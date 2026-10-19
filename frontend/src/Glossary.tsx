@@ -1,6 +1,6 @@
 import { useId, useState } from "react";
 import type { ReactNode } from "react";
-import { CircleHelp } from "lucide-react";
+import { BookOpen, ChevronDown } from "lucide-react";
 import type { Band } from "./data";
 
 // Plain-language definitions for the terms the workspace uses. Term shows one inline; the Data & method tab lists them all.
@@ -42,8 +42,12 @@ export function Term({ k, children }: { k: GlossaryKey; children?: ReactNode }) 
 
 export function HowToRead({ title = "How to read this page", children }: { title?: string; children: ReactNode }) {
   return <details className="how-to-read" open>
-    <summary><CircleHelp size={14} /> {title}</summary>
-    <div>{children}</div>
+    <summary>
+      <span className="htr-icon" aria-hidden="true"><BookOpen size={13} /></span>
+      <span className="htr-title"><small>Reading guide</small>{title}</span>
+      <ChevronDown className="htr-chevron" size={15} aria-hidden="true" />
+    </summary>
+    <div className="htr-body">{children}</div>
   </details>;
 }
 

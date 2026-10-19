@@ -1,0 +1,1341 @@
+{
+  "generatedAt": "2026-10-19T21:03:33.163Z",
+  "source": "UN Comtrade (comtradeapi.un.org, public preview)",
+  "codes": {
+    "8542": "Integrated circuits",
+    "851762": "Network and communication equipment",
+    "852691": "Satellite-navigation (GNSS) receivers"
+  },
+  "hubs": [
+    784,
+    344,
+    792,
+    398,
+    51,
+    417
+  ],
+  "years": [
+    {
+      "year": 2019,
+      "routes": [
+        {
+          "code": 156,
+          "name": "China",
+          "reported": true,
+          "toRussia": {
+            "8542": 45333865,
+            "851762": 688906113,
+            "852691": 24912906
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 344,
+          "name": "China, Hong Kong SAR",
+          "reported": true,
+          "toRussia": {
+            "8542": 155107650.249,
+            "851762": 213382217.719,
+            "852691": 251754.233
+          },
+          "toWorld": {
+            "8542": 134483068336.104,
+            "851762": 12416981367.926,
+            "852691": 133667830.489
+          }
+        },
+        {
+          "code": 398,
+          "name": "Kazakhstan",
+          "reported": true,
+          "toRussia": {
+            "8542": 326571.2,
+            "851762": 6151928.69,
+            "852691": 141313.23
+          },
+          "toWorld": {
+            "8542": 899335.96,
+            "851762": 12549834.3,
+            "852691": 1478766.2
+          }
+        },
+        {
+          "code": 51,
+          "name": "Armenia",
+          "reported": true,
+          "toRussia": {
+            "8542": 122219.44,
+            "851762": 39963.29,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 122996.09,
+            "851762": 1180264.56,
+            "852691": 7442.53
+          }
+        },
+        {
+          "code": 417,
+          "name": "Kyrgyzstan",
+          "reported": true,
+          "toRussia": {
+            "8542": 0,
+            "851762": 684,
+            "852691": 34974
+          },
+          "toWorld": {
+            "8542": 20360,
+            "851762": 430146,
+            "852691": 63083
+          }
+        },
+        {
+          "code": 792,
+          "name": "Türkiye",
+          "reported": true,
+          "toRussia": {
+            "8542": 20052,
+            "851762": 146061,
+            "852691": 23048
+          },
+          "toWorld": {
+            "8542": 18703278,
+            "851762": 63780104,
+            "852691": 14158751
+          }
+        },
+        {
+          "code": 784,
+          "name": "United Arab Emirates",
+          "reported": true,
+          "toRussia": {
+            "8542": 1283194.82,
+            "851762": 6399867.189,
+            "852691": 10.056
+          },
+          "toWorld": {
+            "8542": 247766335.709,
+            "851762": 1923110496.272,
+            "852691": 21201623.508
+          }
+        },
+        {
+          "code": 699,
+          "name": "India",
+          "reported": true,
+          "toRussia": {
+            "8542": 648764.641,
+            "851762": 97141.751,
+            "852691": 1740.604
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 860,
+          "name": "Uzbekistan",
+          "reported": true,
+          "toRussia": {
+            "8542": 473691,
+            "851762": 14335,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 268,
+          "name": "Georgia",
+          "reported": true,
+          "toRussia": {
+            "8542": 0,
+            "851762": 20618.94,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "routes": [
+        {
+          "code": 156,
+          "name": "China",
+          "reported": true,
+          "toRussia": {
+            "8542": 55413418,
+            "851762": 1018662582,
+            "852691": 26465512
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 344,
+          "name": "China, Hong Kong SAR",
+          "reported": true,
+          "toRussia": {
+            "8542": 162371402.875,
+            "851762": 286519202.349,
+            "852691": 4583148.908
+          },
+          "toWorld": {
+            "8542": 153930015848.417,
+            "851762": 12111555017.297,
+            "852691": 116526041.579
+          }
+        },
+        {
+          "code": 398,
+          "name": "Kazakhstan",
+          "reported": true,
+          "toRussia": {
+            "8542": 176190.99,
+            "851762": 3122130.92,
+            "852691": 25315.69
+          },
+          "toWorld": {
+            "8542": 296572.74,
+            "851762": 4713769.08,
+            "852691": 26977
+          }
+        },
+        {
+          "code": 51,
+          "name": "Armenia",
+          "reported": true,
+          "toRussia": {
+            "8542": 5202.54,
+            "851762": 859292.52,
+            "852691": 1372.46
+          },
+          "toWorld": {
+            "8542": 6148.35,
+            "851762": 1721362.76,
+            "852691": 1622.46
+          }
+        },
+        {
+          "code": 417,
+          "name": "Kyrgyzstan",
+          "reported": true,
+          "toRussia": {
+            "8542": 0,
+            "851762": 5916,
+            "852691": 102802
+          },
+          "toWorld": {
+            "8542": 1943,
+            "851762": 472251,
+            "852691": 105312
+          }
+        },
+        {
+          "code": 792,
+          "name": "Türkiye",
+          "reported": true,
+          "toRussia": {
+            "8542": 51871,
+            "851762": 115827,
+            "852691": 826645
+          },
+          "toWorld": {
+            "8542": 16852523,
+            "851762": 59581236,
+            "852691": 13191137
+          }
+        },
+        {
+          "code": 784,
+          "name": "United Arab Emirates",
+          "reported": true,
+          "toRussia": {
+            "8542": 1285794.815,
+            "851762": 2350423.798,
+            "852691": 204172.913
+          },
+          "toWorld": {
+            "8542": 281890659.534,
+            "851762": 2161232650.69,
+            "852691": 21928984.951
+          }
+        },
+        {
+          "code": 699,
+          "name": "India",
+          "reported": true,
+          "toRussia": {
+            "8542": 24451.896,
+            "851762": 528465.037,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 860,
+          "name": "Uzbekistan",
+          "reported": true,
+          "toRussia": {
+            "8542": 502273,
+            "851762": 0,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 268,
+          "name": "Georgia",
+          "reported": false,
+          "toRussia": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "routes": [
+        {
+          "code": 156,
+          "name": "China",
+          "reported": true,
+          "toRussia": {
+            "8542": 72186502,
+            "851762": 1047151112,
+            "852691": 82349302
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 344,
+          "name": "China, Hong Kong SAR",
+          "reported": true,
+          "toRussia": {
+            "8542": 282944583.321,
+            "851762": 419193406.532,
+            "852691": 555751.416
+          },
+          "toWorld": {
+            "8542": 211129710959.365,
+            "851762": 13772365046.182,
+            "852691": 119186019.029
+          }
+        },
+        {
+          "code": 398,
+          "name": "Kazakhstan",
+          "reported": true,
+          "toRussia": {
+            "8542": 245946,
+            "851762": 1932687.21,
+            "852691": 97687.19
+          },
+          "toWorld": {
+            "8542": 315454.62,
+            "851762": 2698270.96,
+            "852691": 115983.36
+          }
+        },
+        {
+          "code": 51,
+          "name": "Armenia",
+          "reported": true,
+          "toRussia": {
+            "8542": 1715.5,
+            "851762": 116966.98,
+            "852691": 375.34
+          },
+          "toWorld": {
+            "8542": 4731.73,
+            "851762": 1457857.45,
+            "852691": 30732.53
+          }
+        },
+        {
+          "code": 417,
+          "name": "Kyrgyzstan",
+          "reported": true,
+          "toRussia": {
+            "8542": 5877,
+            "851762": 110782,
+            "852691": 105968
+          },
+          "toWorld": {
+            "8542": 16390,
+            "851762": 480835,
+            "852691": 145415
+          }
+        },
+        {
+          "code": 792,
+          "name": "Türkiye",
+          "reported": true,
+          "toRussia": {
+            "8542": 57319,
+            "851762": 219635,
+            "852691": 81507
+          },
+          "toWorld": {
+            "8542": 27966298,
+            "851762": 65271989,
+            "852691": 11046969
+          }
+        },
+        {
+          "code": 784,
+          "name": "United Arab Emirates",
+          "reported": true,
+          "toRussia": {
+            "8542": 1684045.938,
+            "851762": 15717676.811,
+            "852691": 329430.243
+          },
+          "toWorld": {
+            "8542": 318273625.83,
+            "851762": 2497689102.282,
+            "852691": 33587697.137
+          }
+        },
+        {
+          "code": 699,
+          "name": "India",
+          "reported": true,
+          "toRussia": {
+            "8542": 116324.441,
+            "851762": 8605.615,
+            "852691": 3266623.996
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 860,
+          "name": "Uzbekistan",
+          "reported": true,
+          "toRussia": {
+            "8542": 386018,
+            "851762": 0,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 268,
+          "name": "Georgia",
+          "reported": true,
+          "toRussia": {
+            "8542": 0,
+            "851762": 246686.91,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "routes": [
+        {
+          "code": 156,
+          "name": "China",
+          "reported": true,
+          "toRussia": {
+            "8542": 179820200,
+            "851762": 928474977,
+            "852691": 103003471
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 344,
+          "name": "China, Hong Kong SAR",
+          "reported": true,
+          "toRussia": {
+            "8542": 208156927.882,
+            "851762": 107612201.508,
+            "852691": 190917.17
+          },
+          "toWorld": {
+            "8542": 213801054086.169,
+            "851762": 14624826441.46,
+            "852691": 148709507.987
+          }
+        },
+        {
+          "code": 398,
+          "name": "Kazakhstan",
+          "reported": true,
+          "toRussia": {
+            "8542": 18258557.85,
+            "851762": 39501093.34,
+            "852691": 1519478.95
+          },
+          "toWorld": {
+            "8542": 18985369.61,
+            "851762": 43689243.09,
+            "852691": 2202159.75
+          }
+        },
+        {
+          "code": 51,
+          "name": "Armenia",
+          "reported": true,
+          "toRussia": {
+            "8542": 13105310.99,
+            "851762": 32869971.77,
+            "852691": 1005574.96
+          },
+          "toWorld": {
+            "8542": 13512031.13,
+            "851762": 33889175.17,
+            "852691": 1197252.73
+          }
+        },
+        {
+          "code": 417,
+          "name": "Kyrgyzstan",
+          "reported": true,
+          "toRussia": {
+            "8542": 658584,
+            "851762": 2701544,
+            "852691": 169792
+          },
+          "toWorld": {
+            "8542": 661746,
+            "851762": 4233061,
+            "852691": 629814
+          }
+        },
+        {
+          "code": 792,
+          "name": "Türkiye",
+          "reported": true,
+          "toRussia": {
+            "8542": 2808799,
+            "851762": 16288160,
+            "852691": 594563
+          },
+          "toWorld": {
+            "8542": 41648058,
+            "851762": 139173485,
+            "852691": 19062649
+          }
+        },
+        {
+          "code": 784,
+          "name": "United Arab Emirates",
+          "reported": true,
+          "toRussia": {
+            "8542": 4755678.37,
+            "851762": 87693916.843,
+            "852691": 53122.912
+          },
+          "toWorld": {
+            "8542": 353559604.346,
+            "851762": 3410533945.3,
+            "852691": 35250076.807
+          }
+        },
+        {
+          "code": 699,
+          "name": "India",
+          "reported": true,
+          "toRussia": {
+            "8542": 4991295.842,
+            "851762": 898879.197,
+            "852691": 12519652.425
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 860,
+          "name": "Uzbekistan",
+          "reported": true,
+          "toRussia": {
+            "8542": 496261,
+            "851762": 201604,
+            "852691": 6932
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 268,
+          "name": "Georgia",
+          "reported": true,
+          "toRussia": {
+            "8542": 2491.96,
+            "851762": 0,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "routes": [
+        {
+          "code": 156,
+          "name": "China",
+          "reported": true,
+          "toRussia": {
+            "8542": 178222876,
+            "851762": 1049478808,
+            "852691": 121844050
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 344,
+          "name": "China, Hong Kong SAR",
+          "reported": true,
+          "toRussia": {
+            "8542": 307893207.386,
+            "851762": 117621008.895,
+            "852691": 179297.526
+          },
+          "toWorld": {
+            "8542": 193517533354.221,
+            "851762": 17064495846.033,
+            "852691": 164474471.108
+          }
+        },
+        {
+          "code": 398,
+          "name": "Kazakhstan",
+          "reported": true,
+          "toRussia": {
+            "8542": 15609835.05,
+            "851762": 33602605.67,
+            "852691": 1877937.72
+          },
+          "toWorld": {
+            "8542": 17295777.91,
+            "851762": 48686247.4,
+            "852691": 3810810.34
+          }
+        },
+        {
+          "code": 51,
+          "name": "Armenia",
+          "reported": true,
+          "toRussia": {
+            "8542": 15706053.38,
+            "851762": 35875541.22,
+            "852691": 267766.13
+          },
+          "toWorld": {
+            "8542": 20020952.78,
+            "851762": 39047119.17,
+            "852691": 298525.87
+          }
+        },
+        {
+          "code": 417,
+          "name": "Kyrgyzstan",
+          "reported": true,
+          "toRussia": {
+            "8542": 13531390,
+            "851762": 5146093,
+            "852691": 335467
+          },
+          "toWorld": {
+            "8542": 13599010,
+            "851762": 8688364,
+            "852691": 386369
+          }
+        },
+        {
+          "code": 792,
+          "name": "Türkiye",
+          "reported": true,
+          "toRussia": {
+            "8542": 3774441,
+            "851762": 15931535,
+            "852691": 207161
+          },
+          "toWorld": {
+            "8542": 33969993,
+            "851762": 224634506,
+            "852691": 22365768
+          }
+        },
+        {
+          "code": 784,
+          "name": "United Arab Emirates",
+          "reported": true,
+          "toRussia": {
+            "8542": 2131908.038,
+            "851762": 124993683.056,
+            "852691": 63197.588
+          },
+          "toWorld": {
+            "8542": 210978013.441,
+            "851762": 3594597550.281,
+            "852691": 39390324.447
+          }
+        },
+        {
+          "code": 699,
+          "name": "India",
+          "reported": true,
+          "toRussia": {
+            "8542": 9362379.565,
+            "851762": 8895754.162,
+            "852691": 58032.392
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 860,
+          "name": "Uzbekistan",
+          "reported": true,
+          "toRussia": {
+            "8542": 0,
+            "851762": 27436.99,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 268,
+          "name": "Georgia",
+          "reported": false,
+          "toRussia": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "routes": [
+        {
+          "code": 156,
+          "name": "China",
+          "reported": true,
+          "toRussia": {
+            "8542": 99615344,
+            "851762": 892641253,
+            "852691": 42919354
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 344,
+          "name": "China, Hong Kong SAR",
+          "reported": true,
+          "toRussia": {
+            "8542": 172030748.085,
+            "851762": 85526659.68,
+            "852691": 450329.573
+          },
+          "toWorld": {
+            "8542": 219797330569.417,
+            "851762": 20203419126.673,
+            "852691": 178358719.863
+          }
+        },
+        {
+          "code": 398,
+          "name": "Kazakhstan",
+          "reported": true,
+          "toRussia": {
+            "8542": 411190.22,
+            "851762": 15558945.61,
+            "852691": 1049227.09
+          },
+          "toWorld": {
+            "8542": 907381.46,
+            "851762": 33154198.77,
+            "852691": 2960448.55
+          }
+        },
+        {
+          "code": 51,
+          "name": "Armenia",
+          "reported": true,
+          "toRussia": {
+            "8542": 0,
+            "851762": 12116820.77,
+            "852691": 2669.63
+          },
+          "toWorld": {
+            "8542": 690424.54,
+            "851762": 12954720.86,
+            "852691": 92041.7
+          }
+        },
+        {
+          "code": 417,
+          "name": "Kyrgyzstan",
+          "reported": true,
+          "toRussia": {
+            "8542": 1333365,
+            "851762": 4792438,
+            "852691": 196284
+          },
+          "toWorld": {
+            "8542": 1357145,
+            "851762": 6890919,
+            "852691": 310482
+          }
+        },
+        {
+          "code": 792,
+          "name": "Türkiye",
+          "reported": true,
+          "toRussia": {
+            "8542": 4752798,
+            "851762": 4231854,
+            "852691": 92337
+          },
+          "toWorld": {
+            "8542": 32426643,
+            "851762": 185679089,
+            "852691": 178083008
+          }
+        },
+        {
+          "code": 784,
+          "name": "United Arab Emirates",
+          "reported": false,
+          "toRussia": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 699,
+          "name": "India",
+          "reported": true,
+          "toRussia": {
+            "8542": 8629871.989,
+            "851762": 13525978.237,
+            "852691": 64837.645
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 860,
+          "name": "Uzbekistan",
+          "reported": true,
+          "toRussia": {
+            "8542": 0,
+            "851762": 48036,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        },
+        {
+          "code": 268,
+          "name": "Georgia",
+          "reported": true,
+          "toRussia": {
+            "8542": 0,
+            "851762": 33.696,
+            "852691": 0
+          },
+          "toWorld": {
+            "8542": 0,
+            "851762": 0,
+            "852691": 0
+          }
+        }
+      ]
+    }
+  ],
+  "chipSources": {
+    "51": {
+      "year": 2024,
+      "sources": [
+        {
+          "code": 156,
+          "name": "China",
+          "value": 456816.7,
+          "partnerReported": null
+        },
+        {
+          "code": 531,
+          "name": "Curaçao",
+          "value": 106824.67,
+          "partnerReported": null
+        },
+        {
+          "code": 458,
+          "name": "Malaysia",
+          "value": 53578.37,
+          "partnerReported": 11102.764
+        },
+        {
+          "code": 842,
+          "name": "USA",
+          "value": 49654.32,
+          "partnerReported": 256943
+        },
+        {
+          "code": 608,
+          "name": "Philippines",
+          "value": 37364.26,
+          "partnerReported": 2913
+        },
+        {
+          "code": 764,
+          "name": "Thailand",
+          "value": 34103.7,
+          "partnerReported": null
+        },
+        {
+          "code": 410,
+          "name": "Rep. of Korea",
+          "value": 31288.36,
+          "partnerReported": null
+        },
+        {
+          "code": 642,
+          "name": "Romania",
+          "value": 12184.34,
+          "partnerReported": 220.17
+        },
+        {
+          "code": 276,
+          "name": "Germany",
+          "value": 11383.23,
+          "partnerReported": 209045.823
+        },
+        {
+          "code": 568,
+          "name": "Other Europe, nes",
+          "value": 11245.09,
+          "partnerReported": null
+        }
+      ]
+    },
+    "344": {
+      "year": 2024,
+      "sources": [
+        {
+          "code": 156,
+          "name": "China",
+          "value": 75070200675.563,
+          "partnerReported": 67580564730
+        },
+        {
+          "code": 490,
+          "name": "Other Asia, nes",
+          "value": 48305794771.03,
+          "partnerReported": 36753484174.331
+        },
+        {
+          "code": 702,
+          "name": "Singapore",
+          "value": 35123799246.7,
+          "partnerReported": 34590725993.27
+        },
+        {
+          "code": 410,
+          "name": "Rep. of Korea",
+          "value": 23250078585.606,
+          "partnerReported": 23316351912
+        },
+        {
+          "code": 458,
+          "name": "Malaysia",
+          "value": 13827147300.026,
+          "partnerReported": 11945046480.221
+        },
+        {
+          "code": 704,
+          "name": "Viet Nam",
+          "value": 8229594209.859,
+          "partnerReported": null
+        },
+        {
+          "code": 392,
+          "name": "Japan",
+          "value": 7521408171.009,
+          "partnerReported": 5043227222.706
+        },
+        {
+          "code": 608,
+          "name": "Philippines",
+          "value": 5901193293.658,
+          "partnerReported": 6485579323
+        },
+        {
+          "code": 842,
+          "name": "USA",
+          "value": 3267041212.342,
+          "partnerReported": 2873416404
+        },
+        {
+          "code": 764,
+          "name": "Thailand",
+          "value": 2981222878.501,
+          "partnerReported": 2127826391.36
+        }
+      ]
+    },
+    "398": {
+      "year": 2024,
+      "sources": [
+        {
+          "code": 156,
+          "name": "China",
+          "value": 18634612.79,
+          "partnerReported": 942602
+        },
+        {
+          "code": 704,
+          "name": "Viet Nam",
+          "value": 12653514.85,
+          "partnerReported": null
+        },
+        {
+          "code": 702,
+          "name": "Singapore",
+          "value": 6742831.24,
+          "partnerReported": null
+        },
+        {
+          "code": 528,
+          "name": "Netherlands",
+          "value": 6222978.7,
+          "partnerReported": 591322.846
+        },
+        {
+          "code": 458,
+          "name": "Malaysia",
+          "value": 1731553.84,
+          "partnerReported": 85.001
+        },
+        {
+          "code": 410,
+          "name": "Rep. of Korea",
+          "value": 1113500.93,
+          "partnerReported": 75022
+        },
+        {
+          "code": 490,
+          "name": "Other Asia, nes",
+          "value": 870809.39,
+          "partnerReported": 15794.106
+        },
+        {
+          "code": 643,
+          "name": "Russian Federation",
+          "value": 810698.26,
+          "partnerReported": null
+        },
+        {
+          "code": 752,
+          "name": "Sweden",
+          "value": 791777.64,
+          "partnerReported": 392803.028
+        },
+        {
+          "code": 276,
+          "name": "Germany",
+          "value": 757430.74,
+          "partnerReported": 962187.118
+        }
+      ]
+    },
+    "417": {
+      "year": 2024,
+      "sources": [
+        {
+          "code": 156,
+          "name": "China",
+          "value": 1517922,
+          "partnerReported": 290495
+        },
+        {
+          "code": 344,
+          "name": "China, Hong Kong SAR",
+          "value": 262295,
+          "partnerReported": 289485.29
+        },
+        {
+          "code": 842,
+          "name": "USA",
+          "value": 222575,
+          "partnerReported": 14739
+        },
+        {
+          "code": 608,
+          "name": "Philippines",
+          "value": 176250,
+          "partnerReported": null
+        },
+        {
+          "code": 784,
+          "name": "United Arab Emirates",
+          "value": 168327,
+          "partnerReported": null
+        },
+        {
+          "code": 704,
+          "name": "Viet Nam",
+          "value": 163165,
+          "partnerReported": null
+        },
+        {
+          "code": 458,
+          "name": "Malaysia",
+          "value": 134429,
+          "partnerReported": 1.093
+        },
+        {
+          "code": 276,
+          "name": "Germany",
+          "value": 127915,
+          "partnerReported": 94810.682
+        },
+        {
+          "code": 490,
+          "name": "Other Asia, nes",
+          "value": 114269,
+          "partnerReported": null
+        },
+        {
+          "code": 40,
+          "name": "Austria",
+          "value": 66322,
+          "partnerReported": 261.936
+        }
+      ]
+    },
+    "784": {
+      "year": 2023,
+      "sources": [
+        {
+          "code": 704,
+          "name": "Viet Nam",
+          "value": 156057690.202,
+          "partnerReported": 23864.68
+        },
+        {
+          "code": 156,
+          "name": "China",
+          "value": 89585520.417,
+          "partnerReported": 31213097
+        },
+        {
+          "code": 458,
+          "name": "Malaysia",
+          "value": 27323298.744,
+          "partnerReported": 17513147.347
+        },
+        {
+          "code": 410,
+          "name": "Rep. of Korea",
+          "value": 16252067.601,
+          "partnerReported": 6776855
+        },
+        {
+          "code": 764,
+          "name": "Thailand",
+          "value": 16033427.16,
+          "partnerReported": 4677244.379
+        },
+        {
+          "code": 702,
+          "name": "Singapore",
+          "value": 12327404.16,
+          "partnerReported": 15987402.287
+        },
+        {
+          "code": 842,
+          "name": "USA",
+          "value": 12113888.993,
+          "partnerReported": 17821672
+        },
+        {
+          "code": 710,
+          "name": "South Africa",
+          "value": 10999805.297,
+          "partnerReported": 13852916.881
+        },
+        {
+          "code": 490,
+          "name": "Other Asia, nes",
+          "value": 8828579.808,
+          "partnerReported": 1140449.013
+        },
+        {
+          "code": 276,
+          "name": "Germany",
+          "value": 5993756.285,
+          "partnerReported": 3642644.017
+        }
+      ]
+    },
+    "792": {
+      "year": 2024,
+      "sources": [
+        {
+          "code": 156,
+          "name": "China",
+          "value": 245131953,
+          "partnerReported": 143842892
+        },
+        {
+          "code": 490,
+          "name": "Other Asia, nes",
+          "value": 191510204,
+          "partnerReported": 130016708.825
+        },
+        {
+          "code": 410,
+          "name": "Rep. of Korea",
+          "value": 122946689,
+          "partnerReported": 99752429
+        },
+        {
+          "code": 458,
+          "name": "Malaysia",
+          "value": 74074830,
+          "partnerReported": 8734774.772
+        },
+        {
+          "code": 704,
+          "name": "Viet Nam",
+          "value": 53383192,
+          "partnerReported": null
+        },
+        {
+          "code": 764,
+          "name": "Thailand",
+          "value": 31070564,
+          "partnerReported": 7698399.158
+        },
+        {
+          "code": 842,
+          "name": "USA",
+          "value": 23265005,
+          "partnerReported": 48901378
+        },
+        {
+          "code": 608,
+          "name": "Philippines",
+          "value": 21759151,
+          "partnerReported": 6606153
+        },
+        {
+          "code": 380,
+          "name": "Italy",
+          "value": 17918661,
+          "partnerReported": 24795788.535
+        },
+        {
+          "code": 276,
+          "name": "Germany",
+          "value": 16040804,
+          "partnerReported": 62937978.565
+        }
+      ]
+    }
+  }
+}

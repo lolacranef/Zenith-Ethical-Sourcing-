@@ -10,7 +10,10 @@
     "preview": "vite preview --host 127.0.0.1",
     "data:comtrade": "node scripts/fetch-comtrade.mjs",
     "data:sayari": "node scripts/fetch-sayari.mjs",
-    "data:tavily": "node scripts/fetch-tavily.mjs"
+    "data:tavily": "node scripts/fetch-tavily.mjs",
+    "data:hub-gold": "node scripts/fetch-hub-gold.mjs",
+    "data:lbma": "node scripts/fetch-lbma.mjs",
+    "data:hub-electronics": "node scripts/fetch-hub-electronics.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",

@@ -8,16 +8,16 @@ import { ProductAnalysis } from "./Analysis";
 import { HowToRead, Term, bandMeaning } from "./Glossary";
 import { buildLead, shortPartner } from "./data";
 
-const SERIES_COLORS = { reported: "#008574", mirror: "#a8692a" };
+export const SERIES_COLORS = { reported: "#008574", mirror: "#a8692a" };
 const formatUsd = (value: number | null) => value === null ? "Not reported" : value >= 1e9 ? `$${(value / 1e9).toFixed(2)}B` : `$${(value / 1e6).toFixed(1)}M`;
 const labelEvery = (count: number, compact: boolean) => count <= 6 ? 1 : count <= 12 ? (compact ? 3 : 2) : (compact ? 6 : 3);
 
 // Joins consecutive reported values into one path; a missing month breaks the line.
-function linePath(values: (number | null)[], x: (index: number) => number, y: (value: number) => number) {
+export function linePath(values: (number | null)[], x: (index: number) => number, y: (value: number) => number) {
   return values.reduce((path, value, index) => value === null ? path : `${path}${index === 0 || values[index - 1] === null ? "M" : "L"}${x(index)},${y(value)}`, "");
 }
 
-function useElementWidth<T extends HTMLElement>() {
+export function useElementWidth<T extends HTMLElement>() {
   const ref = useRef<T>(null);
   const [width, setWidth] = useState(680);
   useEffect(() => {

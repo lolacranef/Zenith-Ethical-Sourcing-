@@ -1,0 +1,441 @@
+{
+ "generatedAt": "2026-10-19",
+ "source": "Sayari Graph, via the Sayari MCP connector (search_trade_facets: shipments, suppliers and buyers scopes; lookup_risk_factors)",
+ "hs": "8542",
+ "note": "Shipment counts are records; flag counts are distinct companies. Each route's records come from Russian import declarations and run over the dates shown. Russia-wide figures span every year Sayari holds (from 2004). Kazakhstan, Kyrgyzstan and Armenia share a customs union with Russia, so most of their trade with it carries no import declaration and is missing here. Supplier warning counts left empty were not among the 30 most common flags Sayari returned for that route, so they are small but unknown.",
+ "routes": {
+  "784": {
+   "records": 4852,
+   "earliest": "2022-01-11",
+   "latest": "2024-03-07",
+   "suppliers": 137,
+   "buyers": 102,
+   "origin": [
+    [
+     "CHN",
+     2068
+    ],
+    [
+     "MYS",
+     681
+    ],
+    [
+     "VNM",
+     525
+    ],
+    [
+     "TWN",
+     484
+    ],
+    [
+     "ARE",
+     263
+    ],
+    [
+     "USA",
+     240
+    ],
+    [
+     "CRI",
+     166
+    ],
+    [
+     "PHL",
+     120
+    ],
+    [
+     "THA",
+     117
+    ],
+    [
+     "JPN",
+     37
+    ]
+   ],
+   "supplierFlags": {
+    "chplCritical": 105,
+    "sanctioned": 9,
+    "sanctionedAdjacent": 67
+   },
+   "buyerFlags": {
+    "chplCritical": 91,
+    "sanctioned": 34,
+    "ofacSdn": 25,
+    "stateProcurement": 45,
+    "exportControls": 27
+   },
+   "supplierWarnings": {
+    "sanctioned": 9,
+    "ofacSdn": 8,
+    "entityList": 3,
+    "massAddress": 3,
+    "diversionAddress": null
+   }
+  },
+  "344": {
+   "records": 206380,
+   "earliest": "2021-09-07",
+   "latest": "2024-01-28",
+   "suppliers": 1762,
+   "buyers": 955,
+   "origin": [
+    [
+     "CHN",
+     73387
+    ],
+    [
+     "MYS",
+     44913
+    ],
+    [
+     "TWN",
+     20609
+    ],
+    [
+     "THA",
+     16744
+    ],
+    [
+     "PHL",
+     13317
+    ],
+    [
+     "USA",
+     11675
+    ],
+    [
+     "HKG",
+     11378
+    ],
+    [
+     "KOR",
+     3176
+    ],
+    [
+     "VNM",
+     3044
+    ],
+    [
+     "MEX",
+     1930
+    ]
+   ],
+   "supplierFlags": {
+    "chplCritical": 1358,
+    "sanctioned": 112,
+    "sanctionedAdjacent": 987
+   },
+   "buyerFlags": {
+    "chplCritical": 855,
+    "sanctioned": 270,
+    "ofacSdn": 161,
+    "stateProcurement": 343,
+    "exportControls": 176
+   },
+   "supplierWarnings": {
+    "sanctioned": 112,
+    "ofacSdn": 86,
+    "entityList": 68,
+    "massAddress": 114,
+    "diversionAddress": 84
+   }
+  },
+  "792": {
+   "records": 27632,
+   "earliest": "2019-06-14",
+   "latest": "2024-07-29",
+   "suppliers": 476,
+   "buyers": 389,
+   "origin": [
+    [
+     "MYS",
+     6376
+    ],
+    [
+     "CHN",
+     5199
+    ],
+    [
+     "TWN",
+     3943
+    ],
+    [
+     "THA",
+     3191
+    ],
+    [
+     "PHL",
+     2877
+    ],
+    [
+     "TUR",
+     1302
+    ],
+    [
+     "USA",
+     1197
+    ],
+    [
+     "VNM",
+     750
+    ],
+    [
+     "KOR",
+     548
+    ],
+    [
+     "MEX",
+     487
+    ]
+   ],
+   "supplierFlags": {
+    "chplCritical": 449,
+    "sanctioned": 27,
+    "sanctionedAdjacent": 192
+   },
+   "buyerFlags": {
+    "chplCritical": 355,
+    "sanctioned": 82,
+    "ofacSdn": 62,
+    "stateProcurement": 128,
+    "exportControls": 66
+   },
+   "supplierWarnings": {
+    "sanctioned": 27,
+    "ofacSdn": 19,
+    "entityList": 19,
+    "massAddress": null,
+    "diversionAddress": null
+   }
+  },
+  "398": {
+   "records": 851,
+   "earliest": "2022-05-11",
+   "latest": "2023-08-03",
+   "suppliers": 8,
+   "buyers": 6,
+   "origin": [
+    [
+     "MYS",
+     230
+    ],
+    [
+     "CHN",
+     171
+    ],
+    [
+     "TWN",
+     129
+    ],
+    [
+     "THA",
+     119
+    ],
+    [
+     "PHL",
+     95
+    ],
+    [
+     "MEX",
+     33
+    ],
+    [
+     "USA",
+     29
+    ],
+    [
+     "KOR",
+     25
+    ],
+    [
+     "JPN",
+     5
+    ]
+   ],
+   "supplierFlags": {
+    "chplCritical": 8,
+    "sanctioned": 1,
+    "sanctionedAdjacent": 3
+   },
+   "buyerFlags": {
+    "chplCritical": 5,
+    "sanctioned": 4,
+    "ofacSdn": 3,
+    "stateProcurement": 5,
+    "exportControls": 3
+   },
+   "supplierWarnings": {
+    "sanctioned": 1,
+    "ofacSdn": 1,
+    "entityList": 1,
+    "massAddress": null,
+    "diversionAddress": null
+   }
+  },
+  "417": {
+   "records": 1412,
+   "earliest": "2022-04-21",
+   "latest": "2023-12-29",
+   "suppliers": 24,
+   "buyers": 17,
+   "origin": [
+    [
+     "CHN",
+     532
+    ],
+    [
+     "MYS",
+     221
+    ],
+    [
+     "TWN",
+     184
+    ],
+    [
+     "THA",
+     139
+    ],
+    [
+     "PHL",
+     116
+    ],
+    [
+     "KGZ",
+     48
+    ],
+    [
+     "USA",
+     43
+    ],
+    [
+     "UZB",
+     22
+    ],
+    [
+     "MEX",
+     21
+    ],
+    [
+     "JPN",
+     18
+    ]
+   ],
+   "supplierFlags": {
+    "chplCritical": 23,
+    "sanctioned": 3,
+    "sanctionedAdjacent": 18
+   },
+   "buyerFlags": {
+    "chplCritical": 17,
+    "sanctioned": 12,
+    "ofacSdn": 9,
+    "stateProcurement": 11,
+    "exportControls": 10
+   },
+   "supplierWarnings": {
+    "sanctioned": 3,
+    "ofacSdn": 2,
+    "entityList": null,
+    "massAddress": null,
+    "diversionAddress": null
+   }
+  },
+  "51": {
+   "records": 2,
+   "earliest": "2022-11-22",
+   "latest": "2022-11-22",
+   "suppliers": 1,
+   "buyers": 1,
+   "origin": [
+    [
+     "MYS",
+     2
+    ]
+   ],
+   "supplierFlags": {
+    "chplCritical": 1,
+    "sanctioned": 0,
+    "sanctionedAdjacent": 1
+   },
+   "buyerFlags": {
+    "chplCritical": 1,
+    "sanctioned": 1,
+    "ofacSdn": 0,
+    "stateProcurement": 0,
+    "exportControls": 0
+   },
+   "supplierWarnings": {
+    "sanctioned": 0,
+    "ofacSdn": 0,
+    "entityList": 0,
+    "massAddress": 0,
+    "diversionAddress": 0
+   }
+  }
+ },
+ "russiaAll": {
+  "records": 859196,
+  "buyers": 7094,
+  "departure": [
+   [
+    "CHN",
+    399454
+   ],
+   [
+    "HKG",
+    206380
+   ],
+   [
+    "DEU",
+    47663
+   ],
+   [
+    "FIN",
+    40484
+   ],
+   [
+    "TUR",
+    27632
+   ],
+   [
+    "EST",
+    13013
+   ],
+   [
+    "THA",
+    11944
+   ],
+   [
+    "NLD",
+    9741
+   ],
+   [
+    "USA",
+    9337
+   ],
+   [
+    "LTU",
+    9166
+   ],
+   [
+    "BEL",
+    8233
+   ],
+   [
+    "CYP",
+    6549
+   ],
+   [
+    "ARE",
+    4852
+   ]
+  ],
+  "buyerFlags": {
+   "chplCritical": 3832,
+   "sanctioned": 573,
+   "ofacSdn": 337,
+   "stateProcurement": 1702,
+   "exportControls": 371
+  }
+ }
+}

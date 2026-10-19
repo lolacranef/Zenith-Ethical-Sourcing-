@@ -1,0 +1,731 @@
+{
+ "generatedAt": "2026-10-19",
+ "source": "Sayari Graph, via the Sayari MCP connector (search_trade_facets, search_buyers, search_suppliers, lookup_data_sources)",
+ "hs": "7108",
+ "note": "Shipment counts are records across every year Sayari holds, not values or tonnes. Risk-flag counts are distinct supplier or buyer companies carrying the flag, not records. Date filters are not applied by the facet tools. Which countries appear depends on which publish shipment-level customs records.",
+ "hubs": {
+  "784": {
+   "inbound": {
+    "records": 21575,
+    "earliest": "2010-09-16",
+    "latest": "2026-07-31",
+    "departure": [
+     [
+      "PER",
+      11677
+     ],
+     [
+      "UGA",
+      1854
+     ],
+     [
+      "COL",
+      1821
+     ],
+     [
+      "TZA",
+      1692
+     ],
+     [
+      "TUR",
+      1236
+     ],
+     [
+      "GHA",
+      1089
+     ],
+     [
+      "RUS",
+      683
+     ],
+     [
+      "ECU",
+      463
+     ],
+     [
+      "MYS",
+      424
+     ],
+     [
+      "CIV",
+      283
+     ]
+    ],
+    "supplierRisk": [
+     [
+      "forced_labor",
+      1494
+     ],
+     [
+      "regulatory_action",
+      32
+     ],
+     [
+      "sanctions_and_export_control_lists",
+      29
+     ],
+     [
+      "export_controls",
+      28
+     ],
+     [
+      "shell_company_risk",
+      26
+     ],
+     [
+      "sanctions",
+      22
+     ]
+    ],
+    "buyerRisk": [
+     [
+      "forced_labor",
+      71
+     ],
+     [
+      "regulatory_action",
+      15
+     ],
+     [
+      "sanctions_and_export_control_lists",
+      10
+     ],
+     [
+      "political_exposure",
+      6
+     ],
+     [
+      "sanctions",
+      5
+     ],
+     [
+      "shell_company_risk",
+      4
+     ]
+    ],
+    "suppliers": 2004
+   },
+   "outbound": {
+    "records": 14687,
+    "earliest": "2018-08-25",
+    "latest": "2026-08-27",
+    "arrival": [
+     [
+      "IND",
+      8134
+     ],
+     [
+      "TUR",
+      3906
+     ],
+     [
+      "MYS",
+      1462
+     ],
+     [
+      "CHE",
+      370
+     ],
+     [
+      "IDN",
+      312
+     ],
+     [
+      "PAK",
+      57
+     ],
+     [
+      "VNM",
+      38
+     ]
+    ],
+    "declaredOrigin": [
+     [
+      "ARE",
+      6103
+     ],
+     [
+      "CIV",
+      396
+     ],
+     [
+      "ZWE",
+      339
+     ],
+     [
+      "CHE",
+      244
+     ],
+     [
+      "IRQ",
+      204
+     ],
+     [
+      "TUR",
+      41
+     ],
+     [
+      "LBY",
+      34
+     ]
+    ]
+   },
+   "buyers": {
+    "total": 1143,
+    "sampled": 25,
+    "sampledRecords": 4082,
+    "freeZoneEntries": 10,
+    "freeZoneFirms": 8,
+    "freeZoneRecords": 1903,
+    "mainlandProfile": "Gold-trading and jewellery LLCs, most with Dubai gold-souk (Deira) addresses",
+    "freeZoneProfile": "Bullion and metals traders, nearly all licensed by DMCC (Dubai Multi Commodities Centre); one is the local arm of a listed international commodities broker",
+    "flagged": "One free-zone buyer in the top 25 carries a Sayari flag for importing from an OFAC-sanctioned supplier; none is itself sanctioned"
+   },
+   "exporters": {
+    "total": 684,
+    "sampled": 25,
+    "freeZoneFirms": 8,
+    "caveat": "The exporter list mixes in misparsed records (customs description fragments read as company names) and companies registered outside the UAE, so its free-zone share is not reliable"
+   },
+   "registries": [
+    "Dubai Multi Commodities Centre (DMCC) licences via third-party company data",
+    "Jebel Ali Free Zone (JAFZA) licences in Dubai Customs documents",
+    "Dubai Airport Free Zone (DAFZ) licensed businesses",
+    "Dubai free-zone client directory",
+    "DIFC public register",
+    "ADGM corporate registry"
+   ],
+   "buyerMix": {
+    "sampled": 25,
+    "sampledRecords": 4082,
+    "groups": [
+     {
+      "label": "Free-zone bullion and metals traders (DMCC, FZE)",
+      "firms": 8,
+      "records": 1903
+     },
+     {
+      "label": "Mainland gold-trading and jewellery firms",
+      "firms": 15,
+      "records": 2179
+     }
+    ],
+    "flags": "One free-zone buyer carries a Sayari flag for importing from an OFAC-sanctioned supplier; none of the top 25 is itself sanctioned."
+   }
+  },
+  "757": {
+   "inbound": {
+    "records": 12216,
+    "earliest": "2004-01",
+    "latest": "2026-08-21",
+    "suppliers": 648,
+    "departure": [
+     [
+      "PER",
+      3671
+     ],
+     [
+      "COL",
+      2707
+     ],
+     [
+      "MEX",
+      1317
+     ],
+     [
+      "CHL",
+      1052
+     ],
+     [
+      "ARG",
+      926
+     ],
+     [
+      "ECU",
+      376
+     ],
+     [
+      "GHA",
+      373
+     ],
+     [
+      "ARE",
+      370
+     ],
+     [
+      "IDN",
+      291
+     ],
+     [
+      "TZA",
+      244
+     ]
+    ],
+    "supplierRisk": [
+     [
+      "forced_labor",
+      283
+     ],
+     [
+      "shell_company_risk",
+      274
+     ],
+     [
+      "regulatory_action",
+      35
+     ],
+     [
+      "environmental_risk",
+      27
+     ],
+     [
+      "adverse_media",
+      18
+     ],
+     [
+      "political_exposure",
+      12
+     ],
+     [
+      "export_controls",
+      9
+     ],
+     [
+      "sanctions",
+      5
+     ]
+    ]
+   },
+   "outbound": {
+    "records": 4388,
+    "earliest": "2011-01-13",
+    "latest": "2026-06-10",
+    "arrival": [
+     [
+      "TUR",
+      1972
+     ],
+     [
+      "IND",
+      1660
+     ],
+     [
+      "MYS",
+      465
+     ],
+     [
+      "VNM",
+      72
+     ],
+     [
+      "IDN",
+      66
+     ],
+     [
+      "UKR",
+      49
+     ],
+     [
+      "ARG",
+      41
+     ]
+    ],
+    "declaredOrigin": [
+     [
+      "CHE",
+      2263
+     ],
+     [
+      "ARE",
+      317
+     ],
+     [
+      "GBR",
+      147
+     ],
+     [
+      "TUR",
+      112
+     ],
+     [
+      "ITA",
+      78
+     ]
+    ]
+   },
+   "buyerMix": {
+    "sampled": 25,
+    "sampledRecords": 4856,
+    "groups": [
+     {
+      "label": "Gold refiners",
+      "firms": 5,
+      "records": 4262
+     },
+     {
+      "label": "Vault and security logistics",
+      "firms": 2,
+      "records": 249
+     },
+     {
+      "label": "Bullion traders and brokers",
+      "firms": 4,
+      "records": 176
+     },
+     {
+      "label": "Probably misattributed (industrial or apparel firms)",
+      "firms": 2,
+      "records": 130
+     },
+     {
+      "label": "Swiss precious-metals control office",
+      "firms": 1,
+      "records": 39
+     }
+    ],
+    "flags": "No top-25 buyer is sanctioned. The five refining groups appear under several name spellings, which Sayari has not merged."
+   }
+  },
+  "792": {
+   "inbound": {
+    "records": 20642,
+    "earliest": "2006-07-07",
+    "latest": "2026-06-15",
+    "suppliers": 1886,
+    "departure": [
+     [
+      "ARE",
+      3906
+     ],
+     [
+      "DEU",
+      3144
+     ],
+     [
+      "CHE",
+      1972
+     ],
+     [
+      "IRQ",
+      1261
+     ],
+     [
+      "ROU",
+      1150
+     ],
+     [
+      "PER",
+      880
+     ],
+     [
+      "LBY",
+      772
+     ],
+     [
+      "GRC",
+      752
+     ],
+     [
+      "USA",
+      601
+     ],
+     [
+      "ITA",
+      480
+     ]
+    ],
+    "supplierRisk": [
+     [
+      "forced_labor",
+      155
+     ],
+     [
+      "regulatory_action",
+      27
+     ],
+     [
+      "shell_company_risk",
+      27
+     ],
+     [
+      "political_exposure",
+      20
+     ],
+     [
+      "export_controls",
+      19
+     ],
+     [
+      "sanctions_and_export_control_lists",
+      18
+     ],
+     [
+      "sanctions",
+      12
+     ]
+    ]
+   },
+   "outbound": {
+    "records": 13343,
+    "earliest": "2012-12-14",
+    "latest": "2026-07-31",
+    "arrival": [
+     [
+      "DEU",
+      1815
+     ],
+     [
+      "GBR",
+      1657
+     ],
+     [
+      "USA",
+      1444
+     ],
+     [
+      "ARE",
+      1236
+     ],
+     [
+      "IND",
+      844
+     ],
+     [
+      "SWE",
+      680
+     ],
+     [
+      "FRA",
+      626
+     ],
+     [
+      "GRC",
+      443
+     ],
+     [
+      "CYP",
+      419
+     ],
+     [
+      "NLD",
+      310
+     ]
+    ],
+    "declaredOrigin": [
+     [
+      "TUR",
+      11859
+     ],
+     [
+      "ARE",
+      210
+     ],
+     [
+      "CHE",
+      69
+     ],
+     [
+      "CIV",
+      66
+     ],
+     [
+      "ITA",
+      36
+     ]
+    ]
+   },
+   "buyerMix": {
+    "sampled": 25,
+    "sampledRecords": 9461,
+    "groups": [
+     {
+      "label": "Jewellery manufacturers and traders",
+      "firms": 11,
+      "records": 4392
+     },
+     {
+      "label": "Licensed precious-metals dealers",
+      "firms": 6,
+      "records": 3028
+     },
+     {
+      "label": "Gold refiners",
+      "firms": 3,
+      "records": 1897
+     },
+     {
+      "label": "Banks",
+      "firms": 1,
+      "records": 144
+     }
+    ],
+    "flags": "No top-25 buyer is sanctioned."
+   }
+  },
+  "344": {
+   "inbound": {
+    "records": 3645,
+    "earliest": "2004-04",
+    "latest": "2026-07-31",
+    "suppliers": 970,
+    "departure": [
+     [
+      "PER",
+      1225
+     ],
+     [
+      "MYS",
+      902
+     ],
+     [
+      "UGA",
+      344
+     ],
+     [
+      "PHL",
+      302
+     ],
+     [
+      "IDN",
+      257
+     ],
+     [
+      "COL",
+      248
+     ],
+     [
+      "RUS",
+      162
+     ],
+     [
+      "VNM",
+      120
+     ],
+     [
+      "GHA",
+      28
+     ],
+     [
+      "TZA",
+      20
+     ]
+    ],
+    "supplierRisk": [
+     [
+      "forced_labor",
+      829
+     ],
+     [
+      "shell_company_risk",
+      36
+     ],
+     [
+      "regulatory_action",
+      20
+     ],
+     [
+      "export_controls",
+      17
+     ],
+     [
+      "sanctions_and_export_control_lists",
+      14
+     ],
+     [
+      "sanctions",
+      9
+     ]
+    ]
+   },
+   "outbound": {
+    "records": 2045,
+    "earliest": "2019-01-04",
+    "latest": "2026-08-26",
+    "arrival": [
+     [
+      "IDN",
+      826
+     ],
+     [
+      "VNM",
+      656
+     ],
+     [
+      "MYS",
+      222
+     ],
+     [
+      "IND",
+      175
+     ],
+     [
+      "TUR",
+      123
+     ],
+     [
+      "RUS",
+      24
+     ],
+     [
+      "PHL",
+      17
+     ]
+    ],
+    "declaredOrigin": [
+     [
+      "HKG",
+      898
+     ],
+     [
+      "SGP",
+      177
+     ],
+     [
+      "USA",
+      97
+     ],
+     [
+      "GBR",
+      44
+     ],
+     [
+      "ARE",
+      32
+     ]
+    ]
+   },
+   "buyerMix": {
+    "sampled": 25,
+    "sampledRecords": 1592,
+    "groups": [
+     {
+      "label": "Industrial refiners",
+      "firms": 1,
+      "records": 361
+     },
+     {
+      "label": "Freight, vault and security logistics",
+      "firms": 4,
+      "records": 360
+     },
+     {
+      "label": "Jewellery makers and traders",
+      "firms": 7,
+      "records": 347
+     },
+     {
+      "label": "Bullion and financial traders",
+      "firms": 6,
+      "records": 283
+     },
+     {
+      "label": "Generic trading or holding companies",
+      "firms": 7,
+      "records": 241
+     }
+    ],
+    "flags": "One top-25 buyer is on the U.S. OFAC sanctions list. Another is flagged for buying from a sanctioned supplier and shares an industrial-building address with a second top-25 buyer."
+   }
+  }
+ }
+}

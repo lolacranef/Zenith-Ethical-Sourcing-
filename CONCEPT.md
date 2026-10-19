@@ -87,13 +87,16 @@ Each Product watch corridor becomes one review lead, recomputed whenever the per
 
 | Source | Status | Role |
 |---|---|---|
-| UN Comtrade (public API) | **In use** | Monthly mirror statistics for Product watch |
+| UN Comtrade (public API) | **In use** | Monthly mirror statistics for Product watch; annual gold statistics for four hubs and CHPL electronics statistics for six routes to Russia, for Hub watch |
 | ITC Trade Map | Referenced | Country/product comparisons. No public API, so it needs account exports to integrate |
 | U.S. Census FTZ statistics, USITC DataWeb | Referenced | U.S. aggregate trade and FTZ context |
 | 19 CFR Part 146 | Referenced | U.S. FTZ recordkeeping rules |
 | DHS UFLPA, CBP EAPA, FATF, OECD, EU Conflict Minerals Regulation, Lacey Act | Referenced | Why a product is on watch |
 | **Sayari** (trade facets) | **In use** (snapshot + `npm run data:sayari`) | Product watch corridor intelligence: shipment-record and supplier counts, supplier concentration, and supplier risk-flag categories. Aggregates only, with no company named |
 | **Tavily** (web search) | **In use** (snapshot + `npm run data:tavily`, human review before publish) | Product watch recent developments: trade-remedy rulings, tariff actions, and forced-labor enforcement, each linked to its source |
+| **Sayari** (gold hub snapshots) | **In use** (snapshot, October 19, 2026) | Hub watch: inbound and outbound gold shipment-record counts by country for the UAE, Switzerland, Türkiye and Hong Kong, the UAE's free-zone versus mainland buyer mix, supplier risk-flag categories. Draws on UAE free-zone registers (DMCC, JAFZA, DAFZ, DIFC, ADGM). Aggregates only |
+| **Sayari** (electronics route snapshots) | **In use** (snapshot, October 19, 2026) | Hub watch: Russian import records of chips shipped from each of six route countries, declared origin, and sanctions, export-control and state-procurement flags on buyers compared with all Russian chip buyers. Aggregates only |
+| LBMA Good Delivery List (gold) | **In use** (`npm run data:lbma`) | Hub watch: accredited and former refiners by country, removal dates and stated reasons. Counts by country only |
 | Sayari (entity graph) | Planned | Entity resolution, ownership and control behind case-level investigations |
 | Tavily + Claude | Backend | Web discovery and document extraction in the investigation engine |
 | Tradeverifyd | Stub | Optional future trade-verification provider |

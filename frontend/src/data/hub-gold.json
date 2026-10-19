@@ -1,0 +1,4497 @@
+{
+  "generatedAt": "2026-10-19T20:59:15.884Z",
+  "source": "UN Comtrade (comtradeapi.un.org, public preview)",
+  "hs": "7108",
+  "hubs": {
+    "344": {
+      "name": "Hong Kong",
+      "years": [
+        {
+          "year": 2018,
+          "imports": 23627497773.443,
+          "exports": 37196701838.141,
+          "sources": [
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 6890911672.81,
+              "partnerReported": 9175342692.759
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 4810185352.845,
+              "partnerReported": 5219128700.208
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 2192046051.143,
+              "partnerReported": 2227495976
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 1854387619.31,
+              "partnerReported": 349053611.794
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 1848324871.691,
+              "partnerReported": 717129460
+            },
+            {
+              "code": 392,
+              "name": "Japan",
+              "value": 1599477755.021,
+              "partnerReported": 1175167983.902
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 1505378251.737,
+              "partnerReported": null
+            },
+            {
+              "code": 608,
+              "name": "Philippines",
+              "value": 1257767367.483,
+              "partnerReported": 801897504
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 747177751.985,
+              "partnerReported": 1492201184.981
+            },
+            {
+              "code": 360,
+              "name": "Indonesia",
+              "value": 260829707.94,
+              "partnerReported": 262117199.03
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 245677292.551,
+              "partnerReported": 712255933.379
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 110403195.824,
+              "partnerReported": 98505960.07
+            },
+            {
+              "code": 490,
+              "name": "Other Asia, nes",
+              "value": 86607201.739,
+              "partnerReported": 239721571.62
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 74057003.402,
+              "partnerReported": 325713690.714
+            },
+            {
+              "code": 410,
+              "name": "Rep. of Korea",
+              "value": 49078492.139,
+              "partnerReported": 45728442
+            }
+          ],
+          "destinations": [
+            {
+              "code": 156,
+              "name": "China",
+              "value": 22330566474.941
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 5719373144.327
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 3508931279.284
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 2157431111.119
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 794862922.886
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 705937807.277
+            },
+            {
+              "code": 490,
+              "name": "Other Asia, nes",
+              "value": 705828584.619
+            },
+            {
+              "code": 360,
+              "name": "Indonesia",
+              "value": 638374629.408
+            },
+            {
+              "code": 410,
+              "name": "Rep. of Korea",
+              "value": 399821303.345
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 62650146.517
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "imports": 13966622314.18,
+          "exports": 25192103910.978,
+          "sources": [
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 2326459861.447,
+              "partnerReported": 2849700945.797
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 1799705305.526,
+              "partnerReported": 899692524
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 1610186007.968,
+              "partnerReported": 3075813282.091
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 1554274768.945,
+              "partnerReported": 1559050466.509
+            },
+            {
+              "code": 392,
+              "name": "Japan",
+              "value": 1451025781.055,
+              "partnerReported": 945299615.616
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 1358725621.083,
+              "partnerReported": 248474352.435
+            },
+            {
+              "code": 608,
+              "name": "Philippines",
+              "value": 1005946972.23,
+              "partnerReported": 959100478
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 573524761.69,
+              "partnerReported": null
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 490536167.429,
+              "partnerReported": null
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 376682674.483,
+              "partnerReported": 1046910378.85
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 319011888.504,
+              "partnerReported": 605687842.485
+            },
+            {
+              "code": 360,
+              "name": "Indonesia",
+              "value": 314809208.137,
+              "partnerReported": 455136672.44
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 263255118.342,
+              "partnerReported": 354837640.894
+            },
+            {
+              "code": 410,
+              "name": "Rep. of Korea",
+              "value": 182172388.456,
+              "partnerReported": 200197746
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 119304092.523,
+              "partnerReported": 200832808.382
+            }
+          ],
+          "destinations": [
+            {
+              "code": 156,
+              "name": "China",
+              "value": 13790750317.727
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 3286024279.081
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 1779290339.156
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 1724832124.019
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 1573088604.174
+            },
+            {
+              "code": 360,
+              "name": "Indonesia",
+              "value": 984407337.463
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 717827720.586
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 386639467.254
+            },
+            {
+              "code": 490,
+              "name": "Other Asia, nes",
+              "value": 361390625
+            },
+            {
+              "code": 410,
+              "name": "Rep. of Korea",
+              "value": 246315707.641
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "imports": 18877648195.136,
+          "exports": 41283352728.03,
+          "sources": [
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 4211030493.462,
+              "partnerReported": 4536769909.16
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 3128778865.958,
+              "partnerReported": 3029142001
+            },
+            {
+              "code": 392,
+              "name": "Japan",
+              "value": 2527277467.969,
+              "partnerReported": 2301049121.897
+            },
+            {
+              "code": 490,
+              "name": "Other Asia, nes",
+              "value": 1518818397.644,
+              "partnerReported": 1773472472.998
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 1076799524.443,
+              "partnerReported": 672965865.38
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 1017465042.349,
+              "partnerReported": 1075784812.259
+            },
+            {
+              "code": 410,
+              "name": "Rep. of Korea",
+              "value": 939005082.473,
+              "partnerReported": 899434641
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 884444103.194,
+              "partnerReported": 977091216.206
+            },
+            {
+              "code": 608,
+              "name": "Philippines",
+              "value": 853041413.03,
+              "partnerReported": 777047408
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 767721760.094,
+              "partnerReported": 1355217048.102
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 409322478.152,
+              "partnerReported": 807966157.147
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 355068828.304,
+              "partnerReported": 244587252
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 317511817.769,
+              "partnerReported": null
+            },
+            {
+              "code": 360,
+              "name": "Indonesia",
+              "value": 232574252.911,
+              "partnerReported": 554235980.28
+            },
+            {
+              "code": 116,
+              "name": "Cambodia",
+              "value": 156992455.053,
+              "partnerReported": 256826415
+            }
+          ],
+          "destinations": [
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 12186336102.244
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 9128587131.441
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 6545172487.483
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 5050263854.57
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 3226164498.137
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 1742566406.997
+            },
+            {
+              "code": 360,
+              "name": "Indonesia",
+              "value": 854089599.08
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 667308032.862
+            },
+            {
+              "code": 490,
+              "name": "Other Asia, nes",
+              "value": 487649023.389
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 433603047.422
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "imports": 29132255816.791,
+          "exports": 30801993998.525,
+          "sources": [
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 6467128255.52,
+              "partnerReported": 6862214777.475
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 5567636998.578,
+              "partnerReported": 4604790255.972
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 3291271017.767,
+              "partnerReported": 2695762778
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 2843167260.726,
+              "partnerReported": 2965622289
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 2710173471.537,
+              "partnerReported": 2224191574.588
+            },
+            {
+              "code": 392,
+              "name": "Japan",
+              "value": 2348091888.833,
+              "partnerReported": 2255825796.397
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 1890364357.734,
+              "partnerReported": 1535842169.293
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 641572419.381,
+              "partnerReported": 359853387.081
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 636905802.402,
+              "partnerReported": null
+            },
+            {
+              "code": 490,
+              "name": "Other Asia, nes",
+              "value": 502050477.307,
+              "partnerReported": 489262013.905
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 443393069.952,
+              "partnerReported": 502222068.32
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 390499648.939,
+              "partnerReported": 735446624.726
+            },
+            {
+              "code": 170,
+              "name": "Colombia",
+              "value": 365023003.394,
+              "partnerReported": 322383934.12
+            },
+            {
+              "code": 410,
+              "name": "Rep. of Korea",
+              "value": 226008659.008,
+              "partnerReported": 153182407
+            },
+            {
+              "code": 608,
+              "name": "Philippines",
+              "value": 200175512.025,
+              "partnerReported": 329253212
+            }
+          ],
+          "destinations": [
+            {
+              "code": 156,
+              "name": "China",
+              "value": 21931355452.924
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 2352487912.064
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 1450533572.417
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 1299952929.553
+            },
+            {
+              "code": 360,
+              "name": "Indonesia",
+              "value": 1098418299.11
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 584620076.067
+            },
+            {
+              "code": 410,
+              "name": "Rep. of Korea",
+              "value": 521954663.722
+            },
+            {
+              "code": 490,
+              "name": "Other Asia, nes",
+              "value": 519953558.02
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 361563675.044
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 206207134.921
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "imports": 38013802272.55,
+          "exports": 30126268460.652,
+          "sources": [
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 9182767099.173,
+              "partnerReported": 15062245364.665
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 5957503993.617,
+              "partnerReported": 5771603140.838
+            },
+            {
+              "code": 392,
+              "name": "Japan",
+              "value": 4328107918.289,
+              "partnerReported": 4203067268.218
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 3985199585.127,
+              "partnerReported": 3452022009.673
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 3135879604.189,
+              "partnerReported": 2627157812.959
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 2732456974.75,
+              "partnerReported": 3021426060
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 2326331341.17,
+              "partnerReported": 1507418660.39
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 1425408007.737,
+              "partnerReported": 1146225360
+            },
+            {
+              "code": 490,
+              "name": "Other Asia, nes",
+              "value": 801697526.712,
+              "partnerReported": 792304359.39
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 661226893.978,
+              "partnerReported": 657678951.358
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 599748547.025,
+              "partnerReported": null
+            },
+            {
+              "code": 643,
+              "name": "Russian Federation",
+              "value": 578547301.745,
+              "partnerReported": null
+            },
+            {
+              "code": 608,
+              "name": "Philippines",
+              "value": 465259696.907,
+              "partnerReported": 480305123
+            },
+            {
+              "code": 410,
+              "name": "Rep. of Korea",
+              "value": 336479363.666,
+              "partnerReported": 280971594
+            },
+            {
+              "code": 800,
+              "name": "Uganda",
+              "value": 305322669.908,
+              "partnerReported": null
+            }
+          ],
+          "destinations": [
+            {
+              "code": 156,
+              "name": "China",
+              "value": 22122365755.751
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 2539231588.079
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 1572854081.431
+            },
+            {
+              "code": 360,
+              "name": "Indonesia",
+              "value": 987591677.686
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 593759952.615
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 588327547.195
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 496358312.544
+            },
+            {
+              "code": 490,
+              "name": "Other Asia, nes",
+              "value": 439319176.568
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 155926099.682
+            },
+            {
+              "code": 458,
+              "name": "Malaysia",
+              "value": 117793887.072
+            }
+          ]
+        },
+        {
+          "year": 2023,
+          "imports": 59845048716.286,
+          "exports": 40235768234.234,
+          "sources": [
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 9968329518.927,
+              "partnerReported": 8273180488.685
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 9768140642.471,
+              "partnerReported": 8263514944.528
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 8732081976.78,
+              "partnerReported": 6773039027.093
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 6078331752.494,
+              "partnerReported": 4514780745.9
+            },
+            {
+              "code": 392,
+              "name": "Japan",
+              "value": 5721287058.314,
+              "partnerReported": 5526482995.001
+            },
+            {
+              "code": 643,
+              "name": "Russian Federation",
+              "value": 5211977730.053,
+              "partnerReported": null
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 3637071131.962,
+              "partnerReported": 3628278170
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 2814440490.535,
+              "partnerReported": 2575219232.288
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 1961595725.663,
+              "partnerReported": 1387849677.932
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 1304825178.552,
+              "partnerReported": null
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 622814853.896,
+              "partnerReported": 621106522.054
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 617799277.068,
+              "partnerReported": 550525709
+            },
+            {
+              "code": 51,
+              "name": "Armenia",
+              "value": 480595711.397,
+              "partnerReported": 472448745.42
+            },
+            {
+              "code": 490,
+              "name": "Other Asia, nes",
+              "value": 420617542.326,
+              "partnerReported": 929434081.418
+            },
+            {
+              "code": 800,
+              "name": "Uganda",
+              "value": 385487674.307,
+              "partnerReported": 286666330.77
+            }
+          ],
+          "destinations": [
+            {
+              "code": 156,
+              "name": "China",
+              "value": 33538120242.937
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 2058547301.362
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 1491527798.152
+            },
+            {
+              "code": 360,
+              "name": "Indonesia",
+              "value": 842456156.328
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 470281553.043
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 449328547.94
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 361885886.642
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 287161117.474
+            },
+            {
+              "code": 490,
+              "name": "Other Asia, nes",
+              "value": 219188611.192
+            },
+            {
+              "code": 704,
+              "name": "Viet Nam",
+              "value": 136011326.434
+            }
+          ]
+        },
+        {
+          "year": 2024,
+          "imports": 65384190513.939,
+          "exports": 56535082373.244,
+          "sources": [
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 15837749545.321,
+              "partnerReported": null
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 10816561121.466,
+              "partnerReported": 10905449386
+            },
+            {
+              "code": 392,
+              "name": "Japan",
+              "value": 10059451005.48,
+              "partnerReported": 9353430131.867
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 6076757177.359,
+              "partnerReported": 6277289598.414
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 5485241787.579,
+              "partnerReported": 5824009559.819
+            },
+            {
+              "code": 643,
+              "name": "Russian Federation",
+              "value": 4640132395.209,
+              "partnerReported": null
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 1840754639.001,
+              "partnerReported": 1863001047.923
+            },
+            {
+              "code": 51,
+              "name": "Armenia",
+              "value": 1670148336.355,
+              "partnerReported": 1131295534.79
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 1659344034.053,
+              "partnerReported": 1397602505.699
+            },
+            {
+              "code": 608,
+              "name": "Philippines",
+              "value": 1177616168.252,
+              "partnerReported": 601856343
+            },
+            {
+              "code": 410,
+              "name": "Rep. of Korea",
+              "value": 1149047671.672,
+              "partnerReported": 550142457
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 958752719.665,
+              "partnerReported": 554072637.065
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 614565865.617,
+              "partnerReported": 560252492
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 525109001.879,
+              "partnerReported": 455038418.3
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 504807161.448,
+              "partnerReported": null
+            }
+          ],
+          "destinations": [
+            {
+              "code": 156,
+              "name": "China",
+              "value": 34165706808.807
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 7488404623.361
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 2271796685.05
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 2227082118.546
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 1786872099.96
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 1606185352.59
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 1578694863.252
+            },
+            {
+              "code": 360,
+              "name": "Indonesia",
+              "value": 1302877883.647
+            },
+            {
+              "code": 704,
+              "name": "Viet Nam",
+              "value": 1201901863.937
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 1072996892.047
+            }
+          ]
+        },
+        {
+          "year": 2025,
+          "imports": 101768312894.201,
+          "exports": 80373354404.046,
+          "sources": [
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 28110482322.621,
+              "partnerReported": null
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 23582659570.989,
+              "partnerReported": 23763955797
+            },
+            {
+              "code": 392,
+              "name": "Japan",
+              "value": 13105139525.278,
+              "partnerReported": 13079769504.436
+            },
+            {
+              "code": 643,
+              "name": "Russian Federation",
+              "value": 10451102235.922,
+              "partnerReported": null
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 6162542494.208,
+              "partnerReported": 2518696497
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 6141729627.712,
+              "partnerReported": 6180928856.065
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 3327148584.192,
+              "partnerReported": 3306466190.4
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 3101205671.816,
+              "partnerReported": null
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 1842135820.422,
+              "partnerReported": 2031814475.643
+            },
+            {
+              "code": 800,
+              "name": "Uganda",
+              "value": 1269409889.389,
+              "partnerReported": 1314598448.4
+            },
+            {
+              "code": 608,
+              "name": "Philippines",
+              "value": 844845316.108,
+              "partnerReported": 955805294
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 726027326.201,
+              "partnerReported": 653533483.289
+            },
+            {
+              "code": 490,
+              "name": "Other Asia, nes",
+              "value": 600544278.075,
+              "partnerReported": null
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 509950608.873,
+              "partnerReported": 510406413.466
+            },
+            {
+              "code": 328,
+              "name": "Guyana",
+              "value": 339043624.633,
+              "partnerReported": null
+            }
+          ],
+          "destinations": [
+            {
+              "code": 156,
+              "name": "China",
+              "value": 46291295865.52
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 8237255555.626
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 4583334987.417
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 4220830837.224
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 3376997869.789
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 2789929466.609
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 2481031146.559
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 2409297140.501
+            },
+            {
+              "code": 410,
+              "name": "Rep. of Korea",
+              "value": 1987120901.158
+            },
+            {
+              "code": 360,
+              "name": "Indonesia",
+              "value": 1903694872.458
+            }
+          ]
+        }
+      ]
+    },
+    "757": {
+      "name": "Switzerland",
+      "years": [
+        {
+          "year": 2018,
+          "imports": 63322525168.682,
+          "exports": 63951747652.095,
+          "sources": [
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 18036621843.787,
+              "partnerReported": 17966177053.995
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 6867892852.896,
+              "partnerReported": 6775939885
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 3426110282.824,
+              "partnerReported": 2356181865.66
+            },
+            {
+              "code": 860,
+              "name": "Uzbekistan",
+              "value": 2478387053.127,
+              "partnerReported": null
+            },
+            {
+              "code": 251,
+              "name": "France",
+              "value": 2373995103.432,
+              "partnerReported": 182998663.183
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 2186679983.004,
+              "partnerReported": 2061623712.09
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 2099921403.262,
+              "partnerReported": 2157431111.119
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 1630089386.091,
+              "partnerReported": 1612091902.663
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 1614569042.971,
+              "partnerReported": null
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 1518765260.205,
+              "partnerReported": 1518889341.91
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 1515578625.577,
+              "partnerReported": 1432835806.312
+            },
+            {
+              "code": 854,
+              "name": "Burkina Faso",
+              "value": 1504384828.367,
+              "partnerReported": 1678474414.405
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 1439131805.813,
+              "partnerReported": 1463738021.895
+            },
+            {
+              "code": 392,
+              "name": "Japan",
+              "value": 1247133784.824,
+              "partnerReported": 804848659.149
+            },
+            {
+              "code": 32,
+              "name": "Argentina",
+              "value": 1230984578.209,
+              "partnerReported": 1194351281.82
+            }
+          ],
+          "destinations": [
+            {
+              "code": 156,
+              "name": "China",
+              "value": 17736413344.3
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 15867977893.234
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 9175342692.759
+            },
+            {
+              "code": 251,
+              "name": "France",
+              "value": 3207120596.931
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 2611274407.029
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 2579534163.739
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 2277659502.12
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 1829893443.231
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 1656340533.597
+            },
+            {
+              "code": 458,
+              "name": "Malaysia",
+              "value": 1629065456.929
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "imports": 60626111232.702,
+          "exports": 61907448388.28,
+          "sources": [
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 6901511386.267,
+              "partnerReported": 5795506093.135
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 6191265298.901,
+              "partnerReported": 5759692664.033
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 4465320756.097,
+              "partnerReported": 4376526216.288
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 3196748755.89,
+              "partnerReported": 2575530963
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 2872741641.651,
+              "partnerReported": 2905785191.439
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 2802542506.1,
+              "partnerReported": 2889364635.2
+            },
+            {
+              "code": 860,
+              "name": "Uzbekistan",
+              "value": 2588086867.455,
+              "partnerReported": null
+            },
+            {
+              "code": 251,
+              "name": "France",
+              "value": 2587493310.256,
+              "partnerReported": 265754406.71
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 2391845097.251,
+              "partnerReported": 2377844886.315
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 2192061414.619,
+              "partnerReported": null
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 2128445428.57,
+              "partnerReported": 2194181553.96
+            },
+            {
+              "code": 854,
+              "name": "Burkina Faso",
+              "value": 1717926854.632,
+              "partnerReported": 1696368729.002
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 1670768333.759,
+              "partnerReported": 1724832124.019
+            },
+            {
+              "code": 32,
+              "name": "Argentina",
+              "value": 1519810364.617,
+              "partnerReported": 1553850994
+            },
+            {
+              "code": 466,
+              "name": "Mali",
+              "value": 1269494516.83,
+              "partnerReported": 1297435539.26
+            }
+          ],
+          "destinations": [
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 17935191354.097
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 16211712214.726
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 7994052862.306
+            },
+            {
+              "code": 251,
+              "name": "France",
+              "value": 4284312013.487
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 3075813282.091
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 2650969465.003
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 1654473161.686
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 1449393270.388
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 1165780103.625
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 1007063229.428
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "imports": 87931537081.913,
+          "exports": 71656680444.766,
+          "sources": [
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 10615532130.488,
+              "partnerReported": 11396305079.711
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 10403121584.116,
+              "partnerReported": 9128587131.441
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 8003378761.611,
+              "partnerReported": 8074839502.168
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 7169369984.781,
+              "partnerReported": 6939107310.967
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 6601367654.488,
+              "partnerReported": 5968553205
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 5052823992.585,
+              "partnerReported": 4972000937.696
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 3250374176.697,
+              "partnerReported": 3398128032.756
+            },
+            {
+              "code": 854,
+              "name": "Burkina Faso",
+              "value": 3235141524.582,
+              "partnerReported": 3260036005.659
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 2989231449.218,
+              "partnerReported": null
+            },
+            {
+              "code": 251,
+              "name": "France",
+              "value": 2802566040.546,
+              "partnerReported": 290074977.472
+            },
+            {
+              "code": 360,
+              "name": "Indonesia",
+              "value": 2158415741.393,
+              "partnerReported": 1897093479.99
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 1718341637.082,
+              "partnerReported": null
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 1647355114.015,
+              "partnerReported": 1585271240.557
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 1642612463.059,
+              "partnerReported": 1315264410.12
+            },
+            {
+              "code": 466,
+              "name": "Mali",
+              "value": 1498123747.783,
+              "partnerReported": 1485383851.9
+            }
+          ],
+          "destinations": [
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 29247063473.985
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 10029509033.646
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 7851110452.905
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 4984165578.604
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 4423025969.979
+            },
+            {
+              "code": 251,
+              "name": "France",
+              "value": 3289693209.361
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 1639403403.919
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 1551512757.251
+            },
+            {
+              "code": 40,
+              "name": "Austria",
+              "value": 1501010642.138
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 1355217048.102
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "imports": 92691613993.807,
+          "exports": 86757610493.818,
+          "sources": [
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 30857744184.174,
+              "partnerReported": 32162362998.21
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 9099553022.836,
+              "partnerReported": 10051540680
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 7437472019.231,
+              "partnerReported": 7436886148.221
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 3673257577.421,
+              "partnerReported": null
+            },
+            {
+              "code": 854,
+              "name": "Burkina Faso",
+              "value": 3378190149.853,
+              "partnerReported": 3457924811.061
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 2628041258.907,
+              "partnerReported": 2627534668.389
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 2522729833.636,
+              "partnerReported": 1299952929.553
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 2396796268.626,
+              "partnerReported": 1666604837.318
+            },
+            {
+              "code": 860,
+              "name": "Uzbekistan",
+              "value": 2355454618.247,
+              "partnerReported": null
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 2350499923.925,
+              "partnerReported": 2404759763.698
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 2061448941.84,
+              "partnerReported": 1859652838.9
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 1468586056.96,
+              "partnerReported": 1457824428.895
+            },
+            {
+              "code": 466,
+              "name": "Mali",
+              "value": 1355790647.462,
+              "partnerReported": 1412727024.4
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 1354518529.988,
+              "partnerReported": 1265499932.815
+            },
+            {
+              "code": 251,
+              "name": "France",
+              "value": 1205681489.098,
+              "partnerReported": 469360104.268
+            }
+          ],
+          "destinations": [
+            {
+              "code": 699,
+              "name": "India",
+              "value": 29487639508.744
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 15935966709.546
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 8893231229.21
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 5753127977.284
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 4604790255.972
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 4603845921.698
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 3275536132.195
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 2434131772.543
+            },
+            {
+              "code": 251,
+              "name": "France",
+              "value": 2031475324.475
+            },
+            {
+              "code": 40,
+              "name": "Austria",
+              "value": 2008481160.784
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "imports": 98951884026.525,
+          "exports": 100227921555.838,
+          "sources": [
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 21637030736.718,
+              "partnerReported": 20287198299
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 8285896035.263,
+              "partnerReported": 8421266394.026
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 6943495511.099,
+              "partnerReported": 2293308375.261
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 5632385485.649,
+              "partnerReported": null
+            },
+            {
+              "code": 860,
+              "name": "Uzbekistan",
+              "value": 4274946472.698,
+              "partnerReported": null
+            },
+            {
+              "code": 643,
+              "name": "Russian Federation",
+              "value": 3712748538.512,
+              "partnerReported": null
+            },
+            {
+              "code": 608,
+              "name": "Philippines",
+              "value": 3486748361.332,
+              "partnerReported": 389296405
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 3272969034.434,
+              "partnerReported": 3147154563.373
+            },
+            {
+              "code": 854,
+              "name": "Burkina Faso",
+              "value": 3023257714.557,
+              "partnerReported": 2966615730.084
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 3021739186.852,
+              "partnerReported": 1506339666.123
+            },
+            {
+              "code": 398,
+              "name": "Kazakhstan",
+              "value": 2748742814.877,
+              "partnerReported": null
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 2719713788.896,
+              "partnerReported": 27381893280.375
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 2402296020.27,
+              "partnerReported": 496358312.544
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 2393567985.923,
+              "partnerReported": 2426271537.537
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 2290556884.068,
+              "partnerReported": 1910545031.01
+            }
+          ],
+          "destinations": [
+            {
+              "code": 156,
+              "name": "China",
+              "value": 27408220471.843
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 12956846184.675
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 10609018237.272
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 9507311956.424
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 6347726003.188
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 5285341898.637
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 4012919347.894
+            },
+            {
+              "code": 251,
+              "name": "France",
+              "value": 3324469088.681
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 3256240236.486
+            },
+            {
+              "code": 682,
+              "name": "Saudi Arabia",
+              "value": 2799099932.517
+            }
+          ]
+        },
+        {
+          "year": 2023,
+          "imports": 102247677326.706,
+          "exports": 107165596657.388,
+          "sources": [
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 15288773191.139,
+              "partnerReported": 10545655013
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 9708125676.657,
+              "partnerReported": 9576237686.427
+            },
+            {
+              "code": 860,
+              "name": "Uzbekistan",
+              "value": 8173825112.223,
+              "partnerReported": null
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 5864554015.882,
+              "partnerReported": 2978240874.36
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 5314108826.564,
+              "partnerReported": 1360358675.49
+            },
+            {
+              "code": 643,
+              "name": "Russian Federation",
+              "value": 3906753383.68,
+              "partnerReported": null
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 3749197198.735,
+              "partnerReported": null
+            },
+            {
+              "code": 398,
+              "name": "Kazakhstan",
+              "value": 3697734980.623,
+              "partnerReported": null
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 3333800625.84,
+              "partnerReported": 3073308003.422
+            },
+            {
+              "code": 854,
+              "name": "Burkina Faso",
+              "value": 2982693373.462,
+              "partnerReported": 2967687667.068
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 2890770783.28,
+              "partnerReported": 2808719655.247
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 2629368098.839,
+              "partnerReported": 3020712465.191
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 2441482043.004,
+              "partnerReported": 29219595066.838
+            },
+            {
+              "code": 392,
+              "name": "Japan",
+              "value": 2214507250.608,
+              "partnerReported": 1958954378.11
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 2194578263.743,
+              "partnerReported": 1616892614.3
+            }
+          ],
+          "destinations": [
+            {
+              "code": 156,
+              "name": "China",
+              "value": 27919963988.883
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 14627967706.416
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 13547901891.129
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 8273180488.685
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 7242360302.246
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 6792434863.315
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 4618419165.467
+            },
+            {
+              "code": 682,
+              "name": "Saudi Arabia",
+              "value": 4497227932.607
+            },
+            {
+              "code": 251,
+              "name": "France",
+              "value": 3466237971.283
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 2898699745.948
+            }
+          ]
+        },
+        {
+          "year": 2024,
+          "imports": 105332188699.661,
+          "exports": 115416455624.249,
+          "sources": [
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 12288307345.91,
+              "partnerReported": 9408492711
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 12234668751.43,
+              "partnerReported": null
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 7421603412.997,
+              "partnerReported": 3775963181.138
+            },
+            {
+              "code": 860,
+              "name": "Uzbekistan",
+              "value": 6061798039.615,
+              "partnerReported": null
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 5502492634.268,
+              "partnerReported": 4825771696.828
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 4366782372.423,
+              "partnerReported": 995230440.006
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 4114464748.074,
+              "partnerReported": 4208939451.574
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 3950428826.175,
+              "partnerReported": 22679139826.583
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 3640004703.701,
+              "partnerReported": 1072996892.047
+            },
+            {
+              "code": 854,
+              "name": "Burkina Faso",
+              "value": 3119627015.726,
+              "partnerReported": 3115134867.15
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 2766542114.508,
+              "partnerReported": 2504741875.01
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 2749308574.056,
+              "partnerReported": null
+            },
+            {
+              "code": 384,
+              "name": "Côte d'Ivoire",
+              "value": 2677675452.515,
+              "partnerReported": 2736021358.5
+            },
+            {
+              "code": 398,
+              "name": "Kazakhstan",
+              "value": 2671399997.795,
+              "partnerReported": null
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 2470390610.978,
+              "partnerReported": 1785410372.481
+            }
+          ],
+          "destinations": [
+            {
+              "code": 156,
+              "name": "China",
+              "value": 23420160406.226
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 19881886484.151
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 12403251525.049
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 11809247353.186
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 6964195841.22
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 6392160406.665
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 6277289598.414
+            },
+            {
+              "code": 682,
+              "name": "Saudi Arabia",
+              "value": 4788951006.219
+            },
+            {
+              "code": 251,
+              "name": "France",
+              "value": 4618615745.319
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 3934792062.839
+            }
+          ]
+        },
+        {
+          "year": 2025,
+          "imports": 211099896939.535,
+          "exports": 195820256218.92,
+          "sources": [
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 51106801492.257,
+              "partnerReported": 45310754049
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 47324171603.581,
+              "partnerReported": null
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 8815333953.902,
+              "partnerReported": 1369863717.391
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 8468174906.963,
+              "partnerReported": 7331483736.335
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 7419848213.174,
+              "partnerReported": 6532111944.006
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 6749439562.424,
+              "partnerReported": 1402156628.069
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 5984127733.336,
+              "partnerReported": 23725128042.158
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 5427695715.686,
+              "partnerReported": null
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 5212013910.487,
+              "partnerReported": 6156260821.175
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 4551362336.555,
+              "partnerReported": 4519763389.924
+            },
+            {
+              "code": 860,
+              "name": "Uzbekistan",
+              "value": 4463141433.158,
+              "partnerReported": null
+            },
+            {
+              "code": 384,
+              "name": "Côte d'Ivoire",
+              "value": 4230343597.624,
+              "partnerReported": 4260061336.751
+            },
+            {
+              "code": 854,
+              "name": "Burkina Faso",
+              "value": 4105692141.837,
+              "partnerReported": null
+            },
+            {
+              "code": 392,
+              "name": "Japan",
+              "value": 4089941939.352,
+              "partnerReported": 3801887559.403
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 3536025686.187,
+              "partnerReported": 3376997869.789
+            }
+          ],
+          "destinations": [
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 53676096791.211
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 46035260584.809
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 17557119626.849
+            },
+            {
+              "code": 251,
+              "name": "France",
+              "value": 15019833014.649
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 13404154036.956
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 10144214697.677
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 6776021349.541
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 6694173208.742
+            },
+            {
+              "code": 764,
+              "name": "Thailand",
+              "value": 5033805896.672
+            },
+            {
+              "code": 682,
+              "name": "Saudi Arabia",
+              "value": 3844587276.787
+            }
+          ]
+        }
+      ]
+    },
+    "784": {
+      "name": "United Arab Emirates",
+      "years": [
+        {
+          "year": 2018,
+          "imports": 27672052091.626,
+          "exports": 15716679237.141,
+          "sources": [
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 2530466875.028,
+              "partnerReported": 1829893443.231
+            },
+            {
+              "code": 324,
+              "name": "Guinea",
+              "value": 2271718327.786,
+              "partnerReported": null
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 1848141737.287,
+              "partnerReported": 2015495786.272
+            },
+            {
+              "code": 862,
+              "name": "Venezuela",
+              "value": 1797294978.605,
+              "partnerReported": null
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 1587235172.658,
+              "partnerReported": 794862922.886
+            },
+            {
+              "code": 466,
+              "name": "Mali",
+              "value": 1332841807.214,
+              "partnerReported": 40204742.51
+            },
+            {
+              "code": 800,
+              "name": "Uganda",
+              "value": 1129567364.994,
+              "partnerReported": 513507305.92
+            },
+            {
+              "code": 729,
+              "name": "Sudan",
+              "value": 1025711722.78,
+              "partnerReported": 875955148
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 990131626.582,
+              "partnerReported": null
+            },
+            {
+              "code": 818,
+              "name": "Egypt",
+              "value": 935511913.18,
+              "partnerReported": 1240490373.321
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 856095450.068,
+              "partnerReported": 13505.9
+            },
+            {
+              "code": 716,
+              "name": "Zimbabwe",
+              "value": 821226357.092,
+              "partnerReported": 611401765.47
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 817127750.465,
+              "partnerReported": 679461119
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 778224105.673,
+              "partnerReported": 505721181.185
+            },
+            {
+              "code": 434,
+              "name": "Libya",
+              "value": 680215778.371,
+              "partnerReported": 680215778
+            }
+          ],
+          "destinations": [
+            {
+              "code": 682,
+              "name": "Saudi Arabia",
+              "value": 2910355553.174
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 2458231059.053
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 2356181865.66
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 1999341770.654
+            },
+            {
+              "code": 512,
+              "name": "Oman",
+              "value": 827230100.298
+            },
+            {
+              "code": 414,
+              "name": "Kuwait",
+              "value": 664985443.624
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 662603496.179
+            },
+            {
+              "code": 48,
+              "name": "Bahrain",
+              "value": 484653171.525
+            },
+            {
+              "code": 50,
+              "name": "Bangladesh",
+              "value": 449676780.776
+            },
+            {
+              "code": 144,
+              "name": "Sri Lanka",
+              "value": 403463302.348
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "imports": 32133977058.045,
+          "exports": 19113230537.414,
+          "sources": [
+            {
+              "code": 466,
+              "name": "Mali",
+              "value": 3218691766.752,
+              "partnerReported": 19135507.07
+            },
+            {
+              "code": 324,
+              "name": "Guinea",
+              "value": 2234457137.293,
+              "partnerReported": null
+            },
+            {
+              "code": 800,
+              "name": "Uganda",
+              "value": 1713491887.334,
+              "partnerReported": 1148295584.55
+            },
+            {
+              "code": 818,
+              "name": "Egypt",
+              "value": 1379901156.783,
+              "partnerReported": 1378291653.497
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 1325756042.914,
+              "partnerReported": 717827720.586
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 1280569530.833,
+              "partnerReported": 830377218.285
+            },
+            {
+              "code": 729,
+              "name": "Sudan",
+              "value": 1166868083.844,
+              "partnerReported": null
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 1066711701.485,
+              "partnerReported": 2472934135.639
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 1042755542.834,
+              "partnerReported": 963594988.65
+            },
+            {
+              "code": 740,
+              "name": "Suriname",
+              "value": 1033604485.569,
+              "partnerReported": 534992619.374
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 979936522.244,
+              "partnerReported": null
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 975207496.26,
+              "partnerReported": 1286728.057
+            },
+            {
+              "code": 434,
+              "name": "Libya",
+              "value": 970227207.066,
+              "partnerReported": 970227207
+            },
+            {
+              "code": 4,
+              "name": "Afghanistan",
+              "value": 967690526.822,
+              "partnerReported": null
+            },
+            {
+              "code": 68,
+              "name": "Bolivia (Plurinational State of)",
+              "value": 947996767.105,
+              "partnerReported": 848960991.62
+            }
+          ],
+          "destinations": [
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 5795506093.135
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 3127494660.749
+            },
+            {
+              "code": 682,
+              "name": "Saudi Arabia",
+              "value": 2079726986.744
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 1910121228.593
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 791311978.093
+            },
+            {
+              "code": 512,
+              "name": "Oman",
+              "value": 761475035.034
+            },
+            {
+              "code": 144,
+              "name": "Sri Lanka",
+              "value": 612976651.986
+            },
+            {
+              "code": 50,
+              "name": "Bangladesh",
+              "value": 606803570.359
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 605687842.485
+            },
+            {
+              "code": 48,
+              "name": "Bahrain",
+              "value": 444816069.643
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "imports": 37256646538.725,
+          "exports": 29303479807.21,
+          "sources": [
+            {
+              "code": 324,
+              "name": "Guinea",
+              "value": 6618413323.126,
+              "partnerReported": null
+            },
+            {
+              "code": 466,
+              "name": "Mali",
+              "value": 2949512307.948,
+              "partnerReported": 4645791.51
+            },
+            {
+              "code": 818,
+              "name": "Egypt",
+              "value": 2265070833,
+              "partnerReported": 2092878317.578
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 2101589273.741,
+              "partnerReported": null
+            },
+            {
+              "code": 729,
+              "name": "Sudan",
+              "value": 1768412856.139,
+              "partnerReported": null
+            },
+            {
+              "code": 562,
+              "name": "Niger",
+              "value": 1743491022.095,
+              "partnerReported": 64549551.422
+            },
+            {
+              "code": 800,
+              "name": "Uganda",
+              "value": 1650190341.31,
+              "partnerReported": 1817954494
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 1610912319.564,
+              "partnerReported": null
+            },
+            {
+              "code": 682,
+              "name": "Saudi Arabia",
+              "value": 1232412692.244,
+              "partnerReported": 1175156346.621
+            },
+            {
+              "code": 716,
+              "name": "Zimbabwe",
+              "value": 1194632591.655,
+              "partnerReported": 739182243.71
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 1117024353.278,
+              "partnerReported": 703571450.78
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 1009930785.104,
+              "partnerReported": 1145732561.96
+            },
+            {
+              "code": 834,
+              "name": "United Rep. of Tanzania",
+              "value": 806151876.849,
+              "partnerReported": 704080866.84
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 803259835.604,
+              "partnerReported": 157851227.737
+            },
+            {
+              "code": 740,
+              "name": "Suriname",
+              "value": 703726892.463,
+              "partnerReported": 401065593.091
+            }
+          ],
+          "destinations": [
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 8074839502.168
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 4630127851.624
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 4604540607.45
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 4536769909.16
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 2717260520.431
+            },
+            {
+              "code": 682,
+              "name": "Saudi Arabia",
+              "value": 806663586.049
+            },
+            {
+              "code": 458,
+              "name": "Malaysia",
+              "value": 452602323.734
+            },
+            {
+              "code": 414,
+              "name": "Kuwait",
+              "value": 403211909.27
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 373031413.01
+            },
+            {
+              "code": 50,
+              "name": "Bangladesh",
+              "value": 369983558.273
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "imports": 48181868703.325,
+          "exports": 33786922894.627,
+          "sources": [
+            {
+              "code": 466,
+              "name": "Mali",
+              "value": 7324042088.192,
+              "partnerReported": 5979668.975
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 5177871357.11,
+              "partnerReported": 1734909931
+            },
+            {
+              "code": 729,
+              "name": "Sudan",
+              "value": 2819349803.911,
+              "partnerReported": null
+            },
+            {
+              "code": 562,
+              "name": "Niger",
+              "value": 2677274825.169,
+              "partnerReported": 55463219.146
+            },
+            {
+              "code": 324,
+              "name": "Guinea",
+              "value": 2336404017.533,
+              "partnerReported": null
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 2227780560.722,
+              "partnerReported": 1427822482.845
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 2084462569.102,
+              "partnerReported": null
+            },
+            {
+              "code": 800,
+              "name": "Uganda",
+              "value": 1985402287.648,
+              "partnerReported": 1032854557.1
+            },
+            {
+              "code": 716,
+              "name": "Zimbabwe",
+              "value": 1898899693.74,
+              "partnerReported": 1604058775.14
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 1701490186.386,
+              "partnerReported": 75658918.85
+            },
+            {
+              "code": 834,
+              "name": "United Rep. of Tanzania",
+              "value": 1225490146.854,
+              "partnerReported": 801827202.95
+            },
+            {
+              "code": 368,
+              "name": "Iraq",
+              "value": 1110415598.672,
+              "partnerReported": null
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 910897898.702,
+              "partnerReported": 206207134.921
+            },
+            {
+              "code": 231,
+              "name": "Ethiopia",
+              "value": 859732053.596,
+              "partnerReported": null
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 851431671.254,
+              "partnerReported": 797654079.51
+            }
+          ],
+          "destinations": [
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 7436886148.221
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 7091311130.498
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 6862214777.475
+            },
+            {
+              "code": 682,
+              "name": "Saudi Arabia",
+              "value": 2990156738.014
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 2047754932.224
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 1187690791.068
+            },
+            {
+              "code": 414,
+              "name": "Kuwait",
+              "value": 1005207416.981
+            },
+            {
+              "code": 818,
+              "name": "Egypt",
+              "value": 772684776.789
+            },
+            {
+              "code": 512,
+              "name": "Oman",
+              "value": 669817688.173
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 573531181.7
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "imports": 59497629608.748,
+          "exports": 35626328590.164,
+          "sources": [
+            {
+              "code": 466,
+              "name": "Mali",
+              "value": 5574052590.158,
+              "partnerReported": 19570131.735
+            },
+            {
+              "code": 643,
+              "name": "Russian Federation",
+              "value": 5362053965.325,
+              "partnerReported": null
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 4679703366.664,
+              "partnerReported": 316874807.16
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 4247202637.013,
+              "partnerReported": 400119072
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 2683927949.558,
+              "partnerReported": 2745034821.05
+            },
+            {
+              "code": 716,
+              "name": "Zimbabwe",
+              "value": 2483061063.404,
+              "partnerReported": 1981811101.2
+            },
+            {
+              "code": 324,
+              "name": "Guinea",
+              "value": 2452703611.018,
+              "partnerReported": null
+            },
+            {
+              "code": 729,
+              "name": "Sudan",
+              "value": 2288234815.883,
+              "partnerReported": null
+            },
+            {
+              "code": 562,
+              "name": "Niger",
+              "value": 2239331863.675,
+              "partnerReported": 37386660.659
+            },
+            {
+              "code": 894,
+              "name": "Zambia",
+              "value": 1738235978.417,
+              "partnerReported": 457881.577
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 1622510524.685,
+              "partnerReported": null
+            },
+            {
+              "code": 800,
+              "name": "Uganda",
+              "value": 1193078927.881,
+              "partnerReported": null
+            },
+            {
+              "code": 768,
+              "name": "Togo",
+              "value": 1184028130.312,
+              "partnerReported": null
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 1167584830.878,
+              "partnerReported": 5137814761.799
+            },
+            {
+              "code": 834,
+              "name": "United Rep. of Tanzania",
+              "value": 1130508599.211,
+              "partnerReported": 609242193.26
+            }
+          ],
+          "destinations": [
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 8421266394.026
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 5771603140.838
+            },
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 5288870968.986
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 3834172202.382
+            },
+            {
+              "code": 682,
+              "name": "Saudi Arabia",
+              "value": 2397396503.708
+            },
+            {
+              "code": 512,
+              "name": "Oman",
+              "value": 2181285701.32
+            },
+            {
+              "code": 414,
+              "name": "Kuwait",
+              "value": 1086634109.773
+            },
+            {
+              "code": 368,
+              "name": "Iraq",
+              "value": 915756530.18
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 759138546.425
+            },
+            {
+              "code": 400,
+              "name": "Jordan",
+              "value": 628557554.946
+            }
+          ]
+        },
+        {
+          "year": 2023,
+          "imports": 76752128851.262,
+          "exports": 52829324883.559,
+          "sources": [
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 12103976141.632,
+              "partnerReported": 3025375341
+            },
+            {
+              "code": 324,
+              "name": "Guinea",
+              "value": 8363537819.894,
+              "partnerReported": null
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 6956890860.838,
+              "partnerReported": 7242360302.246
+            },
+            {
+              "code": 466,
+              "name": "Mali",
+              "value": 4831382587.975,
+              "partnerReported": 32895504.348
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 3208646607.409,
+              "partnerReported": 1647817005.893
+            },
+            {
+              "code": 768,
+              "name": "Togo",
+              "value": 2651629691.454,
+              "partnerReported": 1947.371
+            },
+            {
+              "code": 51,
+              "name": "Armenia",
+              "value": 2581072810.42,
+              "partnerReported": 1301578928.1
+            },
+            {
+              "code": 643,
+              "name": "Russian Federation",
+              "value": 2520985522.367,
+              "partnerReported": null
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 2410768854.915,
+              "partnerReported": 1491527798.152
+            },
+            {
+              "code": 716,
+              "name": "Zimbabwe",
+              "value": 1864504617.695,
+              "partnerReported": 1792919195.07
+            },
+            {
+              "code": 894,
+              "name": "Zambia",
+              "value": 1788023621.952,
+              "partnerReported": 3059702.476
+            },
+            {
+              "code": 834,
+              "name": "United Rep. of Tanzania",
+              "value": 1419926142.848,
+              "partnerReported": 543690766.71
+            },
+            {
+              "code": 566,
+              "name": "Nigeria",
+              "value": 1248364041.787,
+              "partnerReported": null
+            },
+            {
+              "code": 368,
+              "name": "Iraq",
+              "value": 1184165554.886,
+              "partnerReported": null
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 1116938547.628,
+              "partnerReported": 1010203205.21
+            }
+          ],
+          "destinations": [
+            {
+              "code": 792,
+              "name": "Türkiye",
+              "value": 13970246273.059
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 9576237686.427
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 8263514944.528
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 7267058751.929
+            },
+            {
+              "code": 682,
+              "name": "Saudi Arabia",
+              "value": 2880911768.642
+            },
+            {
+              "code": 512,
+              "name": "Oman",
+              "value": 2177942245.596
+            },
+            {
+              "code": 368,
+              "name": "Iraq",
+              "value": 1963651257.642
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 1048014300.202
+            },
+            {
+              "code": 414,
+              "name": "Kuwait",
+              "value": 813174624.001
+            },
+            {
+              "code": 48,
+              "name": "Bahrain",
+              "value": 675835217.361
+            }
+          ]
+        }
+      ]
+    },
+    "792": {
+      "name": "Türkiye",
+      "years": [
+        {
+          "year": 2018,
+          "imports": 11302205200,
+          "exports": 2587389789,
+          "sources": [
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 3099485403,
+              "partnerReported": 2458231059.053
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 1506418576,
+              "partnerReported": 3289318534.279
+            },
+            {
+              "code": 368,
+              "name": "Iraq",
+              "value": 1251303145,
+              "partnerReported": null
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 1091734504,
+              "partnerReported": 882481249.738
+            },
+            {
+              "code": 862,
+              "name": "Venezuela",
+              "value": 901002593,
+              "partnerReported": null
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 769390703,
+              "partnerReported": 224842.308
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 663919943,
+              "partnerReported": 663646178.577
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 541420679,
+              "partnerReported": null
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 388441944,
+              "partnerReported": 24299813.57
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 262740323,
+              "partnerReported": 15254883
+            },
+            {
+              "code": 434,
+              "name": "Libya",
+              "value": 112447973,
+              "partnerReported": 112447973
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 69257179,
+              "partnerReported": 62650146.517
+            },
+            {
+              "code": 324,
+              "name": "Guinea",
+              "value": 61697747,
+              "partnerReported": null
+            },
+            {
+              "code": 56,
+              "name": "Belgium",
+              "value": 46900681,
+              "partnerReported": 27629326.321
+            },
+            {
+              "code": 818,
+              "name": "Egypt",
+              "value": 38785158,
+              "partnerReported": 32958324
+            }
+          ],
+          "destinations": [
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 950959936
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 679461119
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 602746691
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 64556689
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 56163913
+            },
+            {
+              "code": 524,
+              "name": "Nepal",
+              "value": 45132370
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 26384189
+            },
+            {
+              "code": 414,
+              "name": "Kuwait",
+              "value": 22197046
+            },
+            {
+              "code": 818,
+              "name": "Egypt",
+              "value": 22158730
+            },
+            {
+              "code": 458,
+              "name": "Malaysia",
+              "value": 20105250
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "imports": 11268688334,
+          "exports": 2000620267,
+          "sources": [
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 3539990308,
+              "partnerReported": 1910121228.593
+            },
+            {
+              "code": 368,
+              "name": "Iraq",
+              "value": 2400638636,
+              "partnerReported": null
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 1791932207,
+              "partnerReported": 1654473161.686
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 955151693,
+              "partnerReported": 953589484.279
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 548720327,
+              "partnerReported": 1173375006.964
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 300934284,
+              "partnerReported": 38424873.326
+            },
+            {
+              "code": 56,
+              "name": "Belgium",
+              "value": 269049746,
+              "partnerReported": 257339699.415
+            },
+            {
+              "code": 434,
+              "name": "Libya",
+              "value": 219452217,
+              "partnerReported": 219452217
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 167362279,
+              "partnerReported": 204859736.279
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 166727814,
+              "partnerReported": null
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 143150502,
+              "partnerReported": 211839.315
+            },
+            {
+              "code": 170,
+              "name": "Colombia",
+              "value": 94207778,
+              "partnerReported": 51013820.68
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 91968430,
+              "partnerReported": 17643336
+            },
+            {
+              "code": 752,
+              "name": "Sweden",
+              "value": 74886170,
+              "partnerReported": 4150407.335
+            },
+            {
+              "code": 76,
+              "name": "Brazil",
+              "value": 57685144,
+              "partnerReported": 5627111
+            }
+          ],
+          "destinations": [
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 1120483341
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 440685235
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 210225842
+            },
+            {
+              "code": 524,
+              "name": "Nepal",
+              "value": 42353765
+            },
+            {
+              "code": 478,
+              "name": "Mauritania",
+              "value": 41339391
+            },
+            {
+              "code": 504,
+              "name": "Morocco",
+              "value": 31140348
+            },
+            {
+              "code": 699,
+              "name": "India",
+              "value": 27979849
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 27639132
+            },
+            {
+              "code": 156,
+              "name": "China",
+              "value": 24764529
+            },
+            {
+              "code": 364,
+              "name": "Iran",
+              "value": 7554050
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "imports": 25183791731,
+          "exports": 2779978131,
+          "sources": [
+            {
+              "code": 368,
+              "name": "Iraq",
+              "value": 7940022519,
+              "partnerReported": null
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 6136453951,
+              "partnerReported": 4423025969.979
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 5102307292,
+              "partnerReported": 4630127851.624
+            },
+            {
+              "code": 434,
+              "name": "Libya",
+              "value": 1312379651,
+              "partnerReported": null
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 926419639,
+              "partnerReported": 938201331.356
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 672215719,
+              "partnerReported": 1136674583.148
+            },
+            {
+              "code": 56,
+              "name": "Belgium",
+              "value": 443373206,
+              "partnerReported": 433476440.818
+            },
+            {
+              "code": 643,
+              "name": "Russian Federation",
+              "value": 408260763,
+              "partnerReported": 377235791.06
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 224662048,
+              "partnerReported": 71743467.14
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 207432027,
+              "partnerReported": null
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 198080867,
+              "partnerReported": 152352314.924
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 189306404,
+              "partnerReported": 53059951.95
+            },
+            {
+              "code": 324,
+              "name": "Guinea",
+              "value": 156691003,
+              "partnerReported": null
+            },
+            {
+              "code": 68,
+              "name": "Bolivia (Plurinational State of)",
+              "value": 126428783,
+              "partnerReported": 71968215.24
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 121262786,
+              "partnerReported": 10611985.413
+            }
+          ],
+          "destinations": [
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 1478547625
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 586794106
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 398750755
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 185823955
+            },
+            {
+              "code": 458,
+              "name": "Malaysia",
+              "value": 30253181
+            },
+            {
+              "code": 524,
+              "name": "Nepal",
+              "value": 27578687
+            },
+            {
+              "code": 414,
+              "name": "Kuwait",
+              "value": 25670726
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 18700401
+            },
+            {
+              "code": 634,
+              "name": "Qatar",
+              "value": 9053126
+            },
+            {
+              "code": 100,
+              "name": "Bulgaria",
+              "value": 4167792
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "imports": 5498631688,
+          "exports": 3482598318,
+          "sources": [
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 1476281007,
+              "partnerReported": 2047754932.224
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 1159209950,
+              "partnerReported": 654601887.743
+            },
+            {
+              "code": 368,
+              "name": "Iraq",
+              "value": 970850071,
+              "partnerReported": null
+            },
+            {
+              "code": 478,
+              "name": "Mauritania",
+              "value": 260607042,
+              "partnerReported": null
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 215958473,
+              "partnerReported": null
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 208915805,
+              "partnerReported": 11398497.96
+            },
+            {
+              "code": 56,
+              "name": "Belgium",
+              "value": 198322305,
+              "partnerReported": 194553504.221
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 192016655,
+              "partnerReported": 29352713
+            },
+            {
+              "code": 643,
+              "name": "Russian Federation",
+              "value": 119781630,
+              "partnerReported": 119878223.82
+            },
+            {
+              "code": 68,
+              "name": "Bolivia (Plurinational State of)",
+              "value": 110298210,
+              "partnerReported": 136942688.4
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 109112979,
+              "partnerReported": 21038515.236
+            },
+            {
+              "code": 434,
+              "name": "Libya",
+              "value": 99994032,
+              "partnerReported": null
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 46363693,
+              "partnerReported": 182632010.872
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 40930105,
+              "partnerReported": 35290147.053
+            },
+            {
+              "code": 642,
+              "name": "Romania",
+              "value": 31284568,
+              "partnerReported": null
+            }
+          ],
+          "destinations": [
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 1734909931
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 821396778
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 276002414
+            },
+            {
+              "code": 478,
+              "name": "Mauritania",
+              "value": 263312054
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 126439943
+            },
+            {
+              "code": 524,
+              "name": "Nepal",
+              "value": 73109963
+            },
+            {
+              "code": 702,
+              "name": "Singapore",
+              "value": 31284000
+            },
+            {
+              "code": 414,
+              "name": "Kuwait",
+              "value": 27483711
+            },
+            {
+              "code": 368,
+              "name": "Iraq",
+              "value": 21838707
+            },
+            {
+              "code": 504,
+              "name": "Morocco",
+              "value": 16857240
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "imports": 20440349004,
+          "exports": 1051002454,
+          "sources": [
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 13360296020,
+              "partnerReported": 10609018237.272
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 3225028395,
+              "partnerReported": 5288870968.986
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 589571293,
+              "partnerReported": 730515588.239
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 566656022,
+              "partnerReported": null
+            },
+            {
+              "code": 643,
+              "name": "Russian Federation",
+              "value": 376809585,
+              "partnerReported": null
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 337990455,
+              "partnerReported": 350310052
+            },
+            {
+              "code": 368,
+              "name": "Iraq",
+              "value": 326273838,
+              "partnerReported": null
+            },
+            {
+              "code": 478,
+              "name": "Mauritania",
+              "value": 261833878,
+              "partnerReported": null
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 248264562,
+              "partnerReported": 11246432.38
+            },
+            {
+              "code": 434,
+              "name": "Libya",
+              "value": 135857693,
+              "partnerReported": null
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 117251604,
+              "partnerReported": null
+            },
+            {
+              "code": 76,
+              "name": "Brazil",
+              "value": 102331577,
+              "partnerReported": 81710434
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 100396790,
+              "partnerReported": 6806909.145
+            },
+            {
+              "code": 68,
+              "name": "Bolivia (Plurinational State of)",
+              "value": 75463629,
+              "partnerReported": 77473000
+            },
+            {
+              "code": 818,
+              "name": "Egypt",
+              "value": 73337192,
+              "partnerReported": 2510060
+            }
+          ],
+          "destinations": [
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 400119072
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 254405856
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 139414896
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 51197459
+            },
+            {
+              "code": 478,
+              "name": "Mauritania",
+              "value": 32624750
+            },
+            {
+              "code": 504,
+              "name": "Morocco",
+              "value": 25568806
+            },
+            {
+              "code": 688,
+              "name": "Serbia",
+              "value": 18793538
+            },
+            {
+              "code": 376,
+              "name": "Israel",
+              "value": 16970290
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 16312500
+            },
+            {
+              "code": 458,
+              "name": "Malaysia",
+              "value": 16290483
+            }
+          ]
+        },
+        {
+          "year": 2023,
+          "imports": 30016830926,
+          "exports": 4329534058,
+          "sources": [
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 17431563546,
+              "partnerReported": 13547901891.129
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 9594029686,
+              "partnerReported": 13970246273.059
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 565600944,
+              "partnerReported": 52246325.251
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 328917603,
+              "partnerReported": 264320377.601
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 267012019,
+              "partnerReported": 120777227
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 248028846,
+              "partnerReported": 234073205.647
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 214414722,
+              "partnerReported": 84985880.51
+            },
+            {
+              "code": 368,
+              "name": "Iraq",
+              "value": 147872175,
+              "partnerReported": null
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 144063344,
+              "partnerReported": 248256.059
+            },
+            {
+              "code": 76,
+              "name": "Brazil",
+              "value": 132848759,
+              "partnerReported": 24271447
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 104669587,
+              "partnerReported": null
+            },
+            {
+              "code": 643,
+              "name": "Russian Federation",
+              "value": 87346625,
+              "partnerReported": null
+            },
+            {
+              "code": 442,
+              "name": "Luxembourg",
+              "value": 85210732,
+              "partnerReported": null
+            },
+            {
+              "code": 450,
+              "name": "Madagascar",
+              "value": 62099420,
+              "partnerReported": 124374089.596
+            },
+            {
+              "code": 434,
+              "name": "Libya",
+              "value": 51863854,
+              "partnerReported": null
+            }
+          ],
+          "destinations": [
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 3025375341
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 439232191
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 250273472
+            },
+            {
+              "code": 368,
+              "name": "Iraq",
+              "value": 225307594
+            },
+            {
+              "code": 450,
+              "name": "Madagascar",
+              "value": 72343190
+            },
+            {
+              "code": 504,
+              "name": "Morocco",
+              "value": 59464861
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 54966758
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 34744796
+            },
+            {
+              "code": 458,
+              "name": "Malaysia",
+              "value": 25225054
+            },
+            {
+              "code": 524,
+              "name": "Nepal",
+              "value": 22388020
+            }
+          ]
+        },
+        {
+          "year": 2024,
+          "imports": 17102291019,
+          "exports": 3481781178,
+          "sources": [
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 8844242126,
+              "partnerReported": 6392160406.665
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 5454563703,
+              "partnerReported": null
+            },
+            {
+              "code": 68,
+              "name": "Bolivia (Plurinational State of)",
+              "value": 1332703539,
+              "partnerReported": 2755347.44
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 335813528,
+              "partnerReported": 193419251
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 207641175,
+              "partnerReported": 209878502.32
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 160521136,
+              "partnerReported": 130154175.392
+            },
+            {
+              "code": 818,
+              "name": "Egypt",
+              "value": 102398376,
+              "partnerReported": 693666
+            },
+            {
+              "code": 36,
+              "name": "Australia",
+              "value": 94276685,
+              "partnerReported": 1217818.463
+            },
+            {
+              "code": 344,
+              "name": "China, Hong Kong SAR",
+              "value": 64153735,
+              "partnerReported": 34059363.873
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 58800001,
+              "partnerReported": null
+            },
+            {
+              "code": 643,
+              "name": "Russian Federation",
+              "value": 54095537,
+              "partnerReported": null
+            },
+            {
+              "code": 392,
+              "name": "Japan",
+              "value": 49693406,
+              "partnerReported": null
+            },
+            {
+              "code": 288,
+              "name": "Ghana",
+              "value": 38917026,
+              "partnerReported": 29423950.178
+            },
+            {
+              "code": 484,
+              "name": "Mexico",
+              "value": 35188557,
+              "partnerReported": 11398458
+            },
+            {
+              "code": 251,
+              "name": "France",
+              "value": 31515394,
+              "partnerReported": 722887.273
+            }
+          ],
+          "destinations": [
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 1666354525
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 1196007174
+            },
+            {
+              "code": 68,
+              "name": "Bolivia (Plurinational State of)",
+              "value": 143013026
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 95049021
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 85751872
+            },
+            {
+              "code": 458,
+              "name": "Malaysia",
+              "value": 69189887
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 53550203
+            },
+            {
+              "code": 268,
+              "name": "Georgia",
+              "value": 49923161
+            },
+            {
+              "code": 504,
+              "name": "Morocco",
+              "value": 20929954
+            },
+            {
+              "code": 524,
+              "name": "Nepal",
+              "value": 11550015
+            }
+          ]
+        },
+        {
+          "year": 2025,
+          "imports": 23132002138,
+          "exports": 3058984649,
+          "sources": [
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 13023748868,
+              "partnerReported": 10144214697.677
+            },
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 7547739575,
+              "partnerReported": null
+            },
+            {
+              "code": 68,
+              "name": "Bolivia (Plurinational State of)",
+              "value": 629554144,
+              "partnerReported": null
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 516306552,
+              "partnerReported": 456305539
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 455890300,
+              "partnerReported": 305528159.024
+            },
+            {
+              "code": 604,
+              "name": "Peru",
+              "value": 274022131,
+              "partnerReported": null
+            },
+            {
+              "code": 818,
+              "name": "Egypt",
+              "value": 164067514,
+              "partnerReported": 7521727.41
+            },
+            {
+              "code": 710,
+              "name": "South Africa",
+              "value": 95910559,
+              "partnerReported": null
+            },
+            {
+              "code": 458,
+              "name": "Malaysia",
+              "value": 65847408,
+              "partnerReported": 55573459.292
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 31259371,
+              "partnerReported": 20983858.084
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 29346197,
+              "partnerReported": 403414036.354
+            },
+            {
+              "code": 484,
+              "name": "Mexico",
+              "value": 26105552,
+              "partnerReported": 3161101
+            },
+            {
+              "code": 124,
+              "name": "Canada",
+              "value": 24149247,
+              "partnerReported": null
+            },
+            {
+              "code": 642,
+              "name": "Romania",
+              "value": 21848750,
+              "partnerReported": 22212077.87
+            },
+            {
+              "code": 100,
+              "name": "Bulgaria",
+              "value": 21758058,
+              "partnerReported": 22945011.991
+            }
+          ],
+          "destinations": [
+            {
+              "code": 784,
+              "name": "United Arab Emirates",
+              "value": 896625115
+            },
+            {
+              "code": 826,
+              "name": "United Kingdom",
+              "value": 661936897
+            },
+            {
+              "code": 757,
+              "name": "Switzerland",
+              "value": 660175276
+            },
+            {
+              "code": 458,
+              "name": "Malaysia",
+              "value": 185455095
+            },
+            {
+              "code": 842,
+              "name": "USA",
+              "value": 142422071
+            },
+            {
+              "code": 380,
+              "name": "Italy",
+              "value": 126174779
+            },
+            {
+              "code": 68,
+              "name": "Bolivia (Plurinational State of)",
+              "value": 109176603
+            },
+            {
+              "code": 276,
+              "name": "Germany",
+              "value": 66385076
+            },
+            {
+              "code": 410,
+              "name": "Rep. of Korea",
+              "value": 40144584
+            },
+            {
+              "code": 414,
+              "name": "Kuwait",
+              "value": 37522166
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2245 @@
+{
+  "generatedAt": "2026-10-19T19:57:57.927Z",
+  "source": "LBMA Good Delivery List (gold), lbma.org.uk",
+  "pages": {
+    "current": "https://www.lbma.org.uk/good-delivery/gold-current-list",
+    "former": "https://www.lbma.org.uk/good-delivery/gold-former-list"
+  },
+  "current": [
+    {
+      "company": "Shenzhen Zhonghenglong Industrial Co., Ltd.",
+      "refinery": "Guangdong Province (2)",
+      "location": "Guangdong Province",
+      "country": "China",
+      "listedFrom": "August 17, 2026",
+      "firstListing": "17/08/2026",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Shenzhen Yuexin Precious Metals Co., Ltd",
+      "refinery": "Shenzhen Yuexin",
+      "location": "Shenzhen Yuexin",
+      "country": "China",
+      "listedFrom": "December 19, 2024",
+      "firstListing": "19/12/2024",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Metalor Precious Metals Hong Kong Ltd",
+      "refinery": "Yuen Long",
+      "location": "Yuen Long",
+      "country": "Hong Kong",
+      "listedFrom": "January 01, 2026",
+      "firstListing": "May 09, 2007",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "ASAHI METALFINE Inc.",
+      "refinery": "Bando",
+      "location": "Bando, Ibaraki Pref.",
+      "country": "Japan",
+      "listedFrom": "March 01, 2025",
+      "firstListing": "12/09/2008",
+      "transfersToFormer": [
+        "2024-05-31",
+        "2023-03-31",
+        "2022-03-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Yunnan Dianjin Investment Co. Ltd",
+      "refinery": "Kunming City",
+      "location": "Kunming City",
+      "country": "China",
+      "listedFrom": "February 28, 2023",
+      "firstListing": "28/02/2023",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Shenzhen Point Gold Refining Co. Ltd",
+      "refinery": "Shenzhen City",
+      "location": "Shenzhen City",
+      "country": "China",
+      "listedFrom": "August 07, 2023",
+      "firstListing": "07/08/2023",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "TCA S.p.A",
+      "refinery": "Capolona",
+      "location": "Capolona, Arezzo",
+      "country": "Italy",
+      "listedFrom": "August 12, 2014",
+      "firstListing": "12/08/2014",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Metalor Precious Metals (Suzhou) Limited",
+      "refinery": "Suzhou (2)",
+      "location": "Suzhou",
+      "country": "China",
+      "listedFrom": "May 23, 2019",
+      "firstListing": "23/05/2019",
+      "transfersToFormer": [
+        "2020-04-21"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Tau-Ken Altyn",
+      "refinery": "Astana",
+      "location": "Astana",
+      "country": "Kazakhstan",
+      "listedFrom": "March 01, 2021",
+      "firstListing": "19/09/2019",
+      "transfersToFormer": [
+        "2021-02-28",
+        "2020-09-18"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Shenzhen Cuilu Gold Refinery Co., Ltd",
+      "refinery": "Shenzhen",
+      "location": "Shenzhen",
+      "country": "China",
+      "listedFrom": "March 01, 2025",
+      "firstListing": "12/03/2020",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Dongwu Gold Group Co., Ltd.",
+      "refinery": "Suzhou (1)",
+      "location": "Suzhou",
+      "country": "China",
+      "listedFrom": "November 10, 2019",
+      "firstListing": "10/11/2019",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Gold Corporation (T/A The Perth Mint)",
+      "refinery": "Perth Airport",
+      "location": "Perth, Western Australia",
+      "country": "Australia",
+      "listedFrom": "March 01, 2025",
+      "firstListing": "24/01/2003",
+      "transfersToFormer": [
+        "2024-05-31",
+        "2019-04-30",
+        "2010-03-28",
+        "2003-01-23",
+        "1998-12-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Chimet S.p.A.",
+      "refinery": "Arezzo",
+      "location": "Badia Al Pino, Arezzo",
+      "country": "Italy",
+      "listedFrom": "September 05, 2023",
+      "firstListing": "27/07/1996",
+      "transfersToFormer": [
+        "2023-09-04"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "MMTC-PAMP India Pvt Ltd",
+      "refinery": "Mewat",
+      "location": "Haryana",
+      "country": "India",
+      "listedFrom": "May 01, 2026",
+      "firstListing": "16/05/2014",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Nihon Material Co., Ltd",
+      "refinery": "Noda-City",
+      "location": "Noda-City",
+      "country": "Japan",
+      "listedFrom": "December 19, 2013",
+      "firstListing": "19/12/2013",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Daye Nonferrous Metals Co., Ltd",
+      "refinery": "Huangshi City",
+      "location": "Huangshi City",
+      "country": "China",
+      "listedFrom": "June 09, 2015",
+      "firstListing": "09/06/2015",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Navoi Mining and Metallurgical Combinat (NMMC)",
+      "refinery": "Navoi",
+      "location": "Navoi",
+      "country": "Uzbekistan",
+      "listedFrom": "January 01, 2026",
+      "firstListing": "17/10/1994",
+      "transfersToFormer": [
+        "2025-12-31",
+        "2016-06-30"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "CCR Refinery - Glencore Canada Corporation",
+      "refinery": "Montreal",
+      "location": "Montreal East, Quebec",
+      "country": "Canada",
+      "listedFrom": "March 31, 2007",
+      "firstListing": "~1956",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Inner Mongolia Qiankun Gold and Silver Refinery Share Company Ltd",
+      "refinery": "Huhhot",
+      "location": "Shenzhen City",
+      "country": "China",
+      "listedFrom": "May 01, 2025",
+      "firstListing": "01/12/1999",
+      "transfersToFormer": [
+        "2004-06-30",
+        "2001-10-01"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "METALÚRGICA MET-MEX PEÑOLES, S.A. DE C.V",
+      "refinery": "Torreon",
+      "location": "Torreon, Coahuila",
+      "country": "Mexico",
+      "listedFrom": "April 01, 2019",
+      "firstListing": "22/11/1991",
+      "transfersToFormer": [
+        "2014-08-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Shandong Gold Smelting Co., Ltd - (SUSPENDED - 5 August 2026)",
+      "refinery": "Laizhou City",
+      "location": "Laizhou City, Shandong Province",
+      "country": "China",
+      "listedFrom": "January 14, 2010",
+      "firstListing": "14/01/2010",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Jiangxi Copper Company Ltd",
+      "refinery": "Guixi City",
+      "location": "Guixi City, Jiangxi Province",
+      "country": "China",
+      "listedFrom": "April 01, 2025",
+      "firstListing": "30/09/2005",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Umicore SA Business Unit Precious Metals Refining",
+      "refinery": "Hoboken",
+      "location": "Hoboken",
+      "country": "Belgium",
+      "listedFrom": "March 01, 2023",
+      "firstListing": "~1930",
+      "transfersToFormer": [
+        "2023-02-28",
+        "2006-01-09"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Heimerle + Meule GmbH",
+      "refinery": "Pforzheim 4",
+      "location": "Pforzheim",
+      "country": "Germany",
+      "listedFrom": "June 03, 2014",
+      "firstListing": "03/06/2014",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Rand Refinery (Pty) Ltd",
+      "refinery": "Germiston",
+      "location": "Germiston, Gauteng",
+      "country": "South Africa",
+      "listedFrom": "August 09, 2021",
+      "firstListing": "~1921",
+      "transfersToFormer": [
+        "2021-08-08",
+        "2011-09-14",
+        "2007-12-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Zhongyuan Gold Smelter of Zhongjin Gold Corporation",
+      "refinery": "Sanmenxia City",
+      "location": "Sanmenxia City, Henan Province",
+      "country": "China",
+      "listedFrom": "March 28, 2006",
+      "firstListing": "28/03/2006",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Royal Canadian Mint",
+      "refinery": "Ottawa",
+      "location": "Ottawa, Ontario",
+      "country": "Canada",
+      "listedFrom": "December 08, 2021",
+      "firstListing": "~1919",
+      "transfersToFormer": [
+        "2024-06-04",
+        "2024-05-28",
+        "2021-12-07",
+        "2010-05-30",
+        "2007-03-30",
+        "1999-05-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Heraeus Ltd Hong Kong",
+      "refinery": "Fanling",
+      "location": "Fanling",
+      "country": "Hong Kong (Special Administrative Region of China)",
+      "listedFrom": "January 01, 2019",
+      "firstListing": "23/01/2006",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Valcambi SA",
+      "refinery": "Balerna",
+      "location": "Balerna, Ticino",
+      "country": "Switzerland",
+      "listedFrom": "April 01, 2023",
+      "firstListing": "20/05/1968",
+      "transfersToFormer": [
+        "2012-12-31",
+        "2006-10-15"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Ls MnM",
+      "refinery": "Onsan (1)",
+      "location": "Onsan",
+      "country": "Korea, Republic of",
+      "listedFrom": "November 21, 2011",
+      "firstListing": "20/05/1994",
+      "transfersToFormer": [
+        "2011-11-20",
+        "2005-07-24",
+        "1999-11-30",
+        "1995-02-28"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Sumitomo Metal Mining Co., Ltd.",
+      "refinery": "Toyo, Saijo",
+      "location": "Saijo, Ehime Pref.",
+      "country": "Japan",
+      "listedFrom": "December 13, 2007",
+      "firstListing": "17/06/1981",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Zijin Mining Group Gold Smelting Co. Ltd",
+      "refinery": "Shanghang County, Fujian Province",
+      "location": "Shanghang County, Fujian Province",
+      "country": "China",
+      "listedFrom": "August 01, 2026",
+      "firstListing": "31/03/2006",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "MKS PAMP SA",
+      "refinery": "Castel San Pietro",
+      "location": "Castel San Pietro, Ticino",
+      "country": "Switzerland",
+      "listedFrom": "January 01, 2025",
+      "firstListing": "10/06/1987",
+      "transfersToFormer": [
+        "2022-12-31",
+        "2021-11-30",
+        "2020-07-27",
+        "2008-11-18"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Metalor Technologies Singapore Pte Ltd",
+      "refinery": "Singapore City",
+      "location": "Singapore",
+      "country": "Singapore",
+      "listedFrom": "January 01, 2026",
+      "firstListing": "17/07/2014",
+      "transfersToFormer": [
+        "2025-12-31",
+        "2017-06-30"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "C. Hafner GmbH + Co. KG",
+      "refinery": "Pforzheim 3",
+      "location": "Pforzheim",
+      "country": "Germany",
+      "listedFrom": "July 18, 2019",
+      "firstListing": "08/03/2013",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Bangko Sentral ng Pilipinas (Central Bank of the Philippines)",
+      "refinery": "Quezon City",
+      "location": "Quezon City",
+      "country": "Philippines",
+      "listedFrom": "January 01, 2025",
+      "firstListing": "06/09/1979",
+      "transfersToFormer": [
+        "2007-12-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "AngloGold Ashanti Mineração Ltda",
+      "refinery": "Nova Lima",
+      "location": "Nova Lima",
+      "country": "Brazil",
+      "listedFrom": "April 01, 2019",
+      "firstListing": "21/03/1986",
+      "transfersToFormer": [
+        "2005-05-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Metalor Technologies SA",
+      "refinery": "Marin",
+      "location": "Marin, Neuchâtel",
+      "country": "Switzerland",
+      "listedFrom": "January 01, 2026",
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [
+        "2025-12-31",
+        "2015-12-31",
+        "2011-12-31",
+        "2001-06-04"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Asahi Refining Canada Limited",
+      "refinery": "Brampton (1)",
+      "location": "Brampton, Ontario",
+      "country": "Canada",
+      "listedFrom": "January 01, 2024",
+      "firstListing": "15/06/1961",
+      "transfersToFormer": [
+        "2023-12-31",
+        "2022-12-31",
+        "2015-12-31",
+        "2015-03-04",
+        "1998-03-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "PT Aneka Tambang (Persero) Tbk (Logam Mulia)",
+      "refinery": "Jakarta",
+      "location": "Jakarta",
+      "country": "Indonesia",
+      "listedFrom": "July 30, 2010",
+      "firstListing": "01/01/1999",
+      "transfersToFormer": [
+        "2010-07-29"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Shandong Zhaojin Gold and Silver Refinery Co Ltd",
+      "refinery": "Zhaoyuan City",
+      "location": "Shandong Province",
+      "country": "China",
+      "listedFrom": "December 13, 2007",
+      "firstListing": "31/12/2007",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "JX Advanced Metals Corporation",
+      "refinery": "Saganoseki",
+      "location": "Saganoseki",
+      "country": "Japan",
+      "listedFrom": "August 01, 2025",
+      "firstListing": "03/05/2000",
+      "transfersToFormer": [
+        "2023-02-28",
+        "2008-02-27",
+        "2007-10-30"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Matsuda Sangyo Co., Ltd.",
+      "refinery": "Iruma",
+      "location": "Iruma, Saitama Pref.",
+      "country": "Japan",
+      "listedFrom": "December 03, 2007",
+      "firstListing": "11/01/2000",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "PX Pr̩ecinox SA",
+      "refinery": "La Chaux-de-Fonds",
+      "location": "La Chaux-de-Fonds",
+      "country": "Switzerland",
+      "listedFrom": "February 11, 2019",
+      "firstListing": "24/01/2012",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Sempsa Joyeria Plateria SA",
+      "refinery": "Madrid",
+      "location": "Madrid",
+      "country": "Spain",
+      "listedFrom": "January 01, 2008",
+      "firstListing": "01/01/1984",
+      "transfersToFormer": [
+        "2007-12-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "TANAKA PRECIOUS METAL TECHNOLOGIES Co., Ltd.",
+      "refinery": "Hiratsuka",
+      "location": "Hiratsuka, Kanagawa Pref",
+      "country": "Japan",
+      "listedFrom": "January 01, 2000",
+      "firstListing": "07/09/1978",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Solar Applied Materials Technology Corp",
+      "refinery": "Danong Village",
+      "location": "Danong Village, Liouying Township, Tainan County",
+      "country": "Taiwan",
+      "listedFrom": "January 07, 2026",
+      "firstListing": "25/02/2010",
+      "transfersToFormer": [
+        "2026-01-06",
+        "2023-12-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Istanbul Gold Refinery",
+      "refinery": "Kuyumcukent",
+      "location": "Kuyumcukent, Istanbul",
+      "country": "Turkey",
+      "listedFrom": "January 01, 2025",
+      "firstListing": "08/12/2011",
+      "transfersToFormer": [
+        "2024-12-31",
+        "2019-01-31",
+        "2015-04-22",
+        "2013-09-29"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Japan Mint",
+      "refinery": "Osaka",
+      "location": "Osaka",
+      "country": "Japan",
+      "listedFrom": "January 01, 2008",
+      "firstListing": "13/12/2007",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Great Wall Precious Metals Co., LTD. of CBPM",
+      "refinery": "Chengdu",
+      "location": "Chengdu, Sichuan",
+      "country": "China",
+      "listedFrom": "September 01, 2019",
+      "firstListing": "02/10/1961",
+      "transfersToFormer": [
+        "2014-03-17"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Kyrgyzaltyn JSC",
+      "refinery": "Karabalta",
+      "location": "Karabalta",
+      "country": "Kyrgyzstan",
+      "listedFrom": "March 17, 2026",
+      "firstListing": "27/10/1999",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Aurubis AG",
+      "refinery": "Hamburg",
+      "location": "Hamburg",
+      "country": "Germany",
+      "listedFrom": "April 01, 2019",
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [
+        "2011-01-19"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Sichuan Tianze Precious Metals Co., Ltd",
+      "refinery": "Chengdu (2)",
+      "location": "Chengdu",
+      "country": "China",
+      "listedFrom": "March 26, 2013",
+      "firstListing": "26/03/2013",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Tokuriki Honten Co., Ltd.",
+      "refinery": "Kuki",
+      "location": "Saitama Prefecture",
+      "country": "Japan",
+      "listedFrom": "February 20, 2025",
+      "firstListing": "02/07/1981",
+      "transfersToFormer": [
+        "2008-06-26"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Kazzinc Ltd",
+      "refinery": "Ust-Kamenogorsk",
+      "location": "Ust-Kamenogorsk",
+      "country": "Kazakhstan",
+      "listedFrom": "September 01, 2026",
+      "firstListing": "20/06/1996",
+      "transfersToFormer": [
+        "2002-12-31",
+        "1997-04-24"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Mitsui Kinzoku Company, Limited (Takehara)",
+      "refinery": "Takehara",
+      "location": "Takehara, Hiroshima Pref.",
+      "country": "Japan",
+      "listedFrom": "February 01, 2007",
+      "firstListing": "20/05/1981",
+      "transfersToFormer": [
+        "2025-09-30",
+        "2007-01-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Asahi Refining USA Inc.",
+      "refinery": "Salt Lake City (1)",
+      "location": "Salt Lake City, Utah",
+      "country": "United States",
+      "listedFrom": "August 24, 2023",
+      "firstListing": "23/05/1989",
+      "transfersToFormer": [
+        "2023-08-23",
+        "2022-12-31",
+        "2015-12-31",
+        "2015-03-04",
+        "2007-11-13",
+        "1997-12-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Almalyk Mining and Metallurgical Complex (AMMC)",
+      "refinery": "Almalyk",
+      "location": "Almalyk, Tashkent",
+      "country": "Uzbekistan",
+      "listedFrom": "March 01, 2026",
+      "firstListing": "28/10/1997",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Mitsubishi Materials Corporation",
+      "refinery": "Naoshima",
+      "location": "Naoshima, Kagawa Pref.",
+      "country": "Japan",
+      "listedFrom": "April 01, 2019",
+      "firstListing": "20/05/1981",
+      "transfersToFormer": [
+        "2019-03-31",
+        "2011-02-28"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Boliden Commercial AB",
+      "refinery": "Skelleftehamn",
+      "location": "Skelleftehamn",
+      "country": "Sweden",
+      "listedFrom": "May 20, 2005",
+      "firstListing": "01/01/1984",
+      "transfersToFormer": [
+        "2005-05-19"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Argor-Heraeus SA",
+      "refinery": "Mendrisio",
+      "location": "Mendrisio",
+      "country": "Switzerland",
+      "listedFrom": "January 01, 2025",
+      "firstListing": "28/08/1961",
+      "transfersToFormer": [
+        "2007-12-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Metalor USA Refining Corp",
+      "refinery": "North Attleboro",
+      "location": "North Attleboro, Mass",
+      "country": "United States",
+      "listedFrom": "March 01, 2003",
+      "firstListing": "01/01/1987",
+      "transfersToFormer": [
+        "2003-02-28"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Ishifuku Metal Industry Co., Ltd.",
+      "refinery": "Soka, Saitama",
+      "location": "Soka, Saitama Pref.",
+      "country": "Japan",
+      "listedFrom": "January 01, 2011",
+      "firstListing": "30/06/1982",
+      "transfersToFormer": [
+        "2010-12-31",
+        "2007-11-30"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Agosi AG",
+      "refinery": "Pforzheim",
+      "location": "Pforzheim, Baden-Württemberg",
+      "country": "Germany",
+      "listedFrom": "September 01, 2025",
+      "firstListing": "08/04/2008",
+      "transfersToFormer": [
+        "2025-08-31",
+        "2021-09-16",
+        "2015-08-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Nadir Metal Rafineri San. Ve Tic. A.Ş.",
+      "refinery": "Bahçelievler",
+      "location": "Bahçelievler, Istanbul",
+      "country": "Turkey",
+      "listedFrom": "March 01, 2019",
+      "firstListing": "08/12/2011",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "ABC Refinery (Australia) Pty Ltd",
+      "refinery": "Sydney (2)",
+      "location": "Sydney",
+      "country": "Australia",
+      "listedFrom": "December 04, 2015",
+      "firstListing": "04/12/2015",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": "Italpreziosi S.p.A",
+      "refinery": "Arezzo (2)",
+      "location": "Arezzo, Italy",
+      "country": "Italy",
+      "listedFrom": "June 26, 2026",
+      "firstListing": "22/11/2018",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    }
+  ],
+  "former": [
+    {
+      "company": null,
+      "refinery": "Allied Deals Phoenix SA Baia Mare",
+      "location": "Baia Mare",
+      "country": "Romania",
+      "listedFrom": null,
+      "firstListing": "06/04/1970",
+      "transfersToFormer": [
+        "2002-05-16"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Argor SA",
+      "location": "Chiasso",
+      "country": "Switzerland",
+      "listedFrom": null,
+      "firstListing": "15/09/1961",
+      "transfersToFormer": [
+        "1986-09-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "ASARCO Inc.",
+      "location": "Perth Amboy",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "1958",
+      "transfersToFormer": [
+        "1975-05-28"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "ASARCO Inc.",
+      "location": "Amarillo",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "22/04/1976",
+      "transfersToFormer": [
+        "2005-06-30"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "ASARCO Inc.",
+      "location": "Baltimore",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "11/05/2005",
+      "transfersToFormer": [
+        "1975-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Atasay Kuyumculuk Sanayi Ve Ticaret A.S.",
+      "location": "Istanbul",
+      "country": "Turkey",
+      "listedFrom": null,
+      "firstListing": "07/05/2010",
+      "transfersToFormer": [
+        "2016-04-06"
+      ],
+      "reasonForTransfer": "Refinery transferred due to failing to meet the requirements of the Responsible Sourcing programme"
+    },
+    {
+      "company": null,
+      "refinery": "Banco de la Republica",
+      "location": "Medellin",
+      "country": "Colombia",
+      "listedFrom": null,
+      "firstListing": "22/12/1994",
+      "transfersToFormer": [
+        "2005-06-19"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Banco Ourinvest SA",
+      "location": "São Paulo",
+      "country": "Brazil",
+      "listedFrom": null,
+      "firstListing": "17/03/1995",
+      "transfersToFormer": [
+        "2005-07-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Bank of England",
+      "location": "St Luke's, London",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "1920",
+      "transfersToFormer": [
+        "1920-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Bureau Central Suisse, Contrōle Métaux Précieux (Assayers only)",
+      "location": "n/a",
+      "country": "Switzerland",
+      "listedFrom": null,
+      "firstListing": "Pre 1980",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Caplain Saint-André Precieux",
+      "location": "Paris",
+      "country": "France",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Casa da Moeda do Brasil - CMB",
+      "location": "Rio de Janeiro",
+      "country": "Brazil",
+      "listedFrom": null,
+      "firstListing": "25/06/1984",
+      "transfersToFormer": [
+        "2004-06-30"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Cendres + Metaux SA",
+      "location": "Biel-Bienne",
+      "country": "Switzerland",
+      "listedFrom": null,
+      "firstListing": "20/05/1981",
+      "transfersToFormer": [
+        "2015-04-13"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Cendres et Metaux SA",
+      "location": "Biel-Bienne",
+      "country": "Switzerland",
+      "listedFrom": null,
+      "firstListing": "20/05/1981",
+      "transfersToFormer": [
+        "1996-07-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Central Bank of the DPR of Korea",
+      "location": "Pyongyang",
+      "country": "Korea, Democratic People's Republic of",
+      "listedFrom": null,
+      "firstListing": "22/04/1976",
+      "transfersToFormer": [
+        "2006-11-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Central Bank of the DPR of Korea",
+      "location": "Pyongyang",
+      "country": "Korea, Democratic People's Republic of",
+      "listedFrom": null,
+      "firstListing": "22/04/1976",
+      "transfersToFormer": [
+        "2004-06-30"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Chartered Industries of Singapore (Assayer Only)",
+      "location": "n/a",
+      "country": "Singapore",
+      "listedFrom": null,
+      "firstListing": "01/03/1980",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Compagnie des Métaux Précieux",
+      "location": "Ivry",
+      "country": "France",
+      "listedFrom": null,
+      "firstListing": "Pre 1989",
+      "transfersToFormer": [
+        "1989-05-12"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Comptoir Lyon-Alemand et Marret, Bonnin, Lebel et Guieu réunis",
+      "location": "Paris",
+      "country": "France",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Comptoir Lyon-Alemand Louyot",
+      "location": "Paris",
+      "country": "France",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [
+        "1995-10-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "CRM-Comercial e Refinadora de Metais S/A",
+      "location": "Alphaville-Barueri",
+      "country": "Brazil",
+      "listedFrom": null,
+      "firstListing": "15/10/1997",
+      "transfersToFormer": [
+        "2000-10-03"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Daniel C. Griffith & Co Ltd (Assayers only)",
+      "location": "n/a",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "Pre 1980",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Deak International",
+      "location": "Thomastown",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "Pre 1967",
+      "transfersToFormer": [
+        "1990-06-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Degussa",
+      "location": "Amsterdam",
+      "country": "Netherlands",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [
+        "2006-03-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Degussa (Private) Ltd",
+      "location": "Singapore",
+      "country": "Singapore",
+      "listedFrom": null,
+      "firstListing": "2/16/78",
+      "transfersToFormer": [
+        "1998-11-20"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Degussa Canada Ltd",
+      "location": "Burlington",
+      "country": "Canada",
+      "listedFrom": null,
+      "firstListing": "22/05/1989",
+      "transfersToFormer": [
+        "1991-05-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Degussa-H_ls AG",
+      "location": "Hanau-Wolfgang",
+      "country": "Germany",
+      "listedFrom": null,
+      "firstListing": "Pre 1934 and 1953",
+      "transfersToFormer": [
+        "1948-01-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Degussa-H_ls AG",
+      "location": "Hanau-Wolfgang",
+      "country": "Germany",
+      "listedFrom": null,
+      "firstListing": "Pre 1934 and 1953",
+      "transfersToFormer": [
+        "1999-09-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Elemetal Refining, LLC",
+      "location": "Jackson",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "19/12/2013",
+      "transfersToFormer": [
+        "2017-03-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard Canada Ltd",
+      "location": "Aurora",
+      "country": "Canada",
+      "listedFrom": null,
+      "firstListing": "17/10/1960",
+      "transfersToFormer": [
+        "1995-12-12"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard Corp.",
+      "location": "Anaheim",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "17/09/1993",
+      "transfersToFormer": [
+        "1996-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard Corp.",
+      "location": "Anaheim",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "17/09/1993",
+      "transfersToFormer": [
+        "2000-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard Corp.",
+      "location": "Carteret (2)",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "21/07/1977",
+      "transfersToFormer": [
+        "1995-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard Industries",
+      "location": "Carteret (2)",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "21/07/1977",
+      "transfersToFormer": [
+        "1990-01-14"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard Industries Pty Ltd",
+      "location": "Thomastown",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "Pre 1967",
+      "transfersToFormer": [
+        "1990-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard Ltd",
+      "location": "Sheffield",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "1934",
+      "transfersToFormer": [
+        "1983-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard Ltd",
+      "location": "Sheffield",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "1934",
+      "transfersToFormer": [
+        "1995-10-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard Ltd",
+      "location": "Chessington",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "01/01/1968",
+      "transfersToFormer": [
+        "1994-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard S.A.",
+      "location": "Ivry",
+      "country": "France",
+      "listedFrom": null,
+      "firstListing": "Pre 1989",
+      "transfersToFormer": [
+        "1995-10-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard-CLAL S.A.S.",
+      "location": "Noisy le Sec",
+      "country": "France",
+      "listedFrom": null,
+      "firstListing": "04/10/1995",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard-CLAL UK Ltd",
+      "location": "Chessington",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "01/01/1968",
+      "transfersToFormer": [
+        "1998-10-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard-CLAL USA",
+      "location": "Carteret (2)",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "21/07/1977",
+      "transfersToFormer": [
+        "1997-12-09"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Engelhard-CLAL/Drijfhout BV",
+      "location": "Amsterdam (2)",
+      "country": "Netherlands",
+      "listedFrom": null,
+      "firstListing": "20/03/1954",
+      "transfersToFormer": [
+        "2004-06-30"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Falconbridge Ltd",
+      "location": "Montreal East, Quebec",
+      "country": "Canada",
+      "listedFrom": null,
+      "firstListing": "01/01/1955",
+      "transfersToFormer": [
+        "2007-02-15"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Fidelity Printers and Refiners",
+      "location": "Harare",
+      "country": "Zimbabwe",
+      "listedFrom": null,
+      "firstListing": "28/10/1989",
+      "transfersToFormer": [
+        "2008-06-30"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Former Australian Branches of the Royal Mint, London (The Perth Mint)",
+      "location": "Perth Airport",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "~1928",
+      "transfersToFormer": [
+        "1990-01-18"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Former Australian Branches of the Royal Mint, London (The Perth Mint)",
+      "location": "Melbourne, Victoria",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "Unknown",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Garrett, Davidson & Matthey PTY Ltd",
+      "location": "Sydney",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "11/06/1956",
+      "transfersToFormer": [
+        "1965-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Golden West Refining",
+      "location": "Kewdale",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "01/02/1993",
+      "transfersToFormer": [
+        "1999-01-10"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Golden West Refining",
+      "location": "Kewdale",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "01/02/1993",
+      "transfersToFormer": [
+        "1995-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Goldmine Fundidora Ltda",
+      "location": "Sao Cristovao",
+      "country": "Brazil",
+      "listedFrom": null,
+      "firstListing": "12/03/1993",
+      "transfersToFormer": [
+        "1998-07-13"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Handy & Harman Refining Group, Inc.",
+      "location": "Attleboro",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "01/07/1975",
+      "transfersToFormer": [
+        "2001-04-03"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Harringtons Metallurgists Limited/Fine Metals",
+      "location": "Ringwood",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "1993",
+      "transfersToFormer": [
+        "1995-08-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Harringtons Metallurgists Ltd",
+      "location": "Victoria",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "22/02/1991",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Harringtons Metallurgists Ltd",
+      "location": "Chippendale",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "18/11/1981",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Heraeus Deutschland GmbH & Co. KG",
+      "location": "Hanau",
+      "country": "Germany",
+      "listedFrom": null,
+      "firstListing": "15/07/1958",
+      "transfersToFormer": [
+        "2018-12-31"
+      ],
+      "reasonForTransfer": "Refinery transferred at their request as it no longer meets GDL requirements"
+    },
+    {
+      "company": null,
+      "refinery": "Heraeus Deutschland GmbH & Co. KG",
+      "location": "Hanau",
+      "country": null,
+      "listedFrom": null,
+      "firstListing": "15/07/1958",
+      "transfersToFormer": [
+        "2014-09-16"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Homestake Mining Co.",
+      "location": "Lead, SD",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "01/11/1974",
+      "transfersToFormer": [
+        "2000-10-03"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Industrias Reunidas Minero-Metalúrgicas SA (Indumetal)",
+      "location": "Bilbao",
+      "country": "Spain",
+      "listedFrom": null,
+      "firstListing": "16/09/1976",
+      "transfersToFormer": [
+        "1996-11-21"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Johnson & Cook Royal Mint Refinery",
+      "location": "Hatton Garden, London",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "1837",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Johnson & Matthey Royal Mint Refinery",
+      "location": "Hatton Garden, London",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "1837",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Johnson & Sons, Assayers Ltd (Assayers only)",
+      "location": "n/a",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "Pre 1980",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Johnson & Sons, Smelting Works Ltd",
+      "location": "North London",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "1936-1954",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Johnson Matthey (Aust.) Ltd",
+      "location": "Sydney, New South Wales",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "11/06/1956",
+      "transfersToFormer": [
+        "1990-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Johnson Matthey (Aust.) Ltd.",
+      "location": "Thomastown",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "Pre 1967",
+      "transfersToFormer": [
+        "2003-01-24"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Johnson Matthey & Co. (Royal Mint Refinery)",
+      "location": "Hatton Garden, London",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "1837",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Johnson Matthey & Co. Ltd (Royal Mint Refinery)",
+      "location": "Hatton Garden, London",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "1837",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Johnson Matthey & Mallory Ltd",
+      "location": "Brampton",
+      "country": "Canada",
+      "listedFrom": null,
+      "firstListing": "15/06/1961",
+      "transfersToFormer": [
+        "1978-12-12"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Johnson Matthey Hong Kong",
+      "location": "Kwai Chung",
+      "country": "Hong Kong (Special Administrative Region of China)",
+      "listedFrom": null,
+      "firstListing": "15/08/2001",
+      "transfersToFormer": [
+        "2007-05-08"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Johnson Matthey Plc",
+      "location": "Royston",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "~1955",
+      "transfersToFormer": [
+        "2005-05-25"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Johnson Matthey Plc",
+      "location": "Royston",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "~1955",
+      "transfersToFormer": [
+        "2002-10-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "JSC 'Ekaterinburg Non-Ferrous Metals Processing Plant'",
+      "location": "Verkhnyaya Pyshma",
+      "country": "Russia",
+      "listedFrom": null,
+      "firstListing": "28/04/2004",
+      "transfersToFormer": [
+        "2018-05-15"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "JSC Krastsvetmet",
+      "location": "Krasnoyarsk",
+      "country": "Russia",
+      "listedFrom": null,
+      "firstListing": "29/11/1999",
+      "transfersToFormer": [
+        "2022-03-07"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "JSC Novosibirsk Refinery",
+      "location": "Novosibirsk",
+      "country": "Russia",
+      "listedFrom": null,
+      "firstListing": "11/01/1999",
+      "transfersToFormer": [
+        "2022-03-07"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "JSC Uralelectromed",
+      "location": "Verkhnyaya Pyshma",
+      "country": "Russia",
+      "listedFrom": null,
+      "firstListing": "30/06/2006",
+      "transfersToFormer": [
+        "2022-03-07"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Karabalta Mining Enterprise",
+      "location": "Karabalta",
+      "country": "Kyrgyz Republic",
+      "listedFrom": null,
+      "firstListing": "27/10/1999",
+      "transfersToFormer": [
+        "2001-04-30"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Kennecott Utah Copper LLC",
+      "location": "Magna, Utah",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "22/04/2014",
+      "transfersToFormer": [
+        "2024-05-31"
+      ],
+      "reasonForTransfer": "Refinery transferred due to failing to meet company’s listing requirements for annual production/throughput (as per the GDL Rulebook)"
+    },
+    {
+      "company": null,
+      "refinery": "Korea Zinc Co Ltd",
+      "location": "Onsan (2)",
+      "country": "Korea, Republic of",
+      "listedFrom": null,
+      "firstListing": "09/08/2000",
+      "transfersToFormer": [
+        "2009-11-20"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "L'azurde Company for Jewelry",
+      "location": "Riyadh",
+      "country": "Saudi Arabia",
+      "listedFrom": null,
+      "firstListing": "01/06/2010",
+      "transfersToFormer": [
+        "2016-02-29"
+      ],
+      "reasonForTransfer": "Refinery transferred due to failing to meet the requirements of the Responsible Sourcing programme"
+    },
+    {
+      "company": null,
+      "refinery": "Laboratoires Boudet & Dussaix (Assayers only)",
+      "location": "n/a",
+      "country": "France",
+      "listedFrom": null,
+      "firstListing": "Pre 1980",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Les Anciens Etablissements L√©on Martin",
+      "location": "Paris",
+      "country": "France",
+      "listedFrom": null,
+      "firstListing": "20/03/1954",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Marret, Bonnin, Lebel et Guieu (Melters only)",
+      "location": "Unknown",
+      "country": "France",
+      "listedFrom": null,
+      "firstListing": "1954-1956",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Matthey Garrett Pty Limited",
+      "location": "Sydney",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "11/06/1956",
+      "transfersToFormer": [
+        "1981-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Metalli Preziosi SpA",
+      "location": "Paderno Dugnano",
+      "country": "Italy",
+      "listedFrom": null,
+      "firstListing": "31/12/1961",
+      "transfersToFormer": [
+        "2009-03-23"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Metallurgie Hoboken-Overpelt SA/NV",
+      "location": "Hoboken",
+      "country": "Belgium",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [
+        "2001-01-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Monnaie Federale Suisse (Melters only)",
+      "location": "Berne",
+      "country": "Switzerland",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Moscow Special Alloys Processing Plant",
+      "location": "Moscow",
+      "country": "Russia",
+      "listedFrom": null,
+      "firstListing": "11/05/2007",
+      "transfersToFormer": [
+        "2022-03-07"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Musuku Beneficiation Systems Pty Ltd",
+      "location": "Virginia, Free State",
+      "country": "South Africa",
+      "listedFrom": null,
+      "firstListing": "31/08/2005",
+      "transfersToFormer": [
+        "2007-02-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "N M Rothschild & Sons (Royal Mint Refinery)",
+      "location": "Tower of London, London",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "1829",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Nippon Mining & Metals Co., Ltd.",
+      "location": "Hitachi",
+      "country": "Japan",
+      "listedFrom": null,
+      "firstListing": "01/01/1981",
+      "transfersToFormer": [
+        "1998-10-01"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Norddeutsche Affinerie AG",
+      "location": "Hamburg",
+      "country": "Germany",
+      "listedFrom": null,
+      "firstListing": "Pre 1934 and 1953",
+      "transfersToFormer": [
+        "1948-01-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Norddeutsche Affinerie AG",
+      "location": "Hamburg",
+      "country": "Germany",
+      "listedFrom": null,
+      "firstListing": "Pre 1934 and 1953",
+      "transfersToFormer": [
+        "1993-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Norddeutsche Affinerie AG",
+      "location": "Hamburg",
+      "country": "Germany",
+      "listedFrom": null,
+      "firstListing": "Pre 1934 and 1953",
+      "transfersToFormer": [
+        "2007-11-30"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Norddeutsche Affinerie AG (Aurubis)",
+      "location": "Hamburg",
+      "country": "Germany",
+      "listedFrom": null,
+      "firstListing": "Pre 1934 and 1953",
+      "transfersToFormer": [
+        "2010-11-04"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Ohio Precious Metals, LLC",
+      "location": "Jackson",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "19/12/2013",
+      "transfersToFormer": [
+        "2015-05-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "OJSC Kolyma Refinery",
+      "location": "Khasyn",
+      "country": "Russia",
+      "listedFrom": null,
+      "firstListing": "17/09/2004",
+      "transfersToFormer": [
+        "2015-09-17"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Prioksky Plant of Non-Ferrous Metals",
+      "location": "Kasimov, Ryazan",
+      "country": "Russia",
+      "listedFrom": null,
+      "firstListing": "29/11/1999",
+      "transfersToFormer": [
+        "2022-03-07"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Republic Metals Corporation",
+      "location": "Miami",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "17/02/2014",
+      "transfersToFormer": [
+        "2018-12-12"
+      ],
+      "reasonForTransfer": "Refinery transferred due to failing to meet company’s listing requirements (as per the GDL Rulebook)"
+    },
+    {
+      "company": null,
+      "refinery": "Republic Metals Corporation",
+      "location": "Miami",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "17/02/2014",
+      "transfersToFormer": [
+        "2018-01-14"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Republic Metals Corporation",
+      "location": "Miami",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "17/02/2014",
+      "transfersToFormer": [
+        "2014-11-30"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Royal Mint Refinery",
+      "location": "Tower of London, London",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "1829",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "SA Johnson Matthey et Pauwels",
+      "location": "Brussels",
+      "country": "Belgium",
+      "listedFrom": null,
+      "firstListing": "15/09/1966",
+      "transfersToFormer": [
+        "1984-02-28"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "SA Johnson Matthey NV",
+      "location": "Brussels",
+      "country": "Belgium",
+      "listedFrom": null,
+      "firstListing": "15/09/1966",
+      "transfersToFormer": [
+        "1995-11-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "SC Phoenix SA",
+      "location": "Baia Mare, Maramures",
+      "country": "Romania",
+      "listedFrom": null,
+      "firstListing": "06/04/1970",
+      "transfersToFormer": [
+        "1999-11-30"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Schone Edelmetaal",
+      "location": "Amsterdam",
+      "country": "Netherlands",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [
+        "1999-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Schöne Edelmetaal B.V.",
+      "location": "Amsterdam",
+      "country": "The Netherlands",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [
+        "2017-12-22"
+      ],
+      "reasonForTransfer": "Refinery transferred at their request as it no longer meets GDL requirements"
+    },
+    {
+      "company": null,
+      "refinery": "Shyolkovsky Factory of Secondary Precious Metals, SOE",
+      "location": "Shyolkovo, Moscow",
+      "country": "Russia",
+      "listedFrom": null,
+      "firstListing": "27/10/1999",
+      "transfersToFormer": [
+        "2022-03-07"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Sir Anthony de Rothschild (Royal Mint Refinery)",
+      "location": "Tower of London, London",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "1829",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Societe de Banque Suisse",
+      "location": "Le  Locle",
+      "country": "Switzerland",
+      "listedFrom": null,
+      "firstListing": "01/10/1933",
+      "transfersToFormer": [
+        "1952-01-01"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Societe Generale Metallurgique de Hoboken",
+      "location": "Hoboken",
+      "country": "Belgium",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [
+        "1969-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "State Refineries",
+      "location": "Moscow2",
+      "country": "USSR (formerly known as)",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [
+        "1997-01-01"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Sumitomo Metal Mining Co., Ltd.",
+      "location": "Besshi",
+      "country": "Japan",
+      "listedFrom": null,
+      "firstListing": "17/06/1981",
+      "transfersToFormer": [
+        "2004-11-30"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "Sumitomo Metal Mining Co., Ltd.",
+      "location": "Toyo, Saijo",
+      "country": "Japan",
+      "listedFrom": null,
+      "firstListing": "17/06/1981",
+      "transfersToFormer": [
+        "2007-12-12"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "The Sheffield Smelting Co Ltd London",
+      "location": "Sheffield",
+      "country": "United Kingdom",
+      "listedFrom": null,
+      "firstListing": "1934",
+      "transfersToFormer": [
+        "1982-12-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Umicore Brasil Ltda",
+      "location": "Guarulhos",
+      "country": "Brazil",
+      "listedFrom": null,
+      "firstListing": "11/12/1992",
+      "transfersToFormer": [
+        "2019-12-31"
+      ],
+      "reasonForTransfer": "Refinery transferred at their request as it no longer meets GDL requirements"
+    },
+    {
+      "company": null,
+      "refinery": "Umicore Brasil Ltda",
+      "location": "Guarulhos",
+      "country": "Brazil",
+      "listedFrom": null,
+      "firstListing": "11/12/1992",
+      "transfersToFormer": [
+        "2006-03-31"
+      ],
+      "reasonForTransfer": null
+    },
+    {
+      "company": null,
+      "refinery": "US Assay Offices & Mints",
+      "location": "Denver",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [
+        "1997-09-08"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "US Assay Offices & Mints",
+      "location": "New York",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [
+        "1997-09-08"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "US Assay Offices & Mints",
+      "location": "San Francisco",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [
+        "1997-09-08"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "US Assay Offices & Mints",
+      "location": "San Francisco",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [
+        "1997-09-08"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "US Metals Refining Company, Subsidiary of Amax Inc",
+      "location": "Carteret (1)",
+      "country": "USA",
+      "listedFrom": null,
+      "firstListing": "01/10/1955",
+      "transfersToFormer": [
+        "1975-02-14"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Usine Genevoise de Degrossissage d'Or",
+      "location": "Geneva",
+      "country": "Switzerland",
+      "listedFrom": null,
+      "firstListing": "Pre 1934",
+      "transfersToFormer": [],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Uzinele Metalurgice de Metale Neferoase",
+      "location": "Baia Mare, Maramures",
+      "country": "Romania",
+      "listedFrom": null,
+      "firstListing": "06/04/1970",
+      "transfersToFormer": [
+        "1993-10-31"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    },
+    {
+      "company": null,
+      "refinery": "Western Australian Mint t/a Australian Gold Refineries",
+      "location": "Kalgoorlie, Western Australia",
+      "country": "Australia",
+      "listedFrom": null,
+      "firstListing": "18/02/1991",
+      "transfersToFormer": [
+        "1995-01-27"
+      ],
+      "reasonForTransfer": "Other (Unknown, Historical)"
+    }
+  ]
+}
