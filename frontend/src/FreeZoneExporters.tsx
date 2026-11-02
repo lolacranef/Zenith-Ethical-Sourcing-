@@ -5,8 +5,8 @@ import { formatCount, formatDate } from "./data";
 // Indonesian solar exporters to the U.S. whose registered addresses sit in a free trade zone.
 // Hand-entered from Sayari entity summaries; see "About this data" for how the list was built.
 const ZONE_NOTE: Record<string, string> = {
-  Batam: "The whole of Batam island is a free trade and free port zone (Government Regulation 46/2007).",
-  Bintan: "Bintan Industrial Estate sits inside the Bintan free trade zone enclaves (Government Regulation 47/2007).",
+  Batam: "Government Regulation 46/2007 makes Batam island, with Tonton, Setokok, Nipah, Rempang, Galang and Galang Baru, a free trade and free port zone for 70 years.",
+  Bintan: "Government Regulation 47/2007, amended by 41/2017, puts Lobam, where the Bintan Industrial Estate sits, inside the Bintan free trade zone enclaves.",
 };
 
 export default function FreeZoneExporters() {
@@ -25,7 +25,7 @@ export default function FreeZoneExporters() {
       </tr>)}</tbody>
     </table></div>
     <div className="coverage-note hub-disclosure"><Globe2 size={19} /><div><b>About this data</b>
-      <p><b>Companies and addresses:</b> Sayari Graph, pulled {formatDate(ftz.generatedAt)} through the Sayari connector. The {ftz.largestChecked} exporters with the most U.S.-bound shipments of HS 8541.43 from Indonesia were checked, plus one found by its Bintan name ({ftz.checked} of {ftz.suppliersOnRoute} on the route); {ftz.outsideZone} had no free-zone address. Shipment counts are Sayari&rsquo;s all-time totals for this route. <b>Zones:</b> {ZONE_NOTE.Batam} {ZONE_NOTE.Bintan}</p>
+      <p><b>Companies and addresses:</b> Sayari Graph, pulled {formatDate(ftz.generatedAt)} through the Sayari connector. The {ftz.largestChecked} exporters with the most U.S.-bound shipments of HS 8541.43 from Indonesia were checked, plus one found by its Bintan name ({ftz.checked} of {ftz.suppliersOnRoute} on the route); {ftz.outsideZone} had no free-zone address. Shipment counts are Sayari&rsquo;s all-time totals for this route. <b>Zones:</b> {ZONE_NOTE.Batam} {ZONE_NOTE.Bintan} Exact boundaries are set by maps attached to each regulation. Sources: <a href="https://peraturan.bpk.go.id/Details/4768/pp-no-46-tahun-2007" target="_blank" rel="noreferrer">PP 46/2007</a>, <a href="https://peraturan.bpk.go.id/Details/4769/pp-no-47-tahun-2007" target="_blank" rel="noreferrer">PP 47/2007</a> (BPK legal database), <a href="https://setkab.go.id/?p=119852" target="_blank" rel="noreferrer">PP 41/2017 announcement</a> (Cabinet Secretariat).</p>
       <p><b>Network links:</b> sanctions links are two trade steps away (a supplier or customer of the exporter trades with a listed party); none of these exporters is sanctioned itself. <b>What this cannot show:</b> where any shipment&rsquo;s cells were made, who controls the companies, or whether any trade was illicit. Nothing here is an allegation about any company.</p></div></div>
   </div>;
 }
