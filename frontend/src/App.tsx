@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Activity,
   ArrowRight,
@@ -28,6 +28,8 @@ import worldAtlasUrl from "world-atlas/countries-110m.json?url";
 import ProductWatch, { ViewSwitch } from "./ProductWatch";
 import { FlowsAnalysis } from "./Analysis";
 import HubWatch from "./HubWatch";
+import SolarShift, { solarEvents } from "./SolarShift";
+import { dotDelay, useRevealOnScroll } from "./HubShared";
 import SignalFamilies from "./Families";
 import { GlossaryList, HowToRead, Term, bandMeaning } from "./Glossary";
 import { Band, Lead, WINDOW_OPTIONS, WindowMonths, buildLeads } from "./data";
@@ -79,32 +81,14 @@ function ScoreBar({ score }: { score: number }) {
   return <div className="score-line"><span className="score-track"><i style={{ width: `${score}%` }} /></span><b>{score}</b></div>;
 }
 
-function TradePulseChart() {
-  const points = "0,87 54,73 108,78 162,46 216,58 270,30 324,43 378,18 432,38 486,25 540,8";
-  return <div className="chart-frame">
-    <div className="chart-axis-labels"><span>HIGHER INDEX</span><span>ILLUSTRATIVE INDEX · NOT DOLLARS</span></div>
-    <svg className="pulse-chart" viewBox="0 0 560 120" role="img" aria-label="Fictional monthly trade index trend, included only to demonstrate chart layout">
-      <defs><linearGradient id="pulseFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stopColor="#3e7b73" stopOpacity=".25"/><stop offset="100%" stopColor="#3e7b73" stopOpacity="0"/></linearGradient></defs>
-      {[25, 55, 85, 115].map((y) => <line key={y} x1="0" x2="560" y1={y} y2={y} className="chart-gridline" />)}
-      <polygon points={`0,120 ${points} 540,120`} fill="url(#pulseFill)" />
-      <polyline points={points} className="chart-line" />
-      {points.split(" ").map((point, index) => { const [cx, cy] = point.split(","); return <circle key={point} cx={cx} cy={cy} r="3" className="chart-point"><title>{`Illustrative period ${index + 1}`}</title></circle>; })}
-    </svg>
-    <div className="chart-months"><span>OCT</span><span>NOV</span><span>DEC</span><span>JAN</span><span>FEB</span><span>MAR</span><span>APR</span><span>MAY</span><span>JUN</span><span>JUL</span><span>AUG</span></div>
-  </div>;
-}
+// Bar colors follow the triage band, as on the map.
+const bandColor: Record<Band, string> = { Elevated: "coral", Review: "ochre", Watch: "teal" };
 
-function ProductBars() {
-  const rows = [
-    { name: "Solar components", hs: "8541", value: 84, color: "teal" },
-    { name: "Aluminum", hs: "7601", value: 68, color: "ochre" },
-    { name: "Copper products", hs: "7403", value: 49, color: "coral" },
-    { name: "Natural rubber", hs: "4001", value: 34, color: "blue" },
-  ];
-  return <div className="product-bars">{rows.map((row) => <div className="product-bar-row" key={row.hs}>
-    <div className="product-bar-title"><span>{row.name}</span><code>HS {row.hs}</code></div>
-    <div className="product-bar-track"><i className={row.color} style={{ width: `${row.value}%` }} /></div>
-    <span className="product-bar-value">{row.value}</span>
+function ProductBars({ leads }: { leads: Lead[] }) {
+  return <div className="product-bars">{leads.map((lead) => <div className="product-bar-row" key={lead.id} title={`${lead.severity} · ${lead.corridor}`}>
+    <div className="product-bar-title"><span>{lead.product}</span><code>{lead.code} · from {lead.partner}</code></div>
+    <div className="product-bar-track"><i className={bandColor[lead.severity]} style={{ width: `${lead.score}%` }} /></div>
+    <span className="product-bar-value">{lead.score}</span>
   </div>)}</div>;
 }
 
@@ -130,7 +114,7 @@ function RegionWorldMap({ onSelect, leads }: { onSelect: (signal: Lead) => void;
           style={{ fill: "#ddcfae", stroke: "#f6f1e7", strokeWidth: 0.65, outline: "none" }}
         />)}
       </Geographies>
-      {leads.map((signal) => <Marker
+      {leads.map((signal, index) => <Marker
         key={signal.id}
         coordinates={signal.coordinates}
         className="zone-map-marker"
@@ -141,8 +125,8 @@ function RegionWorldMap({ onSelect, leads }: { onSelect: (signal: Lead) => void;
         onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect(signal); } }}
       >
         <title>{`${signal.product} · ${signal.corridor} · ${signal.severity} review lead`}</title>
-        <circle className={`map-marker map-${signal.severity.toLowerCase()}`} r={Math.max(6, signal.score / 9)} />
-        <circle className={`map-marker-halo map-${signal.severity.toLowerCase()}`} r={Math.max(11, signal.score / 5)} />
+        <circle className={`map-marker map-${signal.severity.toLowerCase()}`} style={dotDelay(index, leads.length)} r={Math.max(6, signal.score / 9)} />
+        <circle className={`map-marker-halo map-${signal.severity.toLowerCase()}`} style={{ animationDelay: `${1200 + index * 300}ms` }} r={Math.max(11, signal.score / 5)} />
       </Marker>)}
     </ComposableMap>
     <div className="world-zone-list">{leads.map((signal) => <button type="button" className="world-zone-row" key={signal.id} onClick={() => onSelect(signal)}><i className={`zone-risk-dot ${signal.severity.toLowerCase()}`} /><span className="world-zone-copy"><b>{signal.product}</b><small>{signal.corridor} · {signal.type}</small></span><SeverityPill severity={signal.severity} /><strong className="world-zone-score">{signal.score}</strong></button>)}</div>
@@ -155,6 +139,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<Tab>("overview");
   const [months, setMonths] = useState<WindowMonths>(12);
   const signals = useMemo(() => buildLeads(months), [months]);
+  const mainRef = useRef<HTMLElement>(null);
   const regionOptions = useMemo(() => ["All regions", ...new Set(signals.map((signal) => signal.region))], [signals]);
   const [activeSignalId, setActiveSignalId] = useState(signals[0].id);
   const [productFocus, setProductFocus] = useState<string | undefined>();
@@ -166,6 +151,7 @@ export default function App() {
   const [savedIds, setSavedIds] = useState<string[]>(readSaved);
   const [notice, setNotice] = useState("");
 
+  useRevealOnScroll(mainRef, `${activeTab}${months}${flowsView}`);
   useEffect(() => { try { localStorage.setItem(SAVED_KEY, JSON.stringify(savedIds)); } catch { /* storage unavailable: saves last for this session only */ } }, [savedIds]);
 
   const filteredSignals = useMemo(() => signals.filter((signal) => {
@@ -203,13 +189,13 @@ export default function App() {
   </> : <div className="detail-blank"><FileSearch size={24} /><h2>Choose a review lead</h2><p>Select a row to inspect its scope, context, and public-data limitations.</p></div>}</aside>;
 
   return (
-    <main className="desk-shell">
+    <main className="desk-shell" ref={mainRef}>
       <header className="masthead" id="top">
         <a className="brand" href="#top" aria-label="Zenith home"><ZenithMark /><span className="brand-copy"><b>Zenith</b><small>GLOBAL TRADE OBSERVATORY</small></span></a>
         <div className="workspace-tag"><span className="workspace-dot" />ANALYST WORKSPACE</div>
       </header>
 
-      <section className="notice-band" aria-label="Prototype notice"><span className="notice-kicker"><ShieldAlert size={14} /> DEMO DATA</span><span>Leads, the map, and Product watch use real UN Comtrade statistics, Sayari trade-record aggregates, and Tavily news. Trade flows charts are synthetic examples. Scores order review; they are not findings or allegations.</span><button className="notice-help" type="button" title="Only the Trade flows tab uses synthetic examples."><CircleHelp size={15} /></button></section>
+      <section className="notice-band" aria-label="Prototype notice"><span className="notice-kicker"><ShieldAlert size={14} /> DEMO DATA</span><span>Leads, the map, and Product watch use real UN Comtrade statistics, Sayari trade-record aggregates, and Tavily news. Scores order review; they are not findings or allegations.</span><button className="notice-help" type="button" title="Every chart uses sourced data; the Trade flows diagram explains the method."><CircleHelp size={15} /></button></section>
 
       {activeTab === "overview" && <section className="welcome-panel" aria-labelledby="welcome-heading">
           <div className="welcome-copy">
@@ -245,13 +231,13 @@ export default function App() {
 
       {activeTab === "products" && <ProductWatch key={productFocus} months={months} initialProductId={productFocus} onOpenLead={openLeadForProduct} />}
 
-      {activeTab === "flows" && <section className="tab-page"><div className="section-title-row"><div><p className="eyebrow">03 <span>/</span> TRADE FLOWS</p><h2>Compare reported patterns—not individual cargo</h2></div><span className="data-chip">AGGREGATE PUBLIC DATA</span></div><ViewSwitch view={flowsView} onChange={setFlowsView} labels={{ examples: "Method examples", analysis: "Analysis" }} />{flowsView === "analysis" ? <FlowsAnalysis months={months} onOpenProduct={openProduct} /> : <><HowToRead><p>These charts are made-up examples that show how trade comparisons work. For real figures, switch to <b>Analysis</b> above.</p></HowToRead><div className="flow-page-grid"><article className="visual-card"><div className="visual-card-head"><div><p className="eyebrow">TIME SERIES <span>/</span> INDEXED</p><h2>Product group trend</h2></div><span className="chart-legend"><i /> Synthetic example</span></div><TradePulseChart /><p className="visual-footnote">A real implementation would chart sourced public statistics by product, partner, reporter, and period, subject to available fields.</p></article><article className="visual-card"><div className="visual-card-head"><div><p className="eyebrow">PRODUCT GROUPS</p><h2>Compare screening leads</h2></div></div><ProductBars /><p className="visual-footnote">Illustrative index; never interpret as official volumes or a finding.</p></article><article className="visual-card flow-wide"><div className="visual-card-head"><div><p className="eyebrow">PUBLIC DATA CROSS-CHECK</p><h2>Reporter, product, partner</h2></div></div><FlowDiagram /></article></div></>}</section>}
+      {activeTab === "flows" && <section className="tab-page"><div className="section-title-row"><div><p className="eyebrow">03 <span>/</span> TRADE FLOWS</p><h2>Compare reported patterns—not individual cargo</h2></div><span className="data-chip">AGGREGATE PUBLIC DATA</span></div><ViewSwitch view={flowsView} onChange={setFlowsView} labels={{ examples: "Method examples", analysis: "Analysis" }} />{flowsView === "analysis" ? <FlowsAnalysis months={months} onOpenProduct={openProduct} /> : <><HowToRead><p>The case study uses real UN Comtrade figures: it follows where U.S. solar module imports came from as duty cases moved through four Southeast Asian countries and then the next three. The screening-lead bars are the live review scores for each watched product, and the diagram explains the method. For mirror-gap figures, switch to <b>Analysis</b> above.</p></HowToRead><div className="flow-page-grid"><article className="visual-card flow-wide"><div className="visual-card-head"><div><p className="eyebrow">CASE STUDY <span>/</span> SOLAR MODULES</p><h2>Where U.S. solar imports moved after duties</h2></div><span className="data-chip">UN COMTRADE</span></div><SolarShift /></article><article className="visual-card"><div className="visual-card-head"><div><p className="eyebrow">PRODUCT GROUPS</p><h2>Compare screening leads</h2></div></div><ProductBars leads={signals} /><p className="visual-footnote">Review score (0–100) for each watched product over the selected period, built from the mirror gap, recency, supplier risk and policy activity. It orders attention; it is not a finding.</p></article><article className="visual-card"><div className="visual-card-head"><div><p className="eyebrow">PUBLIC DATA CROSS-CHECK</p><h2>Reporter, product, partner</h2></div></div><FlowDiagram /></article></div></>}</section>}
 
       {activeTab === "hubs" && <HubWatch />}
 
       {activeTab === "saved" && <section className="tab-page"><div className="section-title-row"><div><p className="eyebrow">04 <span>/</span> WORKING FILE</p><h2>Saved review leads</h2></div><span className="lead-total">{savedSignals.length.toString().padStart(2, "0")} SAVED</span></div>{savedSignals.length ? <div className="saved-grid">{savedSignals.map((signal) => <button className="saved-card" key={signal.id} type="button" onClick={() => { setActiveSignalId(signal.id); setActiveTab("signals"); }}><span className="saved-card-top"><SeverityPill severity={signal.severity} /><span>{signal.id}</span></span><b>{signal.title}</b><span>{signal.product} · {signal.code}</span><ScoreBar score={signal.score} /><small>{signal.corridor} · {signal.period}</small></button>)}</div> : <div className="saved-empty"><Bookmark size={24} /><h3>Your working file is empty</h3><p>Open a lead in Signals and choose “Save lead” to keep it here. Saved leads stay in this browser.</p><button type="button" onClick={() => setActiveTab("signals")}>Browse signals <ArrowRight size={14} /></button></div>}</section>}
 
-      {activeTab === "sources" && <section className="tab-page source-page"><div className="section-title-row"><div><p className="eyebrow">05 <span>/</span> DATA &amp; METHOD</p><h2>Know what each layer can support</h2></div><span className="data-chip">GLOBAL FRAME · LOCAL RULES</span></div><div className="coverage-note"><Globe2 size={19} /><div><b>Global trade comparisons, uneven zone-level coverage</b><p>ITC Trade Map supports broad reporter, partner, product, and period comparisons across many markets. It does not identify individual FTZ lots. Census FTZ statistics and USITC DataWeb are U.S.-specific; other jurisdictions require their own official data sources, definitions, and access checks.</p></div></div><div className="source-register">{sourceLinks.map((source) => <a className="register-item" key={source.label} href={source.href} target="_blank" rel="noreferrer"><span className="register-check"><Check size={13} /></span><span className="register-name">{source.label}<small>{source.status} · official external source</small></span><ExternalLink size={14} /></a>)}</div><div className="provider-grid"><article className="provider-card"><h3>Sayari<span className="pending-tag">SNAPSHOT · IN USE</span></h3><p>Bills of lading and customs records for each Product watch corridor, summarized as shipment counts, supplier counts, supplier concentration, and the share of suppliers carrying each category of Sayari risk flag. Zenith shows aggregates only and names no company. Flags describe supplier entities, not the specific shipments in a mirror-gap month. Hub watch adds a UAE gold snapshot drawn from UAE free-zone registers (DMCC, JAFZA, DAFZ, DIFC, ADGM) and customs records, again as counts only.</p></article><article className="provider-card"><h3>Tavily<span className="pending-tag">SNAPSHOT · IN USE</span></h3><p>Web search for recent trade-remedy rulings, tariff actions, and forced-labor enforcement for each watched product. Each item links to its source; official notices are preferred over commentary. Summaries come from search snippets, so confirm against the notice before citing a rate or date.</p></article><article className="provider-card"><h3>UN Comtrade · UAE gold<span className="pending-tag">ANNUAL · IN USE</span></h3><p>Hub watch compares UAE-reported gold imports (HS 7108) with what each source country reports exporting to the UAE, by year from 2018. Figures are as reported to Comtrade; some source countries file no figure, and the UAE has not yet reported 2024. Gaps prompt questions about routing and reporting; they are not findings.</p></article></div><div className="method-grid"><article><span className="method-number">01</span><h3>Public screening</h3><p>Use public aggregate trade data for product, partner, reporter, and time comparisons where fields are available. Show source, release date, unit, and jurisdiction coverage on each view.</p></article><article><span className="method-number">02</span><h3>Review signal</h3><p>Explain why a pattern was surfaced, what benign explanations may apply, and what evidence is missing. Scores order analyst attention only.</p></article><article><span className="method-number">03</span><h3>Confirm locally</h3><p>Zone records, FTZ definitions, and access rights differ by jurisdiction. Case-level admission, inventory, processing, withdrawal, and entry records require local authority and authorization.</p></article></div><section className="glossary-section"><div className="section-title-row"><div><p className="eyebrow">GLOSSARY</p><h2>Terms in plain language</h2></div></div><GlossaryList /></section><div className="scope-note"><Gauge size={16} /><p><b>Evidence discipline</b> Public trade changes can prioritize review. Confirming movement, inventory discrepancies, origin, trafficking, money laundering, or labor abuse requires relevant records and independent corroboration. The system makes no automated findings.</p><a href="https://www.ecfr.gov/current/title-19/chapter-I/part-146" target="_blank" rel="noreferrer">U.S. FTZ recordkeeping rule <ArrowUpRight size={13} /></a></div></section>}
+      {activeTab === "sources" && <section className="tab-page source-page"><div className="section-title-row"><div><p className="eyebrow">05 <span>/</span> DATA &amp; METHOD</p><h2>Know what each layer can support</h2></div><span className="data-chip">GLOBAL FRAME · LOCAL RULES</span></div><div className="coverage-note"><Globe2 size={19} /><div><b>Global trade comparisons, uneven zone-level coverage</b><p>ITC Trade Map supports broad reporter, partner, product, and period comparisons across many markets. It does not identify individual FTZ lots. Census FTZ statistics and USITC DataWeb are U.S.-specific; other jurisdictions require their own official data sources, definitions, and access checks.</p></div></div><div className="source-register">{sourceLinks.map((source) => <a className="register-item" key={source.label} href={source.href} target="_blank" rel="noreferrer"><span className="register-check"><Check size={13} /></span><span className="register-name">{source.label}<small>{source.status} · official external source</small></span><ExternalLink size={14} /></a>)}</div><div className="provider-grid"><article className="provider-card"><h3>Sayari<span className="pending-tag">SNAPSHOT · IN USE</span></h3><p>Bills of lading and customs records for each Product watch corridor, summarized as shipment counts, supplier counts, supplier concentration, and the share of suppliers carrying each category of Sayari risk flag. Zenith shows aggregates only and names no company. Flags describe supplier entities, not the specific shipments in a mirror-gap month. Hub watch adds a UAE gold snapshot drawn from UAE free-zone registers (DMCC, JAFZA, DAFZ, DIFC, ADGM) and customs records, again as counts only.</p></article><article className="provider-card"><h3>Tavily<span className="pending-tag">SNAPSHOT · IN USE</span></h3><p>Web search for recent trade-remedy rulings, tariff actions, and forced-labor enforcement for each watched product. Each item links to its source; official notices are preferred over commentary. Summaries come from search snippets, so confirm against the notice before citing a rate or date.</p></article><article className="provider-card"><h3>UN Comtrade · UAE gold<span className="pending-tag">ANNUAL · IN USE</span></h3><p>Hub watch compares UAE-reported gold imports (HS 7108) with what each source country reports exporting to the UAE, by year from 2018. Figures are as reported to Comtrade; some source countries file no figure, and the UAE has not yet reported 2024. Gaps prompt questions about routing and reporting; they are not findings.</p></article><article className="provider-card"><h3>UN Comtrade · Solar case study<span className="pending-tag">MONTHLY · IN USE</span></h3><p>The Trade flows case study uses U.S.-reported monthly imports of HS 8541.43 (photovoltaic cells assembled in modules or panels) by country of origin from January 2023, grouped by the countries named in each duty case. Shares are each group&rsquo;s value over all U.S. imports of the code that month. Milestone dates come from the Commerce and Federal Register notices below; a marker sits on the month a step was announced or published. A change of supplier after duties is legal on its own and becomes a lead only where new local capacity cannot explain it.</p><ul className="provider-sources"><li><a href="https://comtradeplus.un.org/" target="_blank" rel="noreferrer">UN Comtrade (public preview API) <ExternalLink size={11} /></a></li>{solarEvents.map((event) => <li key={event.period}><a href={event.href} target="_blank" rel="noreferrer">{event.title} <ExternalLink size={11} /></a></li>)}</ul></article></div><div className="method-grid"><article><span className="method-number">01</span><h3>Public screening</h3><p>Use public aggregate trade data for product, partner, reporter, and time comparisons where fields are available. Show source, release date, unit, and jurisdiction coverage on each view.</p></article><article><span className="method-number">02</span><h3>Review signal</h3><p>Explain why a pattern was surfaced, what benign explanations may apply, and what evidence is missing. Scores order analyst attention only.</p></article><article><span className="method-number">03</span><h3>Confirm locally</h3><p>Zone records, FTZ definitions, and access rights differ by jurisdiction. Case-level admission, inventory, processing, withdrawal, and entry records require local authority and authorization.</p></article></div><section className="glossary-section"><div className="section-title-row"><div><p className="eyebrow">GLOSSARY</p><h2>Terms in plain language</h2></div></div><GlossaryList /></section><div className="scope-note"><Gauge size={16} /><p><b>Evidence discipline</b> Public trade changes can prioritize review. Confirming movement, inventory discrepancies, origin, trafficking, money laundering, or labor abuse requires relevant records and independent corroboration. The system makes no automated findings.</p><a href="https://www.ecfr.gov/current/title-19/chapter-I/part-146" target="_blank" rel="noreferrer">U.S. FTZ recordkeeping rule <ArrowUpRight size={13} /></a></div></section>}
 
       <footer className="desk-footer"><span>Zenith <i>·</i> Global trade observatory</span><span>UN Comtrade · Sayari · Tavily <i>·</i> human review only</span></footer>
     </main>

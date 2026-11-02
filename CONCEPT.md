@@ -42,7 +42,7 @@ The demo is a static React app published on GitHub Pages. It has no login, no ba
 | **Overview** | Welcome briefing, headline counts, a world map of review leads on each corridor's partner country, and expandable lead types (mirror gap, supplier risk, policy change) | **Real**, generated from Product watch data |
 | **Signals** | Screening queue with search and filters (lead type, priority, region), plus a lead detail panel: score breakdown, what was flagged, analyst context, sources, a link into Product watch, and a placeholder for authorized record intake | **Real**, generated from Product watch data |
 | **Product watch** | Eight products with a documented history of trade anomalies or enforcement, filterable by risk indication, with mirror-statistics trend charts marked with ruling and tariff dates, plus Sayari and Tavily corridor intelligence | **Real** UN Comtrade, Sayari, and Tavily data plus public enforcement context |
-| **Trade flows** | How reporter, product, and partner comparisons work, with example charts | Synthetic |
+| **Trade flows** | Case study of U.S. solar module imports shifting between supplier countries as duty cases advanced, the live review score per product, and a diagram of how reporter, product, and partner comparisons work | Real (UN Comtrade; dates from Commerce notices) |
 | **Saved leads** | Leads you saved, kept in browser storage | Real |
 | **Data & method** | Source register, method (public screening → review signal → confirm locally), and evidence-discipline notes | Real source links |
 
@@ -163,5 +163,5 @@ Providers share one interface (capabilities and reliability). When Sayari is imp
 2. **Sayari integration.** Corridor aggregates ship with a refresh script (to be verified against the live API). Next: month-by-month record counts to set against mirror gaps, and the backend provider for entity, ownership, and trade-relationship context in case work.
 3. **Connect the investigation engine.** Let a lead open a backend investigation, and bring the tiered evidence graph (`GraphView.tsx`, currently unused) back into the Zenith UI.
 4. **ITC Trade Map imports.** Load account CSV exports for comparisons the Comtrade preview API can't cover.
-5. **Real Trade flows.** Replace the synthetic Trade flows charts with sourced statistics.
+5. **Real Trade flows.** Done: the solar case study and screening-lead bars use sourced data. Next, generalize the case study to other products with duty or enforcement milestones.
 6. **Authorized record intake.** Access-controlled upload for case records, with jurisdiction-specific FTZ rules.

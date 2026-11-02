@@ -4,7 +4,7 @@ import hubElectronics from "./data/hub-electronics.json";
 import sayari from "./data/sayari-hub-electronics.json";
 import { HowToRead, Term } from "./Glossary";
 import { SERIES_COLORS, linePath, useElementWidth } from "./ProductWatch";
-import { CountBars, countryNames, formatUsd, labelPositions, smallShare, times } from "./HubShared";
+import { CountBars, dotDelay, countryNames, formatUsd, labelPositions, smallShare, times } from "./HubShared";
 import { formatCount, formatDate, formatGap, formatShare } from "./data";
 
 type Codes = Record<string, number>;
@@ -94,10 +94,11 @@ function AnnualChart({ shown, code, hover, onHover, width }: { shown: Year[]; co
     onPointerMove={(event) => onHover(pointerIndex(event.clientX, event.currentTarget.getBoundingClientRect()))} onPointerLeave={() => onHover(null)}>
     {ticks.map((tick) => <g key={tick}><line className="chart-gridline" x1={left} x2={width - right} y1={y(tick)} y2={y(tick)} /><text className="axis-label" x={left - 7} y={y(tick) + 3} textAnchor="end">{tick === 0 ? "$0" : formatUsd(tick)}</text></g>)}
     {shown.map((year, index) => <text key={year.year} className="axis-label" x={x(index)} y={height - 8} textAnchor="middle">{year.year}</text>)}
-    {series.map((line) => <path key={line.key} className="trend-line" stroke={line.color} strokeDasharray={line.dash} d={linePath(line.values, x, y)} />)}
-    {series.map((line) => line.values.map((value, index) => <circle key={`${line.key}${index}`} cx={x(index)} cy={y(value)} r="4" fill={line.color} stroke="var(--paper)" strokeWidth="2" />))}
+    <g className="chart-draw">{series.map((line) => <path key={line.key} className="trend-line" stroke={line.color} strokeDasharray={line.dash} d={linePath(line.values, x, y)} />)}</g>
+    {series.map((line) => line.values.map((value, index) => <circle key={`${line.key}${index}`} className={`chart-dot${hover === index ? " active" : ""}`} style={dotDelay(index, line.values.length)} cx={x(index)} cy={y(value)} r="4" fill={line.color} stroke="var(--paper)" strokeWidth="2" />))}
+    <circle className="chart-pulse" cx={x(last)} cy={y(series[0].values[last])} r="4" stroke={SERIES_COLORS.reported} />
     {!compact && labelPositions(series.map((line) => y(line.values[last]))).map((labelY, index) => <text key={series[index].key} className="direct-label" x={width - right + 10} y={labelY + 3}>{series[index].label}</text>)}
-    {hover !== null && <g className="crosshair"><line x1={x(hover)} x2={x(hover)} y1={top} y2={height - bottom} /></g>}
+    {hover !== null && <g className="crosshair"><line className="crosshair-slide" x1={0} x2={0} y1={top} y2={height - bottom} style={{ transform: `translateX(${x(hover)}px)` }} /></g>}
     <rect x={left} y={top} width={width - left - right} height={height - top - bottom} fill="transparent" />
   </svg>;
 }

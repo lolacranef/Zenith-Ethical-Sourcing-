@@ -11,7 +11,7 @@ Zenith is a global trade observatory for ethical-sourcing and trade-compliance a
 | Overview | Welcome briefing, world map of review leads by partner country, lead types | **Real**, generated from the data below |
 | Signals | Screening queue with filters and a lead detail panel showing each lead's score breakdown | **Real**, generated from the data below |
 | Product watch | Eight products with a history of trade anomalies or enforcement, with monthly mirror-statistics charts (U.S. imports vs. partner-reported exports) marked with ruling and tariff dates, plus corridor intelligence: supplier counts and risk-flag exposure, and recent rulings and enforcement news | **Real** UN Comtrade data, Sayari trade-record aggregates, Tavily web search, and public enforcement context |
-| Trade flows | Example reporter / product / partner comparisons | Synthetic |
+| Trade flows | Solar case study (U.S. module imports by supplier group around the 2024–26 duty cases), live review scores per product, and a method diagram | Real (UN Comtrade, Commerce / Federal Register dates) |
 | Hub watch | Two trades, each switchable by country. **Gold** (HS 7108) for the UAE, Switzerland, Türkiye and Hong Kong: annual imports and exports since 2018, a mirror check of each top source country, export destinations, Sayari shipment-record aggregates (with the UAE's free-zone versus mainland buyer mix), and LBMA Good Delivery refiner accreditation by country. **Dual-use electronics to Russia** (CHPL codes 8542, 8517.62, 8526.91) for the UAE, Hong Kong, Türkiye, Kazakhstan, Armenia and Kyrgyzstan: what each reports sending Russia, how the routes compare, each hub's chip suppliers, and Sayari aggregates on Russian buyers | **Real** UN Comtrade annual data, Sayari snapshots, and the LBMA's public lists |
 | Saved leads | Leads you saved, kept in this browser | Real |
 | Data & method | Source register and evidence-discipline notes | Real source links |
@@ -40,6 +40,7 @@ npm run data:comtrade   # fetches products missing from src/data/comtrade-mirror
 npm run data:hub-gold   # rebuilds src/data/hub-gold.json for Hub watch (about 50 calls; can take an hour)
 npm run data:lbma       # rebuilds src/data/lbma-good-delivery.json from the LBMA's gold current and former lists
 npm run data:hub-electronics  # rebuilds src/data/hub-electronics.json (about 25 calls)
+npm run data:solar-shift      # rebuilds src/data/solar-shift.json (one call per month since Jan 2023, U.S. solar module imports by partner)
 npm run build:pages     # type-checks and builds into ../docs
 ```
 
@@ -85,7 +86,7 @@ What it does:
 
 **Demo**
 
-- Trade flows charts are synthetic. Leads, the map, and Product watch use real data.
+- Every chart uses real data. The Trade flows case study uses UN Comtrade monthly imports of HS 8541.43 by partner; its milestone dates come from Commerce and Federal Register notices. The flow diagram explains the method and shows no data.
 - Leads are scored per product corridor, not per company, shipment, or FTZ. Map markers sit on the partner country.
 - Sayari facet counts span every record Sayari holds for a corridor, not just the charted months. Gold (Switzerland → U.S.) has no shipment records because it moves by air.
 - Product watch shows a product only once its data has been fetched. Some partners don't report monthly to Comtrade.

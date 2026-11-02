@@ -82,6 +82,10 @@ export default function GraphView({ elements, onEntitySelect, onEdgeSelect, onEx
         edgeSep: 18,
         fit: true,
         padding: 48,
+        // Nodes fan out into place unless the viewer prefers reduced motion.
+        animate: !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+        animationDuration: 750,
+        animationEasing: "ease-out-cubic",
       } as cytoscape.LayoutOptions,
       minZoom: 0.25,
       maxZoom: 2.5,

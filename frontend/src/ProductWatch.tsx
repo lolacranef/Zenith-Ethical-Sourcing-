@@ -7,6 +7,7 @@ import {
 import { ProductAnalysis } from "./Analysis";
 import { HowToRead, Term, bandMeaning } from "./Glossary";
 import { buildLead, shortPartner } from "./data";
+import { dotDelay } from "./HubShared";
 
 export const SERIES_COLORS = { reported: "#008574", mirror: "#a8692a" };
 const formatUsd = (value: number | null) => value === null ? "Not reported" : value >= 1e9 ? `$${(value / 1e9).toFixed(2)}B` : `$${(value / 1e6).toFixed(1)}M`;
@@ -39,7 +40,7 @@ function GapSparkline({ points }: { points: Point[] }) {
   const y = (gap: number) => height - 4 - (Math.min(max, Math.abs(gap)) / max) * (height - 8);
   return <svg className="gap-sparkline" viewBox={`0 0 ${width} ${height}`} aria-hidden="true">
     <line className="spark-threshold" x1="0" x2={width} y1={y(GAP_THRESHOLD)} y2={y(GAP_THRESHOLD)} />
-    <path className="spark-line" d={linePath(points.map((point) => point.gap), x, y)} />
+    <path className="spark-line" pathLength={1} d={linePath(points.map((point) => point.gap), x, y)} />
     {points.map((point, index) => point.flagged && <circle key={point.month} className="spark-flag" cx={x(index)} cy={y(point.gap!)} r="3" />)}
   </svg>;
 }
@@ -63,10 +64,13 @@ function TrendChart({ points, hover, onHover, width, labels, eventIndexes }: { p
     {points.map((point, index) => point.flagged && <rect key={point.month} className="flag-band" x={x(index) - step / 2} y={top} width={step} height={height - top - bottom} />)}
     {ticks.map((tick) => <g key={tick}><line className="chart-gridline" x1={left} x2={width - right} y1={y(tick)} y2={y(tick)} /><text className="axis-label" x={left - 7} y={y(tick) + 3} textAnchor="end">{tickLabel(tick)}</text></g>)}
     {points.map((point, index) => index % labelEvery(points.length, compact) === 0 && <text key={point.month} className="axis-label" x={x(index)} y={height - 8} textAnchor="middle">{point.month}</text>)}
-    {eventIndexes.map((index) => <g key={index} className="event-marker"><line x1={x(index)} x2={x(index)} y1={top} y2={height - bottom} /><path d={`M${x(index)} ${height - bottom - 9}l4.5 4.5-4.5 4.5-4.5-4.5z`} /></g>)}
-    <path className="trend-line" stroke={SERIES_COLORS.mirror} strokeDasharray="6 4" d={linePath(points.map((point) => point.mirror), x, y)} />
-    <path className="trend-line" stroke={SERIES_COLORS.reported} d={linePath(points.map((point) => point.reported), x, y)} />
-    {points.map((point, index) => point.flagged && <path key={point.month} className="flag-marker" d={`M${x(index)} ${top + 1}l4 6h-8z`} />)}
+    {eventIndexes.map((index) => <g key={index} className="event-marker event-drop" style={dotDelay(index, points.length)}><line x1={x(index)} x2={x(index)} y1={top} y2={height - bottom} /><path d={`M${x(index)} ${height - bottom - 9}l4.5 4.5-4.5 4.5-4.5-4.5z`} /></g>)}
+    <g className="chart-draw">
+      <path className="trend-line" stroke={SERIES_COLORS.mirror} strokeDasharray="6 4" d={linePath(points.map((point) => point.mirror), x, y)} />
+      <path className="trend-line" stroke={SERIES_COLORS.reported} d={linePath(points.map((point) => point.reported), x, y)} />
+    </g>
+    {lastIndex("reported") >= 0 && <circle className="chart-pulse" cx={x(lastIndex("reported"))} cy={reportedLabelY} r="3" stroke={SERIES_COLORS.reported} />}
+    {points.map((point, index) => point.flagged && <path key={point.month} className="flag-marker" style={dotDelay(index, points.length)} d={`M${x(index)} ${top + 1}l4 6h-8z`} />)}
     {!compact && <>
     <text className="direct-label" x={width - right + 8} y={reportedLabelY + 3 + (reportedLabelY <= mirrorLabelY ? -labelSpread : labelSpread)}>{labels[0]}</text>
     <text className="direct-label" x={width - right + 8} y={mirrorLabelY + 3 + (mirrorLabelY < reportedLabelY ? -labelSpread : labelSpread)}>{labels[1]}</text>
@@ -93,7 +97,7 @@ function GapChart({ points, hover, onHover, width, eventIndexes }: { points: Poi
       const end = y(point.gap), up = point.gap >= 0, length = Math.max(1, Math.abs(baseline - end)), radius = Math.min(4, length, barWidth / 2), bx = left + index * slot + 1;
       const d = up ? `M${bx} ${baseline}V${baseline - length + radius}q0 -${radius} ${radius} -${radius}h${barWidth - radius * 2}q${radius} 0 ${radius} ${radius}V${baseline}z`
         : `M${bx} ${baseline}V${baseline + length - radius}q0 ${radius} ${radius} ${radius}h${barWidth - radius * 2}q${radius} 0 ${radius} -${radius}V${baseline}z`;
-      return <path key={point.month} className={`gap-bar ${point.flagged ? "over" : ""} ${hover === index ? "hovered" : ""}`} d={d} />; })}
+      return <path key={point.month} className={`gap-bar ${up ? "up" : "down"} ${point.flagged ? "over" : ""} ${hover === index ? "hovered" : ""}`} style={dotDelay(index, points.length)} d={d} />; })}
     {eventIndexes.map((index) => <line key={index} className="event-line" x1={left + index * slot + slot / 2} x2={left + index * slot + slot / 2} y1={top} y2={height - bottom} />)}
     {[GAP_THRESHOLD, -GAP_THRESHOLD].map((threshold) => <line key={threshold} className="threshold-line" x1={left} x2={width - right} y1={y(threshold)} y2={y(threshold)} />)}
     {!compact && <text className="direct-label" x={width - right + 8} y={y(GAP_THRESHOLD) + 3}>Review threshold ±{GAP_THRESHOLD}%</text>}
@@ -181,7 +185,7 @@ export default function ProductWatch({ months, initialProductId, onOpenLead }: {
         <b>{product.name}</b>
         <span className="product-partner">U.S. ↔ {mirrorData[product.id].partner.name}</span>
         <span className="product-tags">{product.indications.map((key) => <small key={key}>{indicationLabels[key]}</small>)}</span>
-        <GapSparkline points={productPoints} />
+        <GapSparkline key={months} points={productPoints} />
         <span className="product-card-foot"><span><Flag size={11} /> {flags} of {productPoints.length} months flagged</span><span>Latest gap {formatGap(recent?.gap ?? null)}</span></span>
       </button>; })}</div>
 
@@ -198,7 +202,7 @@ export default function ProductWatch({ months, initialProductId, onOpenLead }: {
         <div className="product-charts" ref={chartRef} tabIndex={0} aria-label="Trend charts. Use left and right arrow keys to step through months." onKeyDown={(event) => moveHover(event.key)} onBlur={() => setHover(null)}>
           <div className="chart-title-row"><h3>Monthly trade value, U.S. dollars</h3><span className="series-legend"><span><i className="legend-line" style={{ background: SERIES_COLORS.reported }} />{labels[0]}</span><span><i className="legend-line dashed" style={{ borderColor: SERIES_COLORS.mirror }} />{labels[1]}</span><span><i className="legend-flag" />Flagged month</span>{eventIndexes.length > 0 && <span><i className="legend-event" />Ruling or policy action</span>}</span></div>
           <div className="chart-shell">
-            <TrendChart points={points} hover={hover} onHover={setHover} width={chartWidth} labels={labels} eventIndexes={eventIndexes} />
+            <TrendChart key={`${active.id}${months}`} points={points} hover={hover} onHover={setHover} width={chartWidth} labels={labels} eventIndexes={eventIndexes} />
             {hovered && <div className="chart-tooltip" style={{ left: `${Math.min(76, Math.max(14, (hover! / Math.max(1, points.length - 1)) * 78 + 5))}%` }} role="status">
               <b>{hovered.month}</b>
               <span><i style={{ background: SERIES_COLORS.reported }} />U.S. imports <em>{formatUsd(hovered.reported)}</em></span>
@@ -208,7 +212,7 @@ export default function ProductWatch({ months, initialProductId, onOpenLead }: {
             </div>}
           </div>
           <h3 className="gap-title"><Term k="mirror gap">Mirror gap</Term> by month <small>(U.S. imports ÷ partner exports − 1 · dashed lines = ±{GAP_THRESHOLD}% review threshold)</small></h3>
-          <GapChart points={points} hover={hover} onHover={setHover} width={chartWidth} eventIndexes={eventIndexes} />
+          <GapChart key={`${active.id}${months}`} points={points} hover={hover} onHover={setHover} width={chartWidth} eventIndexes={eventIndexes} />
           {points.some((point) => point.gap !== null && Math.abs(point.gap) > 200) && <p className="gap-cap-note">Bars are capped at the axis limit; hover a month or open the table for exact gaps.{medianGap > 100 && ` A gap this large in most months usually means the two sides classify the goods differently or attribute them to different partners (for example, goods shipped through a third country’s port), so check classification and routing before reading it as an anomaly.`}</p>}
           {afterData.length > 0 && <p className="after-data-note"><Newspaper size={12} /> {afterData.length} development{afterData.length > 1 ? "s" : ""} after {monthLabel(lastPeriod)} {afterData.length > 1 ? "are" : "is"} not yet reflected in trade data. Watch the next monthly releases for import surges or partner shifts.</p>}
           <p className="visual-footnote">U.S. imports are valued at customs value and partner exports at FOB. Shipping time across month boundaries, re-exports, confidential trade, and classification differences all create gaps, so a flag is a reconciliation prompt, not a finding. Months a side did not report are left blank.</p>

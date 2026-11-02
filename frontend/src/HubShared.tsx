@@ -1,3 +1,4 @@
+import { RefObject, useLayoutEffect } from "react";
 import { formatCount, formatShare } from "./data";
 
 // Shared pieces for the Hub watch views.
@@ -25,3 +26,22 @@ export function CountBars({ rows, total, format = formatCount, unit = "records" 
   </div>)}</div>;
 }
 
+
+// Points pop in left to right, finishing as the line draw-in does.
+export const dotDelay = (index: number, count: number) => ({ animationDelay: `${150 + (index / Math.max(1, count - 1)) * 950}ms` });
+
+// Holds each card's chart animations until the card scrolls into view; `key` replays them when the view changes.
+export function useRevealOnScroll(ref: RefObject<HTMLElement | null>, key: string) {
+  useLayoutEffect(() => {
+    const cards = [...(ref.current?.querySelectorAll<HTMLElement>(".visual-card, .provider-card, .metric-ribbon") ?? [])];
+    if (typeof IntersectionObserver === "undefined") return;
+    cards.forEach((card) => { card.dataset.inView = "false"; });
+    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      (entry.target as HTMLElement).dataset.inView = "true";
+      observer.unobserve(entry.target);
+    }), { threshold: 0.2 });
+    cards.forEach((card) => observer.observe(card));
+    return () => observer.disconnect();
+  }, [ref, key]);
+}

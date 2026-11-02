@@ -185,15 +185,7 @@ a.register-item:hover { background: #f2ebdd; }
 .visual-card-head { min-height: 42px; display: flex; align-items: start; justify-content: space-between; gap: 12px; }
 .visual-card-head .eyebrow { margin-bottom: 5px; color: #786857; }
 .visual-card h2 { margin: 0; color: #233d3a; font: 400 19px/1.15 var(--serif); }
-.chart-legend { display: inline-flex; align-items: center; gap: 6px; color: #83776c; font: 8px var(--mono); white-space: nowrap; }
-.chart-legend i { width: 7px; height: 7px; display: inline-block; background: #397d74; border-radius: 50%; }
-.chart-frame { position: relative; margin-top: 11px; padding-top: 14px; background: linear-gradient(90deg, #f4efe5 0%, #f8f3e8 100%); border: 1px solid #e9e0ce; }
-.chart-axis-labels { position: absolute; top: 4px; right: 8px; left: 8px; display: flex; justify-content: space-between; color: #988c81; font: 6px var(--mono); }
-.pulse-chart { width: 100%; height: 126px; overflow: visible; }
 .chart-gridline { stroke: #e9e0cf; stroke-width: 1; stroke-dasharray: 3 4; }
-.chart-line { fill: none; stroke: #397d74; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
-.chart-point { fill: #fbf7ee; stroke: #397d74; stroke-width: 2; }
-.chart-months { padding: 0 8px 8px; display: flex; justify-content: space-between; color: #85796d; font: 7px var(--mono); }
 .visual-footnote { margin: 9px 0 0; color: #817468; font-size: 8px; line-height: 1.5; }
 .product-bars { margin-top: 21px; display: grid; gap: 18px; }
 .product-bar-row { display: grid; grid-template-columns: minmax(95px, 1fr) minmax(80px, 1.5fr) 25px; align-items: center; gap: 9px; }
@@ -611,8 +603,6 @@ body, .desk-shell { background-image: url("data:image/svg+xml,%3Csvg xmlns='http
   .metric-note > strong { font-size: 12px; }
   .visual-card { padding: 13px 11px 11px; }
   .visual-card h2 { font-size: 17px; }
-  .chart-legend { font-size: 7px; }
-  .pulse-chart { height: 105px; }
   .flow-diagram { grid-template-columns: 1fr 18px 1fr 18px 1fr; gap: 3px; padding-right: 0; padding-left: 0; }
   .flow-node { min-height: 66px; padding: 7px 6px; }
   .flow-node b { font-size: 8px; }
@@ -809,3 +799,83 @@ body, .desk-shell { background-image: url("data:image/svg+xml,%3Csvg xmlns='http
 @media (max-width: 560px) { .hub-compare-row { grid-template-columns: 110px minmax(0, 1fr) 76px; gap: 7px; } }
 .hub-page .risk-bars + .hub-sayari { margin-top: 20px; }
 .hub-page .analysis-card > h3.hub-subhead { margin: 16px 0 8px; color: #3b332b; font: 700 10px "DM Sans", sans-serif; }
+
+/* Chart motion: lines draw in left to right, points and markers pop in behind them, bars grow, the latest point pulses.
+   Cards hold their animations until scrolled into view (data-in-view, set by useRevealOnScroll). */
+@keyframes chart-draw { from { clip-path: inset(-12px 100% -12px -12px); } to { clip-path: inset(-12px -12px -12px -12px); } }
+@keyframes dot-pop { from { opacity: 0; transform: scale(0); } }
+@keyframes bar-grow { from { transform: scaleX(0); } }
+@keyframes column-grow { from { transform: scaleY(0); } }
+@keyframes chart-pulse { 0% { opacity: .7; transform: scale(1); } 70%, 100% { opacity: 0; transform: scale(3.2); } }
+@keyframes halo-pulse { 0% { opacity: .58; transform: scale(1); } 60%, 100% { opacity: 0; transform: scale(1.9); } }
+@keyframes metric-rise { from { opacity: 0; transform: translateY(6px); } }
+@keyframes event-drop { from { opacity: 0; transform: translateY(-10px); } }
+@keyframes line-trace { from { stroke-dashoffset: 1; } }
+@keyframes fade-in { from { opacity: 0; } }
+@keyframes arrow-nudge { 0%, 100% { transform: translateX(-2px); opacity: .55; } 50% { transform: translateX(3px); opacity: 1; } }
+.chart-draw { animation: chart-draw 1.3s cubic-bezier(.3,.7,.25,1) backwards; }
+.chart-dot { transform-box: fill-box; transform-origin: center; transition: transform .18s ease; animation: dot-pop .45s cubic-bezier(.3,1.6,.5,1) backwards; }
+.chart-dot.active { transform: scale(1.45); }
+.chart-pulse { fill: none; stroke-width: 2; transform-box: fill-box; transform-origin: center; pointer-events: none; animation: chart-pulse 2.4s ease-out 1.5s infinite backwards; }
+.crosshair-slide { transition: transform .16s ease-out; }
+.chart-tooltip { transition: left .16s ease-out; }
+.flag-marker { transform-box: fill-box; transform-origin: center; animation: dot-pop .45s cubic-bezier(.3,1.6,.5,1) backwards; }
+.flag-band, .label-fade { animation: fade-in .6s ease-out .9s backwards; }
+.event-drop { animation: event-drop .5s cubic-bezier(.3,1.4,.5,1) backwards; }
+.gap-bar { transform-box: fill-box; animation: column-grow .55s cubic-bezier(.3,.7,.25,1) backwards; }
+.gap-bar.up { transform-origin: bottom; }
+.gap-bar.down { transform-origin: top; }
+.spark-line { stroke-dasharray: 1; animation: line-trace 1.1s cubic-bezier(.3,.7,.25,1) backwards; }
+.product-card:nth-child(2) .spark-line { animation-delay: 80ms; }
+.product-card:nth-child(3) .spark-line { animation-delay: 160ms; }
+.product-card:nth-child(4) .spark-line { animation-delay: 240ms; }
+.product-card:nth-child(n+5) .spark-line { animation-delay: 320ms; }
+.map-marker { transform-box: fill-box; transform-origin: center; animation: dot-pop .5s cubic-bezier(.3,1.6,.5,1) backwards; }
+.map-marker-halo { transform-box: fill-box; transform-origin: center; animation: halo-pulse 3.2s ease-out infinite backwards; }
+.zone-map-marker:hover .map-marker { transform: scale(1.18); transition: transform .15s ease; }
+:is(.risk-bar-track, .product-bar-track, .score-track, .family-points span) i { transform-origin: left; transition: width .5s cubic-bezier(.3,.7,.25,1); animation: bar-grow .8s cubic-bezier(.3,.7,.25,1) backwards; }
+:is(.risk-bar-row, .product-bar-row, tr):nth-child(2) :is(.risk-bar-track, .product-bar-track, .family-points span) i { animation-delay: 60ms; }
+:is(.risk-bar-row, .product-bar-row, tr):nth-child(3) :is(.risk-bar-track, .product-bar-track, .family-points span) i { animation-delay: 120ms; }
+:is(.risk-bar-row, .product-bar-row, tr):nth-child(4) :is(.risk-bar-track, .product-bar-track, .family-points span) i { animation-delay: 180ms; }
+:is(.risk-bar-row, .product-bar-row, tr):nth-child(5) :is(.risk-bar-track, .product-bar-track, .family-points span) i { animation-delay: 240ms; }
+:is(.risk-bar-row, .product-bar-row, tr):nth-child(6) :is(.risk-bar-track, .product-bar-track, .family-points span) i { animation-delay: 300ms; }
+:is(.risk-bar-row, .product-bar-row, tr):nth-child(7) :is(.risk-bar-track, .product-bar-track, .family-points span) i { animation-delay: 360ms; }
+:is(.risk-bar-row, .product-bar-row, tr):nth-child(8) :is(.risk-bar-track, .product-bar-track, .family-points span) i { animation-delay: 420ms; }
+:is(.risk-bar-row, .product-bar-row, tr):nth-child(n+9) :is(.risk-bar-track, .product-bar-track, .family-points span) i { animation-delay: 480ms; }
+.metric-ribbon .metric-cell, .product-stats > div { animation: metric-rise .5s ease-out backwards; }
+:is(.metric-ribbon .metric-cell, .product-stats > div):nth-child(2) { animation-delay: 80ms; }
+:is(.metric-ribbon .metric-cell, .product-stats > div):nth-child(3) { animation-delay: 160ms; }
+:is(.metric-ribbon .metric-cell, .product-stats > div):nth-child(4) { animation-delay: 240ms; }
+:is(.metric-ribbon .metric-cell, .product-stats > div):nth-child(5) { animation-delay: 320ms; }
+.flow-node { animation: metric-rise .55s ease-out backwards; }
+.flow-node.product { animation-delay: 220ms; }
+.flow-node.partner { animation-delay: 440ms; }
+.flow-arrow { animation: arrow-nudge 1.8s ease-in-out .8s infinite; }
+.flow-arrow + .flow-node + .flow-arrow { animation-delay: 1.1s; }
+[data-in-view="false"] :is(.chart-draw, .chart-dot, .chart-pulse, .flag-marker, .flag-band, .label-fade, .event-drop, .gap-bar, .spark-line, .map-marker, .map-marker-halo, .risk-bar-track i, .product-bar-track i, .family-points span i, .metric-cell, .product-stats > div, .flow-node, .flow-arrow) { animation-play-state: paused; }
+
+.flow-trend { margin-top: 10px; }
+.flow-trend-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.flow-trend-chips button { padding: 4px 9px; color: #5f5448; background: #f3ecdd; border: 1px solid #e0d5bf; font: 8px var(--mono); cursor: pointer; transition: background .15s ease, color .15s ease, border-color .15s ease; }
+.flow-trend-chips button:hover { border-color: #b7cfc6; color: #1f6b62; }
+.flow-trend-chips button.active { color: #fbf7ee; background: #008574; border-color: #008574; }
+.flow-trend-summary { margin: 9px 0 0; color: #5f5448; font-size: 9px; line-height: 1.5; }
+.flow-trend-summary b { color: #3b332b; }
+.flow-other { stroke-width: 1.2; opacity: .75; transition: opacity .2s ease; }
+.index-baseline { stroke: #8a7d6e; stroke-width: 1; }
+.flow-trend .visual-footnote code { font: 8px var(--mono); }
+
+.solar-metrics { margin: 12px 0; grid-template-columns: repeat(4, 1fr); min-height: 0; }
+.solar-metrics .metric-cell { padding: 11px 13px 9px; }
+.solar-metrics .metric-cell > strong { font-size: 17px; white-space: nowrap; }
+@media (max-width: 560px) { .solar-metrics { grid-template-columns: repeat(2, 1fr); } }
+.solar-shift .flow-trend-chips { margin-bottom: 4px; }
+.solar-events { margin: 10px 0 0; padding: 0; display: grid; gap: 4px; list-style: none; font-size: 9px; line-height: 1.45; }
+.solar-events li { display: flex; gap: 8px; color: #5f5448; }
+.solar-events li::before { content: ""; width: 6px; height: 6px; margin-top: 4px; flex: 0 0 auto; background: var(--gold); transform: rotate(45deg); }
+.solar-events b { flex: 0 0 52px; color: #3b332b; font: 8px/1.9 var(--mono); }
+.solar-events a { color: inherit; text-decoration-color: #cdbd9b; }
+.solar-events a:hover { color: #1f6b62; }
+.provider-sources { margin: 10px 0 0; padding: 0; display: grid; gap: 5px; list-style: none; font-size: 9px; line-height: 1.4; }
+.provider-sources a { color: #2d5650; text-decoration-color: #cdbd9b; }
+.provider-sources a:hover { color: #1f6b62; }

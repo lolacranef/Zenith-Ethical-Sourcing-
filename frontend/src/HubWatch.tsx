@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Database, Globe2, Search, ShieldAlert } from "lucide-react";
 import hubGold from "./data/hub-gold.json";
 import sayariGold from "./data/sayari-hub-gold.json";
@@ -6,7 +6,7 @@ import lbma from "./data/lbma-good-delivery.json";
 import { HowToRead, Term } from "./Glossary";
 import { SERIES_COLORS, linePath, useElementWidth } from "./ProductWatch";
 import { formatCount, formatDate, formatGap, formatShare } from "./data";
-import { CountBars, formatUsd, labelPositions, times } from "./HubShared";
+import { CountBars, dotDelay, formatUsd, labelPositions, times, useRevealOnScroll } from "./HubShared";
 import { ElectronicsHub, electronicsHubs } from "./HubElectronics";
 
 type Source = { code: number; name: string; value: number; partnerReported: number | null };
@@ -167,10 +167,11 @@ function AnnualChart({ years, label, hover, onHover, width }: { years: Year[]; l
     onPointerMove={(event) => onHover(pointerIndex(event.clientX, event.currentTarget.getBoundingClientRect()))} onPointerLeave={() => onHover(null)}>
     {Array.from({ length: Math.round(max / stepSize) + 1 }, (_, index) => index * stepSize).map((tick) => <g key={tick}><line className="chart-gridline" x1={left} x2={width - right} y1={y(tick)} y2={y(tick)} /><text className="axis-label" x={left - 7} y={y(tick) + 3} textAnchor="end">${tick / 1e9}B</text></g>)}
     {years.map((year, index) => <text key={year.year} className="axis-label" x={x(index)} y={height - 8} textAnchor="middle">{year.year}</text>)}
-    {series.map((line) => <path key={line.key} className="trend-line" stroke={line.color} strokeDasharray={line.dash} d={linePath(line.values, x, y)} />)}
-    {series.map((line) => line.values.map((value, index) => value !== null && <circle key={`${line.key}${index}`} cx={x(index)} cy={y(value)} r="4" fill={line.color} stroke="var(--paper)" strokeWidth="2" />))}
+    <g className="chart-draw">{series.map((line) => <path key={line.key} className="trend-line" stroke={line.color} strokeDasharray={line.dash} d={linePath(line.values, x, y)} />)}</g>
+    {series.map((line) => line.values.map((value, index) => value !== null && <circle key={`${line.key}${index}`} className={`chart-dot${hover === index ? " active" : ""}`} style={dotDelay(index, line.values.length)} cx={x(index)} cy={y(value)} r="4" fill={line.color} stroke="var(--paper)" strokeWidth="2" />))}
+    <circle className="chart-pulse" cx={x(last)} cy={y(latest.imports)} r="4" stroke={SERIES_COLORS.reported} />
     {!compact && labelPositions(series.map((line) => y(line.values[last] ?? 0))).map((labelY, index) => series[index].values[last] !== null && <text key={series[index].key} className="direct-label" x={width - right + 10} y={labelY + 3}>{series[index].label}</text>)}
-    {hover !== null && <g className="crosshair"><line x1={x(hover)} x2={x(hover)} y1={top} y2={height - bottom} /></g>}
+    {hover !== null && <g className="crosshair"><line className="crosshair-slide" x1={0} x2={0} y1={top} y2={height - bottom} style={{ transform: `translateX(${x(hover)}px)` }} /></g>}
     <rect x={left} y={top} width={width - left - right} height={height - top - bottom} fill="transparent" />
   </svg>;
 }
@@ -313,7 +314,9 @@ export default function HubWatch() {
   const options = topic === "gold" ? goldHubs : electronicsHubs;
   const active = topic === "gold" ? goldCode : electronicsCode;
   const choose = topic === "gold" ? setGoldCode : setElectronicsCode;
-  return <section className="tab-page hub-page">
+  const pageRef = useRef<HTMLElement>(null);
+  useRevealOnScroll(pageRef, `${topic}${active}`);
+  return <section className="tab-page hub-page" ref={pageRef}>
     <div className="hub-switches">
       <div className="view-switch hub-switch" role="tablist" aria-label="Trade">{topics.map((item) => <button type="button" role="tab" key={item.id} aria-selected={topic === item.id} className={topic === item.id ? "active" : ""} onClick={() => setTopic(item.id)}>{item.label}</button>)}</div>
       <div className="view-switch hub-switch hub-country" role="tablist" aria-label="Hub country">{options.map((item) => <button type="button" role="tab" key={item.code} aria-selected={active === item.code} className={active === item.code ? "active" : ""} onClick={() => choose(item.code)}>{item.label}</button>)}</div>
