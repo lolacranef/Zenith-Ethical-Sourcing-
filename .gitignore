@@ -8,3 +8,4 @@ dist/
 *.py[cod]
 *.tsbuildinfo
 !frontend/src/data/
+.vscode/
