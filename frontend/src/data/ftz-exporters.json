@@ -1,0 +1,132 @@
+{
+  "generatedAt": "2026-11-02",
+  "source": "Sayari Graph (search_suppliers, get_entity_summary, check_watchlist) via the Sayari connector",
+  "corridor": {
+    "product": "solar",
+    "hs": "854143",
+    "from": "IDN",
+    "to": "USA"
+  },
+  "checked": 15,
+  "suppliersOnRoute": 147,
+  "outsideZone": 1,
+  "exporters": [
+    {
+      "name": "REC Solar Energy Indonesia",
+      "zone": "Batam",
+      "area": "Kabil, Nongsa; Batu Aji",
+      "shipments": 1333,
+      "flags": []
+    },
+    {
+      "name": "PT Blue Sky Solar Indonesia",
+      "zone": "Batam",
+      "area": "Sei Pelunggut industrial area, Sagulung",
+      "shipments": 1126,
+      "flags": [
+        "Lists the same Dapur 12 Sei Pelunggut address as PT Jaya Electrical Energy"
+      ]
+    },
+    {
+      "name": "PT Thornova Solar Indonesia",
+      "zone": "Batam",
+      "area": "Tanjung Uncang, Batu Aji",
+      "shipments": 720,
+      "flags": [
+        "Also recorded as PT Big Time Energy; one record filed on behalf of Silver Limited",
+        "No ownership records in Sayari",
+        "Two trade steps from Russian firms on the OFAC SDN list, through its supplier Xiamen Candour"
+      ]
+    },
+    {
+      "name": "PT Jaya Electrical Energy",
+      "zone": "Batam",
+      "area": "Arya Wiraraja Industrial, Kabil, Nongsa",
+      "shipments": 606,
+      "flags": [
+        "Lists the same Dapur 12 Sei Pelunggut address as PT Blue Sky Solar Indonesia"
+      ]
+    },
+    {
+      "name": "PT IDN Solar Tech",
+      "zone": "Batam",
+      "area": "Kabil Indonusa Estate",
+      "shipments": 436,
+      "flags": [
+        "Two trade steps from sanctioned Russian firms, through Hengdian Group DMEGC"
+      ]
+    },
+    {
+      "name": "PT MSUN Solar Indonesia",
+      "zone": "Batam",
+      "area": "Tanjung Uncang, Batu Aji",
+      "shipments": 388,
+      "flags": [
+        "Appears in Ethiopian trade records; Ethiopia is now a leading U.S. supplier"
+      ]
+    },
+    {
+      "name": "PT Avecode International",
+      "zone": "Batam",
+      "area": "Hi-Tech complex, Batu Ampar",
+      "shipments": 355,
+      "flags": []
+    },
+    {
+      "name": "PT Allianz Solar Indonesia",
+      "zone": "Batam",
+      "area": "Bodynits industrial estate, Belian",
+      "shipments": 333,
+      "flags": [
+        "Registered at a garment maker's estate and at a shophouse (ruko)"
+      ]
+    },
+    {
+      "name": "PT Dunia Solar Indonesia",
+      "zone": "Batam",
+      "area": "Tanjung Sengkuang, Batu Ampar",
+      "shipments": 315,
+      "flags": []
+    },
+    {
+      "name": "PT Atelier Solar Indonesia",
+      "zone": "Batam",
+      "area": "Wiraraja Industrial Park I, Kabil",
+      "shipments": 284,
+      "flags": [
+        "Also lists a residential housing-complex address"
+      ]
+    },
+    {
+      "name": "PT Mega Solar Indonesia",
+      "zone": "Batam",
+      "area": "Sungai Binti, Sagulung",
+      "shipments": 271,
+      "flags": []
+    },
+    {
+      "name": "PT Yisheng Photovoltaic New Materials",
+      "zone": "Batam",
+      "area": "Cipta Grand City workshop complex, Sagulung",
+      "shipments": 261,
+      "flags": [
+        "Workshop-unit premises with about 2,500 inbound trade records"
+      ]
+    },
+    {
+      "name": "PT Desun Power Indonesia",
+      "zone": "Batam",
+      "area": "Executive Industrial Park, Belian",
+      "shipments": 239,
+      "flags": []
+    },
+    {
+      "name": "PT Atum Power Bintan",
+      "zone": "Bintan",
+      "area": "Bintan Industrial Estate, Teluk Lobam",
+      "shipments": 208,
+      "flags": []
+    }
+  ],
+  "largestChecked": 14
+}
