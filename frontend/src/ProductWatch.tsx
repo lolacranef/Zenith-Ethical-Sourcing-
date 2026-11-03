@@ -5,7 +5,7 @@ import {
   formatGap, formatShare, fullSeries, indicationLabels, mirrorData, monthLabel, pendingReviewCount, products, reviewBand, riskLabels, sayariGeneratedAt, tavilyGeneratedAt, windowed,
 } from "./data";
 import { ProductAnalysis } from "./Analysis";
-import { HowToRead, More, Term, bandMeaning } from "./Glossary";
+import { Brief, HowToRead, More, Term, bandMeaning } from "./Glossary";
 import { buildLead, shortPartner } from "./data";
 import { dotDelay } from "./HubShared";
 
@@ -183,7 +183,7 @@ export default function ProductWatch({ months, initialProductId, onOpenLead }: {
       return <button type="button" key={product.id} className={`product-card ${product.id === active.id ? "selected" : ""}`} aria-pressed={product.id === active.id} onClick={() => { setActiveId(product.id); setHover(null); }}>
         <span className="product-card-top"><BandPill band={reviewBand(productPoints)} /><code>{product.hs}</code></span>
         <b>{product.name}</b>
-        <span className="product-partner">U.S. ↔ {mirrorData[product.id].partner.name}</span>
+        <span className="product-partner">U.S. ↔ {mirrorData[product.id].partner.name.replace(/\s*\(.*\)$/, "")}</span>
         <span className="product-tags">{product.indications.map((key) => <small key={key}>{indicationLabels[key]}</small>)}</span>
         <GapSparkline key={months} points={productPoints} />
         <span className="product-card-foot"><span><Flag size={11} /> {flags} of {productPoints.length} months flagged</span><span>Latest gap {formatGap(recent?.gap ?? null)}</span></span>
@@ -222,7 +222,7 @@ export default function ProductWatch({ months, initialProductId, onOpenLead }: {
         <aside className="product-context">
           <h3>Why it’s on watch</h3>
           <div className="indicator-list">{active.indications.map((key) => <span key={key}>{indicationLabels[key]}</span>)}</div>
-          <p>{active.history}</p>
+          <Brief text={active.history} />
           <h3>Public references</h3>
           <ul className="context-sources">{active.sources.map((source) => <li key={source.label}>{source.href ? <a href={source.href} target="_blank" rel="noreferrer">{source.label} <ExternalLink size={11} /></a> : source.label}</li>)}<li><a href="https://comtradeplus.un.org/" target="_blank" rel="noreferrer">UN Comtrade database <ExternalLink size={11} /></a></li></ul>
           <h3>What to check next</h3>

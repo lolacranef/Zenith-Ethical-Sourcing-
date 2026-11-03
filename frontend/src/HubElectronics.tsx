@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Database, Globe2, Search, ShieldAlert } from "lucide-react";
 import hubElectronics from "./data/hub-electronics.json";
 import sayari from "./data/sayari-hub-electronics.json";
-import { HowToRead, More, Term } from "./Glossary";
+import { Brief, HowToRead, More, Term } from "./Glossary";
 import { SERIES_COLORS, linePath, useElementWidth } from "./ProductWatch";
 import { CountBars, dotDelay, countryNames, formatUsd, labelPositions, smallShare, times } from "./HubShared";
 import { formatCount, formatDate, formatGap, formatShare } from "./data";
@@ -28,7 +28,7 @@ const ordinal = (n: number) => `${n}${n === 1 ? "st" : n === 2 ? "nd" : n === 3 
 
 // Per-hub framing. Written 2026-10-19; context and leads to check, not findings.
 export const electronicsHubs: { code: number; label: string; iso: string; note: string; cards: { title: string; body: string }[]; sources: { label: string; url: string }[] }[] = [
-  { code: 784, label: "UAE", iso: "ARE", note: "The UAE has not adopted Western sanctions on Russia. In November 2023 the U.S. Treasury designated about 21 UAE-based firms and individuals for supplying Russia with high-priority dual-use goods.",
+  { code: 784, label: "UAE", iso: "ARE", note: "The UAE has not adopted Western sanctions on Russia. In November 2023 the U.S. Treasury designated 14 UAE-based firms and individuals for supplying Russia with high-priority dual-use goods.",
     cards: [
       { title: "Chips missing from UAE statistics", body: "The UAE reports only a few million dollars of chips a year to Russia, yet Sayari holds thousands of Russian import records of chips shipped from the UAE. UAE figures may not fully capture free-zone re-exports." },
       { title: "Same playbook as gold", body: "The free-zone features that make the UAE a gold hub (fast licensing, no customs duty, re-export logistics) also suit electronics. A supplier formed shortly before its first Russian shipment is a classic red flag." },
@@ -55,7 +55,7 @@ export const electronicsHubs: { code: number; label: string; iso: string; note: 
     ] },
   { code: 398, label: "Kazakhstan", iso: "KAZ", note: "Kazakhstan is in the Eurasian Economic Union with Russia and shares a long land border. Goods move into Russia without customs declarations, so Russian import records barely capture this route.",
     cards: [
-      { title: "Visible in statistics, not in shipments", body: "Kazakhstan reported about $50–60M a year of these goods sent to Russia in 2022 and 2023, yet Sayari holds only a few hundred Russian import records, from just 8 suppliers. The customs union means most of this trade carries no declaration." },
+      { title: "Visible in statistics, not in shipments", body: "Kazakhstan reported about $50–60M a year of these goods sent to Russia in 2022 and 2023, yet Sayari holds only about 850 Russian import records, from just 8 suppliers. The customs union means most of this trade carries no declaration." },
       { title: "Compare imports with re-exports", body: "A sharp rise in Kazakhstan’s own imports of these codes from China and Europe after 2022, without matching domestic demand, is the usual sign of re-export." },
     ],
     sources: [] },
@@ -218,7 +218,7 @@ export function ElectronicsHub({ code }: { code: number }) {
       {route.suppliers >= 5 && <><h3 className="hub-subhead">Supplier warning signs</h3>
         <div className="risk-bars" role="list">{([["Sanctioned (any list)", "sanctioned"], ["On the U.S. OFAC SDN list", "ofacSdn"], ["On the U.S. Entity List", "entityList"], ["Address shared by many companies", "massAddress"], ["Address on the U.S. high-diversion-risk list", "diversionAddress"]] as const).map(([label, key]) => { const count = route.supplierWarnings[key];
           return <div className="risk-bar-row" role="listitem" key={key}><span className="risk-bar-label">{label}</span><span className="risk-bar-track">{count !== null && <i style={{ width: `${Math.min(100, Math.max(1, (count / route.suppliers) * 100 * 4))}%` }} />}</span><span className="risk-bar-value">{count === null ? <small>Not in top flags</small> : <>{formatCount(count)} <small>({smallShare(count, route.suppliers)})</small></>}</span></div>; })}</div>
-        <p className="analysis-legend">Counts are of the {formatCount(route.suppliers)} supplier companies on this route; bars are drawn at four times scale so small shares stay visible. “Not in top flags” means the flag was not among the 30 most common Sayari returned for this route, so it is rare but uncounted.</p></>}
+        <More className="analysis-legend" gist={`Counts are of the ${formatCount(route.suppliers)} supplier companies on this route.`}><p>Bars are drawn at four times scale so small shares stay visible. “Not in top flags” means the flag was not among the 30 most common Sayari returned for this route, so it is rare but uncounted.</p></More></>}
       <div className="hub-sayari">
         <div><h3>Chip shipments arriving in Russia, by departure country</h3><CountBars rows={listed ? departure : [...departure, [hub.iso, route.records]]} total={russiaAll.records} /><small className="hub-sub">{formatCount(russiaAll.records)} records across all years Sayari holds{listed ? "" : `; ${countryNames[hub.iso] ?? hub.label} added as the last row`}</small></div>
         <div className="intel-stats hub-company hub-stack">
@@ -234,7 +234,7 @@ export function ElectronicsHub({ code }: { code: number }) {
       {(() => { const a = shown.find((year) => year.year === 2023), b = shown.find((year) => year.year === 2024);
         if (!a || !b) return null; const before = total(own(a).toRussia), after = total(own(b).toRussia);
         return before > 1e6 && after < before * 0.7 ? <article className="provider-card"><h3>Down in 2024</h3><p>{hub.label}’s reported exports of these goods to Russia fell from {formatUsd(before)} in 2023 to {formatUsd(after)} in 2024. In December 2023 the U.S. authorized sanctions on foreign banks that facilitate trade with Russia’s military industry, and several routes fell at the same time. A fall in reported trade can also mean it moved off the books.</p></article> : null; })()}
-      {hub.cards.map((card) => <article key={card.title} className="provider-card"><h3>{card.title}</h3><p>{card.body}</p></article>)}
+      {hub.cards.map((card) => <article key={card.title} className="provider-card"><h3>{card.title}</h3><Brief text={card.body} /></article>)}
     </div>
 
     <div className="coverage-note hub-disclosure"><Globe2 size={19} /><div><b>About this data</b>

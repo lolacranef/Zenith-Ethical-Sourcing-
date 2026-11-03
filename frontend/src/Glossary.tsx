@@ -64,6 +64,17 @@ export function More({ gist, className, children }: { gist: ReactNode; className
   </details>;
 }
 
+// Splits after a sentence end, but not after abbreviations like "U.S." or "e.g.".
+const SENTENCE_END = /(?<!\b(?:U\.S|U\.K|e\.g|i\.e|vs|Inc|Co|No|St))[.!?]\s+(?=[A-Z0-9“"(])/;
+
+// Generated text: first sentence as the gist, the rest behind Read more. Short text renders as is.
+export function Brief({ text, className, as: Tag = "p" }: { text: string; className?: string; as?: "p" | "small" }) {
+  const match = text.length > 150 ? SENTENCE_END.exec(text) : null;
+  if (!match) return <Tag className={className}>{text}</Tag>;
+  const cut = match.index + 1;
+  return <More className={className} gist={text.slice(0, cut)}><p>{text.slice(cut).trim()}</p></More>;
+}
+
 export const bandMeaning: Record<Band, string> = { Elevated: "Look at this first", Review: "Worth a look", Watch: "Keep an eye on it" };
 
 export function GlossaryList() {

@@ -1,0 +1,91 @@
+{
+  "source": "Sayari Graph trade search facets (bills of lading and customs records), retrieved via the Sayari MCP connector",
+  "generatedAt": "2026-11-02",
+  "note": "Shipment-record counts by departure country, all years Sayari holds. Hand-entered from search_trade_facets; no company is named. Departure country is the country a shipment left from, which is not always where the goods were made.",
+  "places": {
+    "ARE": { "name": "UAE", "at": [54, 24] },
+    "ARG": { "name": "Argentina", "at": [-64, -34] },
+    "AUS": { "name": "Australia", "at": [134, -25] },
+    "BEL": { "name": "Belgium", "at": [4.5, 50.6] },
+    "BOL": { "name": "Bolivia", "at": [-64.7, -16.7] },
+    "BRA": { "name": "Brazil", "at": [-52, -10] },
+    "CAN": { "name": "Canada", "at": [-72, 50] },
+    "CHE": { "name": "Switzerland", "at": [8.2, 46.8] },
+    "CHL": { "name": "Chile", "at": [-71, -33] },
+    "CHN": { "name": "China", "at": [104, 35] },
+    "CIV": { "name": "Côte d’Ivoire", "at": [-5.5, 7.5] },
+    "COL": { "name": "Colombia", "at": [-74, 4] },
+    "DEU": { "name": "Germany", "at": [10.4, 51.1] },
+    "ECU": { "name": "Ecuador", "at": [-78.5, -1.5] },
+    "EGY": { "name": "Egypt", "at": [30, 26.5] },
+    "ESP": { "name": "Spain", "at": [-3.7, 40.3] },
+    "FRA": { "name": "France", "at": [2.5, 46.5] },
+    "HKG": { "name": "Hong Kong", "at": [114.2, 22.3] },
+    "IDN": { "name": "Indonesia", "at": [104, 1.1] },
+    "IND": { "name": "India", "at": [79, 22] },
+    "KEN": { "name": "Kenya", "at": [38, 0.5] },
+    "MEX": { "name": "Mexico", "at": [-102, 23.5] },
+    "NGA": { "name": "Nigeria", "at": [8, 9.5] },
+    "NLD": { "name": "Netherlands", "at": [5.3, 52.1] },
+    "NZL": { "name": "New Zealand", "at": [172.5, -41.5] },
+    "PER": { "name": "Peru", "at": [-75, -9.5] },
+    "PHL": { "name": "Philippines", "at": [122, 12] },
+    "THA": { "name": "Thailand", "at": [101, 15] },
+    "TUR": { "name": "Türkiye", "at": [35, 39] },
+    "USA": { "name": "United States", "at": [-98, 39] },
+    "VNM": { "name": "Vietnam", "at": [106, 16] }
+  },
+  "chains": {
+    "solar": {
+      "maker": "IDN", "make": "Module assembly",
+      "input": { "label": "Solar cells", "hs": "HS 8541.42", "records": 2901, "from": [["CHN", 2393], ["PHL", 95], ["KEN", 75], ["VNM", 67], ["NGA", 52], ["HKG", 48]], "suspect": "Kenya and Nigeria appear as departure countries but never as product origin, so treat them as possible record errors." },
+      "gist": "Most cells reach Indonesia’s module plants from China, so the duty question is how much assembly happens in Indonesia.",
+      "check": "Compare cell imports with module exports, and ask module makers where their cells and wafers were made."
+    },
+    "aluminum": {
+      "maker": "CAN", "make": "Smelting",
+      "input": { "label": "Alumina", "hs": "HS 2818.20", "records": 364, "from": [["IND", 178], ["BRA", 93], ["CHN", 36], ["MEX", 24], ["ARG", 12], ["FRA", 8]] },
+      "gist": "Canada’s smelters rely largely on imported alumina, which in Sayari’s records ships mostly from India and Brazil.",
+      "check": "Check the smelt-and-cast country, which U.S. importers must report for aluminum, against the mill certificate."
+    },
+    "cotton": {
+      "maker": "IND", "make": "Spinning, knitting and sewing",
+      "input": { "label": "Raw cotton", "hs": "HS 5201", "records": 16459, "from": [["AUS", 4661], ["USA", 3040], ["BRA", 1849], ["EGY", 1829], ["TUR", 777], ["CIV", 655]] },
+      "gist": "India grows most of its own cotton; these imports top it up, led by Australia and the U.S.",
+      "check": "Ask for fiber-origin records back to the gin, since imported and domestic cotton mix at the spinning mill."
+    },
+    "seafood": {
+      "maker": "IND", "make": "Farming and processing",
+      "input": { "label": "Feed and premixes", "hs": "HS 2309.90", "records": 7722, "from": [["VNM", 5055], ["USA", 458], ["BEL", 455], ["THA", 283], ["FRA", 282], ["CHN", 272]] },
+      "gist": "India’s shrimp is farmed at home; one imported input is feed, which in these records ships mostly from Vietnam. The code also covers other animal feed.",
+      "check": "Trace the farms and processing plants behind each exporter; labor risk sits there more than on the feed route."
+    },
+    "honey": {
+      "maker": "IND", "make": "Packing and export",
+      "input": { "label": "Imported honey", "hs": "HS 0409", "records": 660, "from": [["AUS", 124], ["NZL", 100], ["ESP", 84], ["DEU", 58], ["ARE", 49]] },
+      "gist": "India’s honey imports are small next to its exports (about 700 records in, 8,578 out to the U.S.), and China is not among the top departure countries.",
+      "check": "Compare export volumes with India’s hive output, and test for blending; origin fraud rarely shows in shipping records."
+    },
+    "gold": {
+      "maker": "CHE", "make": "Refining",
+      "input": { "label": "Gold doré and bars", "hs": "HS 7108", "records": 12216, "from": [["PER", 3671], ["COL", 2707], ["MEX", 1317], ["CHL", 1052], ["ARG", 926], ["ECU", 376]] },
+      "gist": "These records lean to Latin America because those countries publish shipment-level customs data; gold that moves by air is largely missing.",
+      "check": "Ask refiners for mine-of-origin and LBMA audit reports; shipping records cover only part of the gold that arrives."
+    },
+    "tin": {
+      "maker": "BOL", "make": "Mining and smelting",
+      "input": null,
+      "domestic": "Tin ore is mined and smelted in Bolivia itself; Sayari holds no imported tin ore into Bolivia.",
+      "gist": "This chain stays inside Bolivia until the metal ships, so the risk sits at the mine.",
+      "check": "Ask for smelter and mine names and check them against the RMI conformant smelter list."
+    },
+    "timber": {
+      "maker": "BRA", "make": "Logging and sawmilling",
+      "input": null,
+      "domestic": "Logs are harvested in Brazil and sawn there before export.",
+      "elsewhere": { "label": "Other buyers of Brazil’s sawn tropical timber", "hs": "HS 4407.29", "records": 5958, "to": [["NLD", 1567], ["USA", 832], ["CHN", 717], ["FRA", 620], ["BEL", 553], ["ESP", 455]] },
+      "gist": "Brazil saws its own logs; the U.S. is the second-largest buyer in these records, after the Netherlands.",
+      "check": "Match species and volumes against harvest permits; the legality risk sits at the forest, not at sea."
+    }
+  }
+}

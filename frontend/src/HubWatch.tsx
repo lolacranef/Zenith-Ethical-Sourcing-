@@ -3,7 +3,7 @@ import { Database, Globe2, Search, ShieldAlert } from "lucide-react";
 import hubGold from "./data/hub-gold.json";
 import sayariGold from "./data/sayari-hub-gold.json";
 import lbma from "./data/lbma-good-delivery.json";
-import { HowToRead, More, Term } from "./Glossary";
+import { Brief, HowToRead, More, Term } from "./Glossary";
 import { SERIES_COLORS, linePath, useElementWidth } from "./ProductWatch";
 import { formatCount, formatDate, formatGap, formatShare } from "./data";
 import { CountBars, dotDelay, formatUsd, labelPositions, times, useRevealOnScroll } from "./HubShared";
@@ -94,7 +94,7 @@ export const goldHubs: GoldHubConfig[] = [
     },
     cards: [
       { title: "A refinery in the middle", body: "Switzerland imported $105B of gold in 2024 and exported $115B. Mine output arrives as unrefined doré and leaves as bars, mostly to China, India, the U.S. and the UK, so what goes in roughly equals what comes out." },
-      { title: "Industrial mines match", body: "Gold from large industrial mines in Ghana, Burkina Faso, Peru and Côte d’Ivoire matches within a few percent on both sides. Documented mine-to-refinery trade looks like this." },
+      { title: "Industrial mines match", body: "Gold from large industrial mines in Ghana, Burkina Faso, Côte d’Ivoire and Peru matches within about 10% on both sides (2024). Documented mine-to-refinery trade looks like this." },
       { title: "State gold does not mirror", body: "Uzbekistan, Kazakhstan and South Africa file no figures for their gold exports to Switzerland. Much of their gold is sold by central banks or state companies, which national statistics can leave out." },
       { title: "London–Zurich accounting gap", body: "The UK reported $22.7B of gold sent to Switzerland in 2024 while Switzerland recorded $4.0B from the UK. Gold moving between vaults and refiners is counted inconsistently, so this gap says more about statistics than smuggling." },
       { title: "Russian gold in 2022", body: "Switzerland recorded $3.7B of gold from Russia in 2022. Its own ban, adopted on 3 August 2022, covers only gold exported from Russia after 4 August, so imports earlier in the year were legal. Monthly figures would show the timing." },
@@ -114,10 +114,10 @@ export const goldHubs: GoldHubConfig[] = [
       643: "Russia stopped publishing trade statistics in 2022.",
     },
     cards: [
-      { title: "Demand-driven and volatile", body: "Türkiye’s gold imports swing with domestic demand and the lira: $25B in 2020, $5.5B in 2021, $30B in 2023 and $17B in 2024. Exports stay at $1–4B, so most of the gold stays in the country." },
-      { title: "Imports fell, jewellery rose", body: "A monthly quota on unprocessed gold imports took effect on 7 August 2023, and 2024 gold imports were about 43% below 2023. Türkiye’s central bank reports that jewellery imports, outside the quota, almost quadrupled over the same period: the gold may have moved to another product code." },
+      { title: "Demand-driven and volatile", body: "Türkiye’s gold imports swing with domestic demand and the lira: $25B in 2020, $5.5B in 2021, $30B in 2023 and $17B in 2024. Exports stay between about $1B and $4.5B, so most of the gold stays in the country." },
+      { title: "Imports fell, jewellery rose", body: "A monthly quota on unprocessed gold imports took effect on 7 August 2023, and 2024 gold imports were about 43% below 2023. Türkiye’s central bank reports that jewellery imports, outside the quota, almost quadrupled between August 2023 and November 2024: the gold may have moved to another product code." },
       { title: "Bolivia’s sudden role", body: "In 2024 Türkiye recorded $1.3B of gold from Bolivia, which reports almost none. Bolivia’s central bank sold about $1B of gold reserves in 2023 under a new law. If this is central-bank gold, the gap is a statistical one; if not, it needs explaining." },
-      { title: "The UAE link", body: "The UAE is a steady second source, and Türkiye is the UAE’s largest destination. Gold moves both ways between the two, which makes origin harder to trace." },
+      { title: "The UAE link", body: "The UAE has been one of Türkiye’s top three sources every year since 2018, and Türkiye is the UAE’s largest destination. Gold moves both ways between the two, which makes origin harder to trace." },
     ],
     sources: [
       { label: "Central Bank of Türkiye: gold import quota and consumption demand indicators", url: "https://www.tcmb.gov.tr/wps/wcm/connect/blog/en/main+menu/analyses/gold+import+quota+and+consumption+demand+indicators" },
@@ -139,7 +139,7 @@ export const goldHubs: GoldHubConfig[] = [
       { title: "Russian gold rises", body: "Hong Kong recorded $4.6B of gold from Russia in 2024, up from $0.6B in 2022. Russia does not report, so there is no mirror, and Hong Kong has not adopted Western sanctions." },
       { title: "Armenia appears again", body: "Hong Kong recorded $1.7B from Armenia in 2024, which reports $1.1B. Armenia’s rise as a gold source for both Hong Kong and the UAE is a pattern worth tracing." },
       { title: "Imports more than quadrupled", body: "Hong Kong’s gold imports rose from $14B in 2019 to $65B in 2024, much faster than the gold price." },
-      { title: "A sanctioned buyer at the top", body: "One of Hong Kong’s 25 largest gold buyers in Sayari is on the U.S. OFAC sanctions list, and another is flagged for buying from a sanctioned supplier while sharing an address with a third. Several large buyers are generic trading or holding companies with no visible gold business." },
+      { title: "A sanctioned buyer at the top", body: "One of Hong Kong’s 25 largest gold buyers in Sayari is on the U.S. OFAC sanctions list, and another is flagged for buying from a sanctioned supplier while sharing an address with a third. Seven of the 25 are generic trading or holding companies with no visible gold business." },
     ],
     sources: [
       { label: "LBMA gold Good Delivery former list (Russian refiners removed March 2022)", url: "https://www.lbma.org.uk/good-delivery/gold-former-list" },
@@ -249,7 +249,7 @@ export function GoldHub({ code }: { code: number }) {
             <td className={`num ${read !== "agree" && read !== "unreported" ? "over" : ""}`}>{read === "none" ? <small>Not meaningful</small> : formatGap(gap)}</td>
             <td><span className={`hub-reading ${read}`}>{readingLabel[read]}</span></td>
             <td className="num">{lbmaCount(source.name) || "None"}{lbmaRemovedSince(source.name, "2015") > 0 && <small>{lbmaRemovedSince(source.name, "2015")} removed since 2015</small>}</td>
-            <td><small>{hub.notes[source.code] ?? ""}</small></td>
+            <td><Brief as="small" text={hub.notes[source.code] ?? ""} /></td>
           </tr>; })}</tbody>
       </table></div>
       <More className="visual-footnote" gist="Gap = recorded imports ÷ source-reported exports − 1. Beyond ±25% is highlighted."><p>Gap = {hub.label}-recorded imports ÷ source-reported exports − 1; beyond ±25% is highlighted. LBMA refiners = refineries in that country currently on the LBMA gold Good Delivery List. “Almost none” means the source reports less than a tenth of what {hub.label} records, where a percentage stops being useful. Importers usually value goods including freight and insurance and exporters don’t, so small positive gaps are normal.</p></More>
@@ -263,18 +263,18 @@ export function GoldHub({ code }: { code: number }) {
       </div>
       <div className="intel-stats hub-company">
         {buyers ? <>
-          <div><span className="metric-label">FREE-ZONE FIRMS IN TOP 25 BUYERS</span><strong>{buyers.freeZoneFirms} of {buyers.sampled}</strong><small>{formatShare(buyers.freeZoneRecords, buyers.sampledRecords)} of those buyers’ records. {buyers.freeZoneProfile}.</small></div>
+          <div><span className="metric-label">FREE-ZONE FIRMS IN TOP 25 BUYERS</span><strong>{buyers.freeZoneFirms} of {buyers.sampled}</strong><Brief as="small" text={`${formatShare(buyers.freeZoneRecords, buyers.sampledRecords)} of those buyers’ records. ${buyers.freeZoneProfile}.`} /></div>
           <div><span className="metric-label">MAINLAND BUYERS</span><strong>{buyers.sampled - buyers.freeZoneEntries} of {buyers.sampled}</strong><small>{buyers.mainlandProfile}.</small></div>
         </> : <>
           <div><span className="metric-label">SUPPLIERS OF GOLD TO {hub.label.toUpperCase()}</span><strong>{formatCount(inbound.suppliers)}</strong><small>Distinct exporting companies in Sayari’s records</small></div>
           <div><span className="metric-label">TOP DEPARTURE COUNTRY</span><strong>{formatShare(inbound.departure[0][1], inbound.records)}</strong><small>Of inbound records come from one country, reflecting which countries publish shipment-level customs data</small></div>
         </>}
         <div><span className="metric-label">EXPORTS DECLARED “{hub.label.toUpperCase()} ORIGIN”</span><strong>{formatShare(ownOrigin, outbound.records)}</strong><small>Of outbound records. Refining or re-melting can make {hub.label} the declared origin, so the mining country drops out of downstream records.</small></div>
-        <div><span className="metric-label">TOP SOURCES WITH NO LBMA REFINER</span><strong>{noRefiner} of {latest.sources.length}</strong><small>In {latest.year}; gold from these countries most likely arrives unrefined{buyers && exporters ? `. ${formatCount(buyers.total)} buyers and ${formatCount(exporters.total)} exporters in Sayari; ${buyers.flagged.charAt(0).toLowerCase()}${buyers.flagged.slice(1)}` : ""}.</small></div>
+        <div><span className="metric-label">TOP SOURCES WITH NO LBMA REFINER</span><strong>{noRefiner} of {latest.sources.length}</strong><small>In {latest.year}; gold from these countries most likely arrives unrefined.</small></div>
       </div>
       {buyerMix && <><h3>Who buys: the 25 largest buyers in Sayari, by type</h3>
         <CountBars rows={buyerMix.groups.map((group) => [`${group.label} (${group.firms})`, group.records])} total={buyerMix.sampledRecords} />
-        <p className="analysis-legend">{buyerMix.flags} Shares are of those buyers’ {formatCount(buyerMix.sampledRecords)} shipment records; the number in brackets is how many firms fall in each group. Types are assigned from company names and registrations.</p></>}
+        <More className="analysis-legend" gist="Shares are of the largest buyers’ shipment records; brackets count the firms in each group."><p>{buyerMix.flags} Shares are of those buyers’ {formatCount(buyerMix.sampledRecords)} shipment records; the number in brackets is how many firms fall in each group. Types are assigned from company names and registrations.</p></More></>}
       <h3>Companies supplying gold to {hub.label} that carry a Sayari risk flag, by category</h3>
       <CountBars rows={inbound.supplierRisk.map(([key, count]) => [riskNames[key] ?? key, count])} total={inbound.suppliers} unit="suppliers" />
       <More className="visual-footnote" gist="Counts are Sayari records and companies, not dollars or tonnes."><p>Shipment counts are records across every year Sayari holds, not dollars or tonnes. The risk bars count supplier companies (of {formatCount(inbound.suppliers)}) carrying each flag; most forced- and child-labor flags come from U.S. Labor Department listings of gold from Peru and other mining countries, and describe the country and product, not a finding about the company. Which countries appear depends on which publish shipment-level customs records, so Peru and Colombia, which publish detailed export declarations, often dominate.{buyers ? " Free-zone firms are identified by licence suffix (DMCC, FZE, FZCO, FZ-LLC)." : ""}{exporters ? ` ${exporters.caveat}.` : ""}</p></More>
@@ -282,7 +282,7 @@ export function GoldHub({ code }: { code: number }) {
 
     <article className="visual-card analysis-card">
       <div className="visual-card-head"><div><p className="eyebrow">ACCREDITATION <span>/</span> LBMA GOOD DELIVERY LIST <span>/</span> {formatDate(lbma.generatedAt.slice(0, 10))}</p><h2>Which refiners London accepts</h2></div><span className="data-chip">LBMA · PUBLIC LIST</span></div>
-      <p className="analysis-legend">The London Bullion Market Association accepts gold bars only from refiners on its Good Delivery List, which requires annual responsible-sourcing audits. A refiner that is removed moves to the Former List with a transfer date.</p>
+      <p className="analysis-legend">London accepts gold bars only from refiners on the LBMA Good Delivery List, which requires yearly responsible-sourcing audits.</p>
       <div className="intel-stats hub-company">
         <div><span className="metric-label">ACCREDITED GOLD REFINERS</span><strong>{lbmaCurrent.length}</strong><small>In {lbmaCountries.length} countries and territories</small></div>
         <div><span className="metric-label">{hub.label.toUpperCase()} REFINERS LISTED</span><strong>{lbmaCount(hub.lbmaName)}</strong><small>Now, plus {lbmaFormerCount(hub.lbmaName)} on the Former List. {hub.refinerNote}</small></div>
@@ -294,7 +294,7 @@ export function GoldHub({ code }: { code: number }) {
       <More className="visual-footnote" gist="No accredited refiner at home means the gold is refined elsewhere before it reaches London."><p>Gold from a country with no accredited refiner reaches London only after refining elsewhere, often in Switzerland or the UAE. Not being listed says nothing about a refiner’s conduct; the UAE, for example, runs its own UAEGD accreditation, whose register was not machine-readable from here.</p></More>
     </article>
 
-    {hub.cards.length > 0 && <div className="observation-grid">{hub.cards.map((card) => <article key={card.title} className="provider-card"><h3>{card.title}</h3><p>{card.body}</p></article>)}</div>}
+    {hub.cards.length > 0 && <div className="observation-grid">{hub.cards.map((card) => <article key={card.title} className="provider-card"><h3>{card.title}</h3><Brief text={card.body} /></article>)}</div>}
 
     <div className="coverage-note hub-disclosure"><Globe2 size={19} /><div><b>About this data</b>
       <More gist="Public UN Comtrade and LBMA figures plus Sayari counts. No company is named."><p><b>Trade values:</b> UN Comtrade annual statistics for HS 7108 (non-monetary gold), as reported by {hub.label} and by each source country, pulled {formatDate(hubGold.generatedAt.slice(0, 10))} from the public preview API. Comtrade publishes country statistics under its terms of use; figures are as reported and later revisions are not reflected. <b>Company and route data:</b> Sayari Graph aggregates pulled {formatDate(sayariGold.generatedAt)} through the Sayari connector, licensed for this workspace; only counts are shown and no company is named. <b>Gold prices:</b> approximate LBMA annual averages, used only to separate price from volume. <b>Refiner accreditation:</b> the LBMA’s public gold Good Delivery current and former lists, read from lbma.org.uk on {formatDate(lbma.generatedAt.slice(0, 10))}; only counts by country are shown.</p>

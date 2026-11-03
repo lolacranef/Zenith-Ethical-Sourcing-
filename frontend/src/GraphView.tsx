@@ -22,7 +22,7 @@ const baseStyle: StylesheetStyle[] = [
       color: "#182b2c",
       "font-family": "DM Sans, sans-serif",
       "font-size": 11,
-      "font-weight": 600,
+      "font-weight": 700,
       "text-wrap": "wrap",
       "text-max-width": "110px",
       "text-valign": "bottom",
