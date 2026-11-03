@@ -50,7 +50,7 @@ export type Lead = {
   score: number;
   components: ScoreComponent[];
   metrics: LeadMetrics;
-  plain: { summary: string; nextStep: string };
+  plain: { headline: string; detail: string; nextStep: string };
   change: string;
   severity: Band;
   description: string;
@@ -251,9 +251,10 @@ function plainLanguage(type: Lead["type"], goods: string, partner: string, metri
   // A single month the other way is noise; "both ways" needs at least two in each direction.
   const bothWays = Math.min(metrics.flaggedAbove, metrics.flaggedBelow) >= 2;
   const structural = metrics.flaggedMonths === metrics.monthsWithGap && Math.abs(metrics.medianGap ?? 0) >= 50;
-  const trade = metrics.flaggedMonths === 0
+  const headline = metrics.flaggedMonths === 0
     ? `U.S. and ${partner} records of ${goods} trade agree closely in every month.`
-    : `In ${metrics.flaggedMonths} of ${metrics.monthsWithGap} months, U.S. and ${partner} records of ${goods} trade disagreed by more than 25%. ` + (bothWays
+    : `In ${metrics.flaggedMonths} of ${metrics.monthsWithGap} months, U.S. and ${partner} records of ${goods} trade disagreed by more than 25%.`;
+  const trade = metrics.flaggedMonths === 0 ? "" : (bothWays
       ? `The gaps went both ways: in ${metrics.flaggedAbove} of those months the U.S. recorded more, in ${metrics.flaggedBelow} less. In the latest month (${metrics.latestMonth}) it recorded ${size(metrics.latestGap ?? 0)}.`
       : `Typically the U.S. recorded ${size(metrics.medianGap ?? 0)}.`);
   const flaggedCount = metrics.forcedLaborSuppliers ?? 0;
@@ -275,7 +276,7 @@ function plainLanguage(type: Lead["type"], goods: string, partner: string, metri
     : type === "Supplier risk"
       ? "Start by asking the largest suppliers for documents showing where materials came from and how workers were treated."
       : "Watch the next few months of trade data for sudden jumps, drops, or new supplying countries.";
-  return { summary: [trade, suppliers, policy].filter(Boolean).join(" "), nextStep };
+  return { headline, detail: [trade, suppliers, policy].filter(Boolean).join(" "), nextStep };
 }
 
 export const buildLeads = (months: WindowMonths) => products.map((product) => buildLead(product, months)).filter((lead): lead is Lead => lead !== null).sort((a, b) => b.score - a.score);

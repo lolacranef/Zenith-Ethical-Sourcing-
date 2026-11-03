@@ -40,14 +40,27 @@ export function Term({ k, children }: { k: GlossaryKey; children?: ReactNode }) 
   </span>;
 }
 
-export function HowToRead({ title = "How to read this page", children }: { title?: string; children: ReactNode }) {
-  return <details className="how-to-read" open>
+function MoreToggle() {
+  return <span className="more-toggle" aria-hidden="true"><span className="more-open">Read more</span><span className="more-close">Show less</span><ChevronDown className="htr-chevron" size={14} /></span>;
+}
+
+// The gist is the one line everyone reads; the full guide opens on demand. Keep Term buttons out of the gist, since it sits inside the summary button.
+export function HowToRead({ gist, title = "How to read this page", children }: { gist: ReactNode; title?: string; children: ReactNode }) {
+  return <details className="how-to-read">
     <summary>
       <span className="htr-icon" aria-hidden="true"><BookOpen size={13} /></span>
-      <span className="htr-title"><small>Reading guide</small>{title}</span>
-      <ChevronDown className="htr-chevron" size={15} aria-hidden="true" />
+      <span className="htr-title"><small>{title}</small>{gist}</span>
+      <MoreToggle />
     </summary>
     <div className="htr-body">{children}</div>
+  </details>;
+}
+
+// A one-line takeaway with the full explanation one click away. Same rule as HowToRead: no interactive content in the gist.
+export function More({ gist, className, children }: { gist: ReactNode; className?: string; children: ReactNode }) {
+  return <details className={className ? `more ${className}` : "more"}>
+    <summary><span className="more-gist">{gist}</span><MoreToggle /></summary>
+    <div className="more-body">{children}</div>
   </details>;
 }
 

@@ -3,7 +3,7 @@ import { Database, Globe2, Search, ShieldAlert } from "lucide-react";
 import hubGold from "./data/hub-gold.json";
 import sayariGold from "./data/sayari-hub-gold.json";
 import lbma from "./data/lbma-good-delivery.json";
-import { HowToRead, Term } from "./Glossary";
+import { HowToRead, More, Term } from "./Glossary";
 import { SERIES_COLORS, linePath, useElementWidth } from "./ProductWatch";
 import { formatCount, formatDate, formatGap, formatShare } from "./data";
 import { CountBars, dotDelay, formatUsd, labelPositions, times, useRevealOnScroll } from "./HubShared";
@@ -200,7 +200,7 @@ export function GoldHub({ code }: { code: number }) {
 
   return <>
     <div className="section-title-row"><div><p className="eyebrow">HUB WATCH <span>/</span> {hub.label.toUpperCase()} <span>/</span> GOLD (HS 7108)</p><h2>{hub.title}</h2></div><span className="data-chip">UN COMTRADE · SAYARI · LBMA</span></div>
-    <HowToRead><p>{hub.intro} This page compares what {hub.label} records importing with what each source country records exporting to {hub.label} (<Term k="mirror statistics">mirror statistics</Term>), then adds Sayari shipment records for the routes and the kinds of companies involved. A gap is a question to check, not evidence of smuggling: gold carried by hand, gold recorded under another country as destination, and reporting gaps all produce one.</p></HowToRead>
+    <HowToRead gist={`Does what ${hub.label} says it received match what each country says it sent?`}><p>{hub.intro} This page compares what {hub.label} records importing with what each source country records exporting to {hub.label} (<Term k="mirror statistics">mirror statistics</Term>), then adds Sayari shipment records for the routes and the kinds of companies involved. A gap is a question to check, not evidence of smuggling: gold carried by hand, gold recorded under another country as destination, and reporting gaps all produce one.</p></HowToRead>
 
     <section className="metric-ribbon hub-metrics" aria-label={`${hub.label} gold headline figures`}>
       <div className="metric-cell"><span className="metric-label">GOLD IMPORTS {latest.year}</span><strong>{formatUsd(latest.imports)}</strong><small>{times(latest.imports, first.imports)} {first.year}, as {hub.label} reports</small></div>
@@ -224,7 +224,7 @@ export function GoldHub({ code }: { code: number }) {
             </div>}
           </div>
         </div>
-        <p className="visual-footnote">Values as {hub.label} reports them to UN Comtrade, through {latest.year}. The dotted line re-prices each year’s imports at the {first.year} average gold price (approximate LBMA annual averages), so it tracks the amount of gold rather than its price. Reported weights are inconsistent, so tonnes are not shown.</p>
+        <More className="visual-footnote" gist="The dotted line strips out the gold price, so it tracks the amount of gold."><p>Values as {hub.label} reports them to UN Comtrade, through {latest.year}. The dotted line re-prices each year’s imports at the {first.year} average gold price (approximate LBMA annual averages), so it tracks the amount of gold rather than its price. Reported weights are inconsistent, so tonnes are not shown.</p></More>
         <details className="data-table-toggle"><summary>View data as a table</summary><div className="table-scroll"><table><thead><tr><th>Year</th><th>Imports</th><th>Exports</th><th>Imports at {first.year} prices</th><th>Gold price (approx.)</th></tr></thead><tbody>{years.map((year) => <tr key={year.year}><td>{year.year}</td><td>{formatUsd(year.imports)}</td><td>{formatUsd(year.exports)}</td><td>{formatUsd(atFirstYearPrice(year))}</td><td>{GOLD_PRICE[year.year] ? `$${formatCount(GOLD_PRICE[year.year])}/oz` : "—"}</td></tr>)}</tbody></table></div></details>
       </article>
 
@@ -252,7 +252,7 @@ export function GoldHub({ code }: { code: number }) {
             <td><small>{hub.notes[source.code] ?? ""}</small></td>
           </tr>; })}</tbody>
       </table></div>
-      <p className="visual-footnote">Gap = {hub.label}-recorded imports ÷ source-reported exports − 1; beyond ±25% is highlighted. LBMA refiners = refineries in that country currently on the LBMA gold Good Delivery List. “Almost none” means the source reports less than a tenth of what {hub.label} records, where a percentage stops being useful. Importers usually value goods including freight and insurance and exporters don’t, so small positive gaps are normal.</p>
+      <More className="visual-footnote" gist="Gap = recorded imports ÷ source-reported exports − 1. Beyond ±25% is highlighted."><p>Gap = {hub.label}-recorded imports ÷ source-reported exports − 1; beyond ±25% is highlighted. LBMA refiners = refineries in that country currently on the LBMA gold Good Delivery List. “Almost none” means the source reports less than a tenth of what {hub.label} records, where a percentage stops being useful. Importers usually value goods including freight and insurance and exporters don’t, so small positive gaps are normal.</p></More>
     </article>
 
     <article className="visual-card analysis-card">
@@ -277,7 +277,7 @@ export function GoldHub({ code }: { code: number }) {
         <p className="analysis-legend">{buyerMix.flags} Shares are of those buyers’ {formatCount(buyerMix.sampledRecords)} shipment records; the number in brackets is how many firms fall in each group. Types are assigned from company names and registrations.</p></>}
       <h3>Companies supplying gold to {hub.label} that carry a Sayari risk flag, by category</h3>
       <CountBars rows={inbound.supplierRisk.map(([key, count]) => [riskNames[key] ?? key, count])} total={inbound.suppliers} unit="suppliers" />
-      <p className="visual-footnote">Shipment counts are records across every year Sayari holds, not dollars or tonnes. The risk bars count supplier companies (of {formatCount(inbound.suppliers)}) carrying each flag; most forced- and child-labor flags come from U.S. Labor Department listings of gold from Peru and other mining countries, and describe the country and product, not a finding about the company. Which countries appear depends on which publish shipment-level customs records, so Peru and Colombia, which publish detailed export declarations, often dominate.{buyers ? " Free-zone firms are identified by licence suffix (DMCC, FZE, FZCO, FZ-LLC)." : ""}{exporters ? ` ${exporters.caveat}.` : ""}</p>
+      <More className="visual-footnote" gist="Counts are Sayari records and companies, not dollars or tonnes."><p>Shipment counts are records across every year Sayari holds, not dollars or tonnes. The risk bars count supplier companies (of {formatCount(inbound.suppliers)}) carrying each flag; most forced- and child-labor flags come from U.S. Labor Department listings of gold from Peru and other mining countries, and describe the country and product, not a finding about the company. Which countries appear depends on which publish shipment-level customs records, so Peru and Colombia, which publish detailed export declarations, often dominate.{buyers ? " Free-zone firms are identified by licence suffix (DMCC, FZE, FZCO, FZ-LLC)." : ""}{exporters ? ` ${exporters.caveat}.` : ""}</p></More>
     </article>
 
     <article className="visual-card analysis-card">
@@ -291,15 +291,15 @@ export function GoldHub({ code }: { code: number }) {
       </div>
       <h3>Accredited refiners by country</h3>
       <CountBars rows={lbmaCountries.slice(0, 10).map(([key, count]) => [titleCase(key), count])} total={lbmaCurrent.length} unit="accredited refiners" />
-      <p className="visual-footnote">Gold from a country with no accredited refiner reaches London only after refining elsewhere, often in Switzerland or the UAE. Not being listed says nothing about a refiner’s conduct; the UAE, for example, runs its own UAEGD accreditation, whose register was not machine-readable from here.</p>
+      <More className="visual-footnote" gist="No accredited refiner at home means the gold is refined elsewhere before it reaches London."><p>Gold from a country with no accredited refiner reaches London only after refining elsewhere, often in Switzerland or the UAE. Not being listed says nothing about a refiner’s conduct; the UAE, for example, runs its own UAEGD accreditation, whose register was not machine-readable from here.</p></More>
     </article>
 
     {hub.cards.length > 0 && <div className="observation-grid">{hub.cards.map((card) => <article key={card.title} className="provider-card"><h3>{card.title}</h3><p>{card.body}</p></article>)}</div>}
 
     <div className="coverage-note hub-disclosure"><Globe2 size={19} /><div><b>About this data</b>
-      <p><b>Trade values:</b> UN Comtrade annual statistics for HS 7108 (non-monetary gold), as reported by {hub.label} and by each source country, pulled {formatDate(hubGold.generatedAt.slice(0, 10))} from the public preview API. Comtrade publishes country statistics under its terms of use; figures are as reported and later revisions are not reflected. <b>Company and route data:</b> Sayari Graph aggregates pulled {formatDate(sayariGold.generatedAt)} through the Sayari connector, licensed for this workspace; only counts are shown and no company is named. <b>Gold prices:</b> approximate LBMA annual averages, used only to separate price from volume. <b>Refiner accreditation:</b> the LBMA’s public gold Good Delivery current and former lists, read from lbma.org.uk on {formatDate(lbma.generatedAt.slice(0, 10))}; only counts by country are shown.</p>
+      <More gist="Public UN Comtrade and LBMA figures plus Sayari counts. No company is named."><p><b>Trade values:</b> UN Comtrade annual statistics for HS 7108 (non-monetary gold), as reported by {hub.label} and by each source country, pulled {formatDate(hubGold.generatedAt.slice(0, 10))} from the public preview API. Comtrade publishes country statistics under its terms of use; figures are as reported and later revisions are not reflected. <b>Company and route data:</b> Sayari Graph aggregates pulled {formatDate(sayariGold.generatedAt)} through the Sayari connector, licensed for this workspace; only counts are shown and no company is named. <b>Gold prices:</b> approximate LBMA annual averages, used only to separate price from volume. <b>Refiner accreditation:</b> the LBMA’s public gold Good Delivery current and former lists, read from lbma.org.uk on {formatDate(lbma.generatedAt.slice(0, 10))}; only counts by country are shown.</p>
       {hub.sources.length > 0 && <p><b>Checked against:</b> {hub.sources.map((source, index) => <span key={source.url}>{index > 0 && "; "}<a href={source.url} target="_blank" rel="noreferrer">{source.label}</a></span>)}.</p>}
-      <p><b>What this cannot show:</b> individual shipments, which zone or vault a consignment entered, or whether any trade was illicit. Gaps also arise from gold carried by hand and not declared, refinery countries recorded in place of destinations, monetary gold excluded on one side, timing, and confidential reporting. Nothing here is an allegation about any country or company.</p></div></div>
+      <p><b>What this cannot show:</b> individual shipments, which zone or vault a consignment entered, or whether any trade was illicit. Gaps also arise from gold carried by hand and not declared, refinery countries recorded in place of destinations, monetary gold excluded on one side, timing, and confidential reporting. Nothing here is an allegation about any country or company.</p></More></div></div>
     <p className="data-provenance"><Database size={12} /> Refresh trade values with <code>npm run data:hub-gold</code> and the LBMA lists with <code>npm run data:lbma</code>. <ShieldAlert size={12} /> Sayari figures are a dated snapshot. <Search size={12} /> Source notes are leads to check.</p>
   </>;
 }

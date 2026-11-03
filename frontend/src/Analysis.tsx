@@ -1,6 +1,6 @@
 import { ArrowRight, BookOpenCheck, ChevronDown, Database, Search } from "lucide-react";
 import { ASSESSED_ON, DATA_THROUGH, Priority, flowObservations, indicationGuide, productAssessments } from "./analysisNotes";
-import { HowToRead } from "./Glossary";
+import { HowToRead, More } from "./Glossary";
 import { Band, Indication, WINDOW_OPTIONS, WindowMonths, buildLeads, formatDate, formatGap, fullSeries, indicationLabels, mirrorData, products, shortPartner } from "./data";
 
 const priorityOrder: Record<Priority, number> = { High: 0, Medium: 1, Low: 2 };
@@ -23,7 +23,7 @@ export function ProductAnalysis({ months, onOpenTrend, onOpenLead }: { months: W
 
   return <div className="analysis-view">
     <AssessmentNote months={months} />
-    <HowToRead><p>Start with <b>Review priority by product</b>: High means look at it first. The <b>Zenith score</b> comes straight from the data; the <b>overall priority</b> is an analyst’s judgment after allowing for known reporting quirks. Open a <b>product brief</b> for what the data shows, innocent explanations, and what to check next.</p></HowToRead>
+    <HowToRead gist="Start with the review priority: High means look at it first."><p>Start with <b>Review priority by product</b>: High means look at it first. The <b>Zenith score</b> comes straight from the data; the <b>overall priority</b> is an analyst’s judgment after allowing for known reporting quirks. Open a <b>product brief</b> for what the data shows, innocent explanations, and what to check next.</p></HowToRead>
 
     <article className="visual-card analysis-card">
       <div className="visual-card-head"><div><p className="eyebrow">ANALYSIS <span>/</span> RISK INDICATIONS</p><h2>What each indication means</h2></div></div>
@@ -86,7 +86,7 @@ export function FlowsAnalysis({ months, onOpenProduct }: { months: WindowMonths;
 
   return <div className="analysis-view">
     <AssessmentNote months={months} />
-    <HowToRead><p>Each row is one trade route. <b>U.S. imports</b> is what the U.S. recorded; <b>partner-reported exports</b> is what the other country recorded sending. The <b>gap</b> compares the two (red when they differ by more than 25%). <b>Volatility</b> shows how much monthly imports jump around; very high volatility often follows new duties.</p></HowToRead>
+    <HowToRead gist="Each row asks one question: do both countries’ records of this trade match?"><p>Each row is one trade route. <b>U.S. imports</b> is what the U.S. recorded; <b>partner-reported exports</b> is what the other country recorded sending. The <b>gap</b> compares the two (red when they differ by more than 25%). <b>Volatility</b> shows how much monthly imports jump around; very high volatility often follows new duties.</p></HowToRead>
     <article className="visual-card analysis-card">
       <div className="visual-card-head"><div><p className="eyebrow">ANALYSIS <span>/</span> CORRIDOR FLOWS <span>/</span> {windowLabel(months).toUpperCase()} TO {lastMonth.toUpperCase()}</p><h2>Real trade flows behind each lead</h2></div><span className="data-chip">UN COMTRADE</span></div>
       <div className="table-scroll analysis-table"><table>
@@ -102,7 +102,7 @@ export function FlowsAnalysis({ months, onOpenProduct }: { months: WindowMonths;
             <td><button type="button" className="text-action" onClick={() => onOpenProduct(row.id)}>Trend <ArrowRight size={12} /></button></td>
           </tr>; })}</tbody>
       </table></div>
-      <p className="visual-footnote">Gap = U.S. imports ÷ partner-reported exports − 1 over the period; above ±25% is highlighted. Volatility is the spread of monthly U.S. import values around their average. Only the largest supplier country per product is tracked, so moves between origins are not visible yet.</p>
+      <More className="visual-footnote" gist="Gap = U.S. imports ÷ partner exports − 1. Beyond ±25% is highlighted."><p>Gap = U.S. imports ÷ partner-reported exports − 1 over the period; above ±25% is highlighted. Volatility is the spread of monthly U.S. import values around their average. Only the largest supplier country per product is tracked, so moves between origins are not visible yet.</p></More>
     </article>
     <div className="observation-grid">{flowObservations.map((item) => <article key={item.title} className="provider-card"><h3>{item.title}</h3><p>{item.body}</p></article>)}</div>
     <p className="data-provenance"><Database size={12} /> Source: UN Comtrade monthly mirror statistics. Figures recompute with the period selector.</p>

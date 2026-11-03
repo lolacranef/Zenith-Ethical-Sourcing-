@@ -1,6 +1,7 @@
 import { Globe2 } from "lucide-react";
 import ftz from "./data/ftz-exporters.json";
 import { formatCount, formatDate } from "./data";
+import { More } from "./Glossary";
 
 // Indonesian solar exporters to the U.S. whose registered addresses sit in a free trade zone.
 // Hand-entered from Sayari entity summaries; see "About this data" for how the list was built.
@@ -14,7 +15,7 @@ export default function FreeZoneExporters() {
   const inZone = rows.length;
   const flagged = rows.filter((row) => row.flags.length > 0).length;
   return <div className="ftz-exporters">
-    <p className="flow-trend-summary"><b>{inZone} of the {ftz.checked}</b> Indonesian solar exporters to the U.S. checked are registered in the Batam or Bintan free trade zones; {flagged} show at least one address or network pattern from the free-zone method. Being in a zone is normal for exporters. These rows are screening leads to check, not findings.</p>
+    <More className="flow-trend-summary" gist={<><b>{inZone} of {ftz.checked}</b> exporters sit in a free zone, and {flagged} show a pattern worth a closer look.</>}><p><b>{inZone} of the {ftz.checked}</b> Indonesian solar exporters to the U.S. checked are registered in the Batam or Bintan free trade zones; {flagged} show at least one address or network pattern from the free-zone method. Being in a zone is normal for exporters. These rows are screening leads to check, not findings.</p></More>
     <div className="table-scroll analysis-table"><table>
       <thead><tr><th>Exporter</th><th>Zone</th><th>U.S. shipments</th><th>What to check</th></tr></thead>
       <tbody>{rows.map((row) => <tr key={row.name}>
@@ -25,7 +26,7 @@ export default function FreeZoneExporters() {
       </tr>)}</tbody>
     </table></div>
     <div className="coverage-note hub-disclosure"><Globe2 size={19} /><div><b>About this data</b>
-      <p><b>Companies and addresses:</b> Sayari Graph, pulled {formatDate(ftz.generatedAt)} through the Sayari connector. The {ftz.largestChecked} exporters with the most U.S.-bound shipments of HS 8541.43 from Indonesia were checked, plus one found by its Bintan name ({ftz.checked} of {ftz.suppliersOnRoute} on the route); {ftz.outsideZone} had no free-zone address. Shipment counts are Sayari&rsquo;s all-time totals for this route. <b>Zones:</b> {ZONE_NOTE.Batam} {ZONE_NOTE.Bintan} Exact boundaries are set by maps attached to each regulation. Sources: <a href="https://peraturan.bpk.go.id/Details/4768/pp-no-46-tahun-2007" target="_blank" rel="noreferrer">PP 46/2007</a>, <a href="https://peraturan.bpk.go.id/Details/4769/pp-no-47-tahun-2007" target="_blank" rel="noreferrer">PP 47/2007</a> (BPK legal database), <a href="https://setkab.go.id/?p=119852" target="_blank" rel="noreferrer">PP 41/2017 announcement</a> (Cabinet Secretariat).</p>
-      <p><b>Network links:</b> sanctions links are two trade steps away (a supplier or customer of the exporter trades with a listed party); none of these exporters is sanctioned itself. <b>What this cannot show:</b> where any shipment&rsquo;s cells were made, who controls the companies, or whether any trade was illicit. Nothing here is an allegation about any company.</p></div></div>
+      <More gist="Sayari records for the top exporters, checked against Indonesia’s zone regulations. Nothing here is an allegation."><p><b>Companies and addresses:</b> Sayari Graph, pulled {formatDate(ftz.generatedAt)} through the Sayari connector. The {ftz.largestChecked} exporters with the most U.S.-bound shipments of HS 8541.43 from Indonesia were checked, plus one found by its Bintan name ({ftz.checked} of {ftz.suppliersOnRoute} on the route); {ftz.outsideZone} had no free-zone address. Shipment counts are Sayari&rsquo;s all-time totals for this route. <b>Zones:</b> {ZONE_NOTE.Batam} {ZONE_NOTE.Bintan} Exact boundaries are set by maps attached to each regulation. Sources: <a href="https://peraturan.bpk.go.id/Details/4768/pp-no-46-tahun-2007" target="_blank" rel="noreferrer">PP 46/2007</a>, <a href="https://peraturan.bpk.go.id/Details/4769/pp-no-47-tahun-2007" target="_blank" rel="noreferrer">PP 47/2007</a> (BPK legal database), <a href="https://setkab.go.id/?p=119852" target="_blank" rel="noreferrer">PP 41/2017 announcement</a> (Cabinet Secretariat).</p>
+      <p><b>Network links:</b> sanctions links are two trade steps away (a supplier or customer of the exporter trades with a listed party); none of these exporters is sanctioned itself. <b>What this cannot show:</b> where any shipment&rsquo;s cells were made, who controls the companies, or whether any trade was illicit. Nothing here is an allegation about any company.</p></More></div></div>
   </div>;
 }

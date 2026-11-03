@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Database, Globe2, Search, ShieldAlert } from "lucide-react";
 import hubElectronics from "./data/hub-electronics.json";
 import sayari from "./data/sayari-hub-electronics.json";
-import { HowToRead, Term } from "./Glossary";
+import { HowToRead, More, Term } from "./Glossary";
 import { SERIES_COLORS, linePath, useElementWidth } from "./ProductWatch";
 import { CountBars, dotDelay, countryNames, formatUsd, labelPositions, smallShare, times } from "./HubShared";
 import { formatCount, formatDate, formatGap, formatShare } from "./data";
@@ -148,7 +148,7 @@ export function ElectronicsHub({ code }: { code: number }) {
 
   return <>
     <div className="section-title-row"><div><p className="eyebrow">HUB WATCH <span>/</span> {hub.label.toUpperCase()} → RUSSIA <span>/</span> CHPL ELECTRONICS</p><h2>Dual-use electronics from {hub.label} to Russia</h2></div><span className="data-chip">UN COMTRADE · SAYARI</span></div>
-    <HowToRead><p>Since 2022 the U.S., EU, UK and Japan have restricted exports to Russia of the electronics its weapons rely on, listed by product code in the <b>Common High Priority List (CHPL)</b>. This page follows three of the most important codes: integrated circuits (HS 8542), network equipment (8517.62) and satellite-navigation receivers (8526.91). Russia stopped publishing trade data in 2022, so the figures come from what {hub.label} and other <Term k="transshipment">transit</Term> countries report sending Russia, plus Sayari records of Russian import declarations. {hub.note} Trade in these goods is not illegal in itself, and much of what reaches Russia is Chinese-made.</p></HowToRead>
+    <HowToRead gist="Are restricted chips and electronics still reaching Russia, and by which routes?"><p>Since 2022 the U.S., EU, UK and Japan have restricted exports to Russia of the electronics its weapons rely on, listed by product code in the <b>Common High Priority List (CHPL)</b>. This page follows three of the most important codes: integrated circuits (HS 8542), network equipment (8517.62) and satellite-navigation receivers (8526.91). Russia stopped publishing trade data in 2022, so the figures come from what {hub.label} and other <Term k="transshipment">transit</Term> countries report sending Russia, plus Sayari records of Russian import declarations. {hub.note} Trade in these goods is not illegal in itself, and much of what reaches Russia is Chinese-made.</p></HowToRead>
 
     <section className="metric-ribbon hub-metrics" aria-label={`${hub.label} to Russia electronics headline figures`}>
       <div className="metric-cell"><span className="metric-label">EXPORTS TO RUSSIA {latest.year}</span><strong>{formatUsd(toRussiaLatest)}</strong><small>{toRussiaBase === null ? `No ${BASELINE} figure` : toRussiaBase < 1e6 ? `From under $1M in ${BASELINE}, the year before sanctions` : `${times(toRussiaLatest, toRussiaBase)} ${BASELINE}, the year before sanctions`}</small></div>
@@ -195,7 +195,7 @@ export function ElectronicsHub({ code }: { code: number }) {
           <td className="num">{item.latestTotal === null ? "—" : smallShare(item.latestTotal, routeSum)}</td>
         </tr>)}</tbody>
       </table></div>
-      <p className="visual-footnote">Countries chosen as the main suppliers and transit routes named in public sanctions analyses. China and Hong Kong mostly ship their own or regional production, so a large total there is not by itself re-export. In {latest.year}, {hub.label}’s largest of the three codes was {codeNames[topCode].toLowerCase()} ({topCode}).</p>
+      <More className="visual-footnote" gist="China and Hong Kong mostly ship their own production, so a big total isn’t re-export by itself."><p>Countries chosen as the main suppliers and transit routes named in public sanctions analyses. China and Hong Kong mostly ship their own or regional production, so a large total there is not by itself re-export. In {latest.year}, {hub.label}’s largest of the three codes was {codeNames[topCode].toLowerCase()} ({topCode}).</p></More>
     </article>
 
     {chips && chips.sources.reduce((sum, source) => sum + source.value, 0) < 5e6 && <p className="intel-empty">{hub.label} recorded under $5M of chip imports from its top suppliers in {chips.year}, too little for a mirror check.</p>}
@@ -206,7 +206,7 @@ export function ElectronicsHub({ code }: { code: number }) {
         <tbody>{chips.sources.map((source) => { const gap = source.partnerReported ? Math.round(((source.value - source.partnerReported) / source.partnerReported) * 1000) / 10 : null; const almostNone = source.partnerReported !== null && source.partnerReported < source.value * 0.1;
           return <tr key={source.code}><td><b>{shortName(source.name)}</b></td><td className="num">{formatUsd(source.value)}</td><td className="num">{source.partnerReported === null ? <small>Not reported</small> : formatUsd(source.partnerReported)}</td><td className={`num ${almostNone || (gap !== null && Math.abs(gap) > 25) ? "over" : ""}`}>{almostNone ? <small>Supplier reports almost none</small> : formatGap(gap)}</td></tr>; })}</tbody>
       </table></div>
-      <p className="visual-footnote">Gap = recorded imports ÷ supplier-reported exports − 1; beyond ±25% is highlighted; “almost none” means the supplier reports under a tenth. Chips are often recorded under the country where they were packaged, and Taiwan does not report to UN Comtrade (it appears as “Other Asia, nes”), so gaps here are common and mostly attribution effects.</p>
+      <More className="visual-footnote" gist="Chips are often recorded where they were packaged, so gaps here are common."><p>Gap = recorded imports ÷ supplier-reported exports − 1; beyond ±25% is highlighted; “almost none” means the supplier reports under a tenth. Chips are often recorded under the country where they were packaged, and Taiwan does not report to UN Comtrade (it appears as “Other Asia, nes”), so gaps here are common and mostly attribution effects.</p></More>
     </article>}
 
     <article className="visual-card analysis-card">
@@ -226,7 +226,7 @@ export function ElectronicsHub({ code }: { code: number }) {
           <div><span className="metric-label">SUPPLIERS · BUYERS</span><strong>{formatCount(route.suppliers)} · {formatCount(route.buyers)}</strong><small>{route.supplierFlags.chplCritical} supplier{route.supplierFlags.chplCritical === 1 ? "" : "s"} flagged for shipping CHPL critical components; {route.supplierFlags.sanctioned} are themselves sanctioned</small></div>
         </div>
       </div>
-      <p className="visual-footnote">Flag counts are distinct companies, not shipments. Sanctions flags reflect current listings, which include designations made after the trade took place. “State procurement contractor” means the company appears in Russian government procurement records. Russia-wide figures cover every year Sayari holds, while most routes appear only from 2021 or 2022, so the comparison is indicative.</p>
+      <More className="visual-footnote" gist="Flags count companies, not shipments, so this comparison is indicative."><p>Flag counts are distinct companies, not shipments. Sanctions flags reflect current listings, which include designations made after the trade took place. “State procurement contractor” means the company appears in Russian government procurement records. Russia-wide figures cover every year Sayari holds, while most routes appear only from 2021 or 2022, so the comparison is indicative.</p></More>
     </article>
 
     <div className="observation-grid">
@@ -238,9 +238,9 @@ export function ElectronicsHub({ code }: { code: number }) {
     </div>
 
     <div className="coverage-note hub-disclosure"><Globe2 size={19} /><div><b>About this data</b>
-      <p><b>Trade values:</b> UN Comtrade annual statistics for HS 8542, 8517.62 and 8526.91 as reported by each route and supplier country, pulled {formatDate(hubElectronics.generatedAt.slice(0, 10))} from the public preview API, under Comtrade’s terms of use. Russia does not report. <b>Company data:</b> Sayari Graph aggregates pulled {formatDate(sayari.generatedAt)} through the Sayari connector, licensed for this workspace; only counts are shown and no company is named. <b>Product codes:</b> chosen from Tiers 1 and 2 of the Common High Priority List published by the U.S. Bureau of Industry and Security with the EU, UK and Japan.</p>
+      <More gist="Public UN Comtrade figures plus Sayari counts for three restricted product codes. No company is named."><p><b>Trade values:</b> UN Comtrade annual statistics for HS 8542, 8517.62 and 8526.91 as reported by each route and supplier country, pulled {formatDate(hubElectronics.generatedAt.slice(0, 10))} from the public preview API, under Comtrade’s terms of use. Russia does not report. <b>Company data:</b> Sayari Graph aggregates pulled {formatDate(sayari.generatedAt)} through the Sayari connector, licensed for this workspace; only counts are shown and no company is named. <b>Product codes:</b> chosen from Tiers 1 and 2 of the Common High Priority List published by the U.S. Bureau of Industry and Security with the EU, UK and Japan.</p>
       <p><b>Checked against:</b> {[...hub.sources, { label: "Morrison Foerster: U.S. authorizes secondary sanctions on banks supporting Russia’s military-industrial base (EO 14114, Dec 2023)", url: "https://www.mofo.com/resources/insights/240103-us-authorizes-secondary-sanctions-on-banks" }].map((source, index) => <span key={source.url}>{index > 0 && "; "}<a href={source.url} target="_blank" rel="noreferrer">{source.label}</a></span>)}.</p>
-      <p><b>What this cannot show:</b> whether any shipment broke a law. {hub.label} has not adopted U.S. or EU sanctions, CHPL items have civilian uses, and a license or exemption may apply. Records cannot show the end user. Nothing here is an allegation about any country or company.</p></div></div>
+      <p><b>What this cannot show:</b> whether any shipment broke a law. {hub.label} has not adopted U.S. or EU sanctions, CHPL items have civilian uses, and a license or exemption may apply. Records cannot show the end user. Nothing here is an allegation about any country or company.</p></More></div></div>
     <p className="data-provenance"><Database size={12} /> Refresh trade values with <code>npm run data:hub-electronics</code>. <ShieldAlert size={12} /> Sayari figures are a dated snapshot. <Search size={12} /> Notes are leads to check.</p>
   </>;
 }

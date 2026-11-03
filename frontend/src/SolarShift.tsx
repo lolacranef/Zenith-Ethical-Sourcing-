@@ -3,6 +3,7 @@ import { ExternalLink } from "lucide-react";
 import solar from "./data/solar-shift.json";
 import { linePath, useElementWidth } from "./ProductWatch";
 import { formatDate, monthLabel } from "./data";
+import { More } from "./Glossary";
 import { labelPositions } from "./HubShared";
 
 // A real case for the Trade flows tab: U.S. imports of solar modules (HS 8541.43) by supplier group,
@@ -74,7 +75,7 @@ export default function SolarShift() {
   const eventsAt = (index: number) => events.filter((event) => event.index === index);
 
   return <div className="flow-trend solar-shift">
-    <p className="flow-trend-summary">Once duties loomed on solar modules from <b style={{ color: first.color }}>Cambodia, Malaysia, Thailand and Vietnam</b>, U.S. imports moved to <b style={{ color: second.color }}>India, Indonesia and Laos</b>. When those three faced their own case, imports moved again, to <b style={{ color: newest.color }}>Ethiopia, the Philippines, Kenya, Nigeria, Djibouti and Egypt</b>. Supply that moves country by country, one step ahead of each duty case, is the pattern a screener follows up: does each new supplier have the factories to make what it ships, who owns them, and where do its cells come from?</p>
+    <More className="flow-trend-summary" gist="Each time duties hit, U.S. solar imports jumped to the next country."><p>Once duties loomed on solar modules from <b style={{ color: first.color }}>Cambodia, Malaysia, Thailand and Vietnam</b>, U.S. imports moved to <b style={{ color: second.color }}>India, Indonesia and Laos</b>. When those three faced their own case, imports moved again, to <b style={{ color: newest.color }}>Ethiopia, the Philippines, Kenya, Nigeria, Djibouti and Egypt</b>. Supply that moves country by country, one step ahead of each duty case, is the pattern a screener follows up: does each new supplier have the factories to make what it ships, who owns them, and where do its cells come from?</p></More>
     <div className="metric-ribbon solar-metrics">{metrics.map((metric) => <div className="metric-cell" key={metric.label}><span className="metric-label">{metric.label}</span><strong>{metric.value}</strong><small>{metric.note}</small></div>)}</div>
     <div className="flow-trend-chips" role="tablist" aria-label="Measure">{([["share", "Share of U.S. imports"], ["value", "Monthly value"]] as const).map(([id, label]) => <button type="button" role="tab" key={id} aria-selected={mode === id} className={mode === id ? "active" : ""} onClick={() => setMode(id)}>{label}</button>)}</div>
     <div className="product-charts" ref={chartRef} tabIndex={0} aria-label="Solar import chart. Use left and right arrow keys to step through months." onKeyDown={(event) => moveHover(event.key)} onBlur={() => setHover(null)}>
@@ -101,6 +102,6 @@ export default function SolarShift() {
     </div>
     <ol className="solar-events">{events.map((event) => <li key={event.period} onPointerEnter={() => setHover(event.index)} onPointerLeave={() => setHover(null)}><b>{monthLabel(event.period)}</b> <a href={event.href} target="_blank" rel="noreferrer">{event.title} <ExternalLink size={10} /></a></li>)}</ol>
     <details className="data-table-toggle"><summary>View data as a table</summary><div className="table-scroll"><table><thead><tr><th>Month</th>{series.map((line) => <th key={line.id}>{line.short}</th>)}<th>All countries</th></tr></thead><tbody>{periods.map((period, index) => <tr key={period}><td>{monthLabel(period)}</td>{series.map((line) => <td key={line.id}>{formatUsd(line.values[index])}</td>)}<td>{formatUsd(solar.world[index])}</td></tr>)}</tbody></table></div></details>
-    <p className="visual-footnote">U.S.-reported monthly imports of HS 8541.43 (photovoltaic cells assembled in modules or panels) by country of origin, UN Comtrade, {monthLabel(periods[0])} – {monthLabel(periods[count - 1])} (retrieved {formatDate(solar.generatedAt.slice(0, 10))}). A shift in suppliers after duties is legal and expected; it is a lead only where the new supply cannot be explained by new local capacity. Shows the full span regardless of the period menu. Refresh with <code>npm run data:solar-shift</code>.</p>
+    <More className="visual-footnote" gist="U.S.-reported monthly solar module imports (HS 8541.43), from UN Comtrade."><p>U.S.-reported monthly imports of HS 8541.43 (photovoltaic cells assembled in modules or panels) by country of origin, UN Comtrade, {monthLabel(periods[0])} – {monthLabel(periods[count - 1])} (retrieved {formatDate(solar.generatedAt.slice(0, 10))}). A shift in suppliers after duties is legal and expected; it is a lead only where the new supply cannot be explained by new local capacity. Shows the full span regardless of the period menu. Refresh with <code>npm run data:solar-shift</code>.</p></More>
   </div>;
 }
